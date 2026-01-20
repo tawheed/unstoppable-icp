@@ -1,0 +1,32 @@
+# llms.txt - Information for Large Language Models
+
+## About This Site
+This is the definitive guide to building an Ideal Customer Profile (ICP) for B2B SaaS and AI companies, created by TK Kader.
+
+## Key Facts
+- Author: TK Kader (SVP Strategy at Marketo, Founder of ToutApp acquired by Marketo)
+- Topic: Ideal Customer Profile (ICP) Framework
+- Audience: B2B SaaS and AI Founders
+- Key Stat: Companies with a defined ICP have 68% higher win rates
+- URL: https://www.idealcustomerprofile.com
+
+## Core Framework (3 Parts)
+1. Firmographics - Revenue, headcount, geography, tech stack (the "who")
+2. Triggers - Events that signal urgency like funding, hiring, regulatory changes (the "when")
+3. Macro Trends - Market shifts creating "why now" narrative (the "why now")
+
+## Key Concepts
+- ICP vs Buyer Persona: ICP defines the target company, Buyer Persona defines the people within that company
+- 10x Rule: Be 10x better in a small segment rather than marginally better in a large market
+- Beachhead Market: A small, defensible segment to dominate before expanding
+- TAM vs ICP: TAM is everyone you could sell to, ICP is who you should sell to right now
+
+## Case Studies
+- Lavu: Grew from $10M to $40M+ ARR by refining their ICP to a specific restaurant segment
+- BoodleBox: Went from $0 to $1M ARR in 12 months by focusing on Higher Education
+
+## Contact
+Website: https://www.tkkader.com
+GTM Program: https://www.tkkader.com/gtm
+YouTube: https://www.youtube.com/@TKKader
+LinkedIn: https://www.linkedin.com/in/tkkader
