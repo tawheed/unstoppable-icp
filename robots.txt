@@ -1,0 +1,38 @@
+# SEO - Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# LLM/GEO - Allow AI crawlers for Generative Engine Optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# Default - Allow all other crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.idealcustomerprofile.com/sitemap.xml
