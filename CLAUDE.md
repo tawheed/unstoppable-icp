@@ -16,12 +16,10 @@ This is a static marketing micro-site for "Ideal Customer Profile" - a single-pa
 
 ## Development
 
-To work on this site locally, simply open `index.html` in a browser or use any static file server:
+Run a local server with live reload:
 
 ```bash
-python3 -m http.server 8000
-# or
-npx serve .
+npx browser-sync start --server --files "*.html"
 ```
 
 ## Deployment
