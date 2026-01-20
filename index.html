@@ -265,7 +265,8 @@
         h1, h2, h3, h4, h5, h6 { font-family: 'Crimson Pro', serif; }
         
         .video-facade { cursor: pointer; position: relative; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #e2e8f0; }
-        .video-facade::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.1); transition: background 0.3s; }
+        .video-facade::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.1); transition: background 0.3s; pointer-events: none; }
+        .video-facade iframe { position: relative; z-index: 20; }
         .video-facade:hover::before { background: rgba(0,0,0,0.0); }
         .play-button { width: 72px; height: 72px; background: #DC2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10; transition: transform 0.2s; box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.4); }
         .video-facade:hover .play-button { transform: scale(1.05); }
@@ -354,7 +355,7 @@
                 
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/o9ema2yJvxs/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/o9ema2yJvxs?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/o9ema2yJvxs?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
@@ -406,7 +407,7 @@
 
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/vhRkCTdFmZE/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/vhRkCTdFmZE?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/vhRkCTdFmZE?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
@@ -489,7 +490,7 @@
 
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/aWRwBAYOiF8/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/aWRwBAYOiF8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/aWRwBAYOiF8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
@@ -534,7 +535,7 @@
 
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/K8YoRPB1ft8/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/K8YoRPB1ft8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/K8YoRPB1ft8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
@@ -567,12 +568,12 @@
                     <span class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest">Part 5</span>
                     <div class="h-px bg-red-100 flex-1"></div>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900">Real World Reesults: From $0 to $1M ARR in 12 Months</h2>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900">Real World Results: From $0 to $1M ARR in 12 Months</h2>
 
                 <!-- Video Facade -->
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/jBQJo-GU4H8/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/jBQJo-GU4H8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/jBQJo-GU4H8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
@@ -611,7 +612,7 @@
                 <!-- Video Facade -->
                 <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
                      style="background-image: url('https://img.youtube.com/vi/XMem2vKeXbk/maxresdefault.jpg');"
-                     onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/RJcSjGadYfc?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/RJcSjGadYfc?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
                     <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
                 </div>
 
