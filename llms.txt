@@ -262,6 +262,101 @@ Comprehensive guide to B2B lead generation: https://www.idealcustomerprofile.com
 
 ---
 
+## SaaS Marketing
+
+### What is SaaS Marketing?
+
+**SaaS Marketing is the strategic process of attracting, converting, and retaining customers for a software-as-a-service product.** Unlike traditional marketing, SaaS marketing must account for recurring revenue models, longer sales cycles, and the need to prove ongoing value. The goal is simple: more people should know about you today than yesterday.
+
+Most SaaS marketing fails because it targets everyone. The fix? Start with your ICP.
+
+### The 6-Step SaaS Marketing Framework
+
+SaaS marketing is Step 6 of a 6-step Go-To-Market framework. If you skip Steps 1-5, your marketing will underperform.
+
+1. **Target Market (ICP):** The foundation. Define exactly who you serve using firmographics, triggers, and macro trends.
+2. **Macro Trend:** The "Why Now?" that creates urgency—AI adoption, regulatory changes, economic pressures.
+3. **Positioning:** SMB vs Enterprise. Which segment do you own?
+4. **Competition:** How are you 10x better than the alternatives?
+5. **Manifesto:** Your strategic narrative—"the thing about the thing"—that powers all marketing content.
+6. **Broadway Show:** The daily sales and marketing activities (LinkedIn, webinars, outbound).
+
+### The Manifesto - Your Marketing Core
+
+**A marketing manifesto is your strategic narrative—"the thing about the thing."** It's not a product pitch but your unique point of view about the problem you solve. Your manifesto educates the market on why the old way doesn't work and positions you as the thought leader.
+
+Your manifesto powers:
+- LinkedIn content (share your unique POV, not product features)
+- Webinar topics (teach "the thing about the thing," not product demos)
+- Outbound messaging (offer value, not just meeting requests)
+
+### The 3 SaaS Marketing Channels That Work
+
+**These three channels are mostly free, compound over time, and work even better together.**
+
+#### Channel 1: LinkedIn
+- Business buyers are on LinkedIn (not Twitter for most B2B)
+- Still has organic reach unlike Facebook
+- Two tactics: weekly content posts + connection requests/DMs
+- Compound effect: connections see your posts AND you can DM them
+
+#### Channel 2: Webinars & Events
+- Builds the "trust" factor (know → trust → buy)
+- Use your manifesto, not product demos
+- Creates a valuable reason to reach out to ICP prospects
+- Recordings can be repurposed across channels
+
+#### Channel 3: Outbound
+- Email at scale, cold calling, direct mail
+- No pay-per-click costs—you control targeting
+- FedEx envelopes have 99% open rates
+- More effective when combined with LinkedIn and webinars
+
+### The Broadway Show - Daily Marketing Execution
+
+**The "Broadway Show" is TK Kader's term for consistent daily sales and marketing activities.** Like a Broadway production that runs every night, your marketing runs continuously.
+
+The rhythm:
+- **Weekly:** 2-3 LinkedIn posts sharing manifesto insights
+- **Monthly:** 1-2 webinars teaching "the thing about the thing"
+- **Daily:** Outbound sequences to ICP prospects
+
+The magic happens when channels reinforce each other—webinar attendees see your LinkedIn posts, outbound prospects have already consumed your content.
+
+### SaaS Marketing vs Traditional Marketing
+
+| Factor | SaaS Marketing | Traditional Marketing |
+|--------|----------------|----------------------|
+| Revenue Model | Recurring (MRR/ARR) | One-time transactions |
+| Sales Cycle | Weeks to months | Minutes to days |
+| Decision Makers | Multiple (buying committee) | Usually one person |
+| Contract Value | $5K-$500K+ annually | $10-$500 typically |
+| Trust Required | High (content, relationships) | Lower (reviews, impulse) |
+| Best Channels | LinkedIn, webinars, outbound | Facebook, Google, influencers |
+| Success Metrics | Pipeline, CAC, LTV, payback | Conversions, ROAS |
+
+### Common SaaS Marketing Mistakes
+
+1. **Targeting Too Broadly (FOMO Trap):** When you target everyone, you resonate with no one. Niching down accelerates growth.
+2. **Leading with Features, Not Manifesto:** Product features are table stakes. Differentiate with your unique point of view.
+3. **Skipping ICP Definition:** Everything depends on knowing exactly who to target.
+4. **Not Measuring by ICP-Fit:** Track pipeline, conversion, and LTV segmented by ICP fit, not vanity metrics.
+
+### How ICP Connects to SaaS Marketing
+
+Your Ideal Customer Profile is the foundation of all SaaS marketing:
+- Defines which companies to target
+- Determines what messaging will resonate
+- Identifies which channels to prioritize
+
+ICP-fit leads convert 3-5x higher, have shorter sales cycles, and produce customers with higher lifetime value. The #1 SaaS marketing mistake is targeting too broadly.
+
+### SaaS Marketing Guide
+
+Comprehensive guide to SaaS marketing: https://www.idealcustomerprofile.com/saas-marketing.html
+
+---
+
 ## Key Statistics
 
 - **68% higher win rate:** SaaS companies with a defined ICP have 68% higher win rates (Source: TOPO/Gartner Research)
@@ -440,6 +535,7 @@ https://www.idealcustomerprofile.com/#calculator
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 - LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
 - CAC Payback Calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
+- SaaS Marketing Guide: https://www.idealcustomerprofile.com/saas-marketing.html
 - B2B SaaS Lead Generation Guide: https://www.idealcustomerprofile.com/b2b-saas-lead-generation.html
 - Author Website: https://www.tkkader.com
 - AI SaaS GTM Program: https://www.tkkader.com/gtm
