@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTV Calculator - Free Customer Lifetime Value Calculator for SaaS</title>
+    <meta name="description" content="Free LTV Calculator for B2B SaaS founders. Calculate Customer Lifetime Value, LTV:CAC Ratio, and payback period. Learn how LTV connects to your Ideal Customer Profile.">
+    <meta name="author" content="TK Kader">
+    <meta name="keywords" content="LTV calculator, customer lifetime value calculator, LTV CAC ratio, SaaS LTV, CLV calculator, customer lifetime value, CAC payback period, B2B SaaS metrics">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://www.tkkader.com/wp-content/uploads/cropped-TK-Kader-Brand-Favicon.png" sizes="32x32" />
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://www.idealcustomerprofile.com/ltv-calculator.html" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:site_name" content="Ideal Customer Profile by TK Kader" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LTV Calculator - Free Customer Lifetime Value Calculator for SaaS" />
+    <meta property="og:description" content="Free LTV Calculator for B2B SaaS founders. Calculate Customer Lifetime Value (LTV), LTV:CAC Ratio, and CAC payback period." />
+    <meta property="og:url" content="https://www.idealcustomerprofile.com/ltv-calculator.html" />
+    <meta property="og:image" content="https://img.youtube.com/vi/wMLMig8tSd0/maxresdefault.jpg" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tawheed" />
+    <meta name="twitter:creator" content="@tawheed" />
+
+    <!-- PRECONNECT HINTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://img.youtube.com">
+    <link rel="preconnect" href="https://www.tkkader.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9N756LLXH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9N756LLXH');
+    </script>
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- SCHEMA MARKUP -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ideal Customer Profile Guide",
+            "item": "https://www.idealcustomerprofile.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTV Calculator",
+            "item": "https://www.idealcustomerprofile.com/ltv-calculator.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LTV Calculator",
+        "alternateName": "Customer Lifetime Value Calculator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate Customer Lifetime Value (LTV) and LTV:CAC Ratio for B2B SaaS companies.",
+        "url": "https://www.idealcustomerprofile.com/ltv-calculator.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "TK Kader",
+          "url": "https://www.tkkader.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Customer Lifetime Value (LTV)",
+        "description": "A step-by-step guide to calculating LTV and LTV:CAC ratio for B2B SaaS companies.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Determine Your ARPU",
+            "text": "Calculate your Average Revenue Per User (ARPU) by dividing your Monthly Recurring Revenue (MRR) by your total number of customers."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Calculate Customer Lifespan from Churn Rate",
+            "text": "Divide 1 by your monthly churn rate to get average customer lifespan in months. For example, 2% monthly churn = 50 month lifespan."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Apply the LTV Formula",
+            "text": "Multiply ARPU by Customer Lifespan by Gross Margin to get your Customer Lifetime Value (LTV)."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Calculate LTV:CAC Ratio",
+            "text": "Divide your LTV by your Customer Acquisition Cost (CAC). A healthy ratio is 3:1 or higher."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Calculating Your LTV:CAC Ratio (And Why It's Such an Important SaaS Metric)",
+        "description": "Learn how to calculate LTV:CAC ratio and why it's the most important metric for SaaS startup success.",
+        "thumbnailUrl": "https://img.youtube.com/vi/wMLMig8tSd0/maxresdefault.jpg",
+        "uploadDate": "2020-05-06",
+        "contentUrl": "https://www.youtube.com/watch?v=wMLMig8tSd0",
+        "embedUrl": "https://www.youtube.com/embed/wMLMig8tSd0"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "How to Increase SaaS Customer Lifetime Value",
+        "description": "Why LTV is the most important SaaS metric and three strategies to increase customer lifetime value.",
+        "thumbnailUrl": "https://img.youtube.com/vi/plT1R3hZfag/maxresdefault.jpg",
+        "uploadDate": "2020-02-23",
+        "contentUrl": "https://www.youtube.com/watch?v=plT1R3hZfag",
+        "embedUrl": "https://www.youtube.com/embed/plT1R3hZfag"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is LTV (Customer Lifetime Value)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Customer Lifetime Value (LTV) is the total revenue a business can expect from a single customer account throughout their entire relationship. For SaaS companies, LTV is calculated by multiplying Average Revenue Per User (ARPU) by Customer Lifespan by Gross Margin. LTV helps you understand how much you can afford to spend on customer acquisition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you calculate LTV for SaaS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The standard SaaS LTV formula is: LTV = ARPU x Gross Margin x (1 / Monthly Churn Rate). For example, if your ARPU is $100/month, gross margin is 70%, and monthly churn is 2%, your LTV = $100 x 0.70 x 50 = $3,500."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good LTV:CAC ratio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A healthy LTV:CAC ratio is 3:1 or higher, meaning you earn $3 in lifetime value for every $1 spent acquiring a customer. Below 1:1 means you're losing money on every customer. 1:1 to 3:1 is unsustainable long-term. Above 5:1 may indicate you're underinvesting in growth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does LTV connect to ICP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Customers who match your Ideal Customer Profile (ICP) typically have 2-3x higher LTV than non-ICP customers. ICP-fit customers get more value from your product, have higher engagement, lower churn, and are more likely to expand their usage over time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between LTV and CLV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LTV (Lifetime Value) and CLV (Customer Lifetime Value) are the same metric—both refer to the total revenue expected from a customer over their entire relationship with your company. The terms are used interchangeably in SaaS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is CAC payback period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CAC payback period is the number of months it takes to recover your Customer Acquisition Cost through gross profit. It's calculated as: CAC / (ARPU x Gross Margin). A good SaaS payback period is under 12 months."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFEFC; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Crimson Pro', serif; }
+
+        .video-facade { cursor: pointer; position: relative; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid #e2e8f0; }
+        .video-facade::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.1); transition: background 0.3s; pointer-events: none; }
+        .video-facade iframe { position: relative; z-index: 20; }
+        .video-facade:hover::before { background: rgba(0,0,0,0.0); }
+        .play-button { width: 72px; height: 72px; background: #DC2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 10; transition: transform 0.2s; box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.4); }
+        .video-facade:hover .play-button { transform: scale(1.05); }
+        .play-button svg { width: 32px; height: 32px; fill: white; margin-left: 4px; }
+
+        /* Calculator Input Styles */
+        .calc-input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; transition: border-color 0.2s; }
+        .calc-input:focus { outline: none; border-color: #DC2626; }
+    </style>
+</head>
+<body class="text-slate-800 bg-[#FFFEFC] selection:bg-yellow-200 selection:text-slate-900 pb-20 md:pb-0">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-[#FFFEFC]/95 backdrop-blur border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans hover:opacity-80 transition-opacity">
+                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm" />
+                <span>Ideal Customer Profile<span class="text-red-600">.com</span></span>
+            </a>
+            <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105">
+                Get Help Building Your ICP &rarr;
+            </a>
+        </div>
+    </nav>
+
+    <!-- MOBILE STICKY BOTTOM BAR -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-4 z-50 flex items-center justify-between shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
+        <div class="text-xs font-bold text-slate-500 font-sans">
+            Calculate your <span class="text-red-600">LTV</span> now.
+        </div>
+        <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
+            GTM Program &rarr;
+        </a>
+    </div>
+
+    <!-- BREADCRUMB -->
+    <div class="max-w-4xl mx-auto px-6 pt-6">
+        <nav class="text-sm font-sans text-slate-500">
+            <a href="/" class="hover:text-red-600 transition-colors">ICP Guide</a>
+            <span class="mx-2">/</span>
+            <span class="text-slate-900">LTV Calculator</span>
+        </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="pt-8 pb-8 text-center px-4 max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-[1.1] tracking-tight">
+            LTV Calculator
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-sans font-light">
+            Calculate your <strong class="text-slate-900 font-semibold">Customer Lifetime Value (LTV)</strong>, <strong class="text-slate-900 font-semibold">LTV:CAC Ratio</strong>, and <strong class="text-slate-900 font-semibold">CAC Payback Period</strong> in seconds. Then learn how LTV connects to your Ideal Customer Profile and why ICP-fit customers have dramatically higher lifetime value.
+        </p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-4xl mx-auto px-4 md:px-6 py-8">
+
+        <!-- LTV CALCULATOR -->
+        <div id="calculator" class="bg-slate-900 text-white rounded-xl p-10 mb-16 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-red-600 rounded-full opacity-20 blur-3xl"></div>
+            <h2 class="font-serif text-2xl font-bold mb-2 relative z-10">Calculate Your Customer Lifetime Value</h2>
+            <p class="text-slate-400 mb-8 font-sans text-sm relative z-10">Enter your SaaS metrics to see your LTV, LTV:CAC ratio, and payback period instantly.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8 relative z-10">
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Monthly ARPU ($)</label>
+                    <input type="text" id="ltv-arpu" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 100" value="100" inputmode="numeric">
+                    <p class="text-xs text-slate-500 mt-1">Average Revenue Per User per month</p>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Monthly Churn Rate (%)</label>
+                    <input type="number" id="ltv-churn" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 2" value="2" min="0.1" max="100" step="0.1">
+                    <p class="text-xs text-slate-500 mt-1">Percentage of customers who cancel each month</p>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Gross Margin (%)</label>
+                    <input type="number" id="ltv-margin" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 70" value="70" min="0" max="100">
+                    <p class="text-xs text-slate-500 mt-1">Revenue minus cost of goods sold</p>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Customer Acquisition Cost ($)</label>
+                    <input type="text" id="ltv-cac" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 500" value="500" inputmode="numeric">
+                    <p class="text-xs text-slate-500 mt-1">Total cost to acquire one customer</p>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="relative z-10 space-y-3">
+                <div class="bg-slate-800 p-5 rounded-lg text-center">
+                    <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">Customer Lifespan</p>
+                    <div id="ltv-lifespan" class="text-2xl md:text-3xl font-bold text-slate-300 font-mono">50 months</div>
+                    <p class="text-xs text-slate-500 mt-1">1 / Monthly Churn Rate</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-3">
+                    <div class="bg-slate-700 p-5 rounded-lg text-center">
+                        <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">Simple LTV</p>
+                        <div id="ltv-simple" class="text-xl md:text-2xl font-bold text-slate-300 font-mono">$5,000</div>
+                        <p class="text-xs text-slate-500 mt-1">ARPU x Lifespan</p>
+                    </div>
+                    <div class="bg-slate-700 p-5 rounded-lg text-center">
+                        <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">Gross Margin LTV</p>
+                        <div id="ltv-margin-result" class="text-xl md:text-2xl font-bold text-white font-mono">$3,500</div>
+                        <p class="text-xs text-slate-500 mt-1">ARPU x Lifespan x Margin</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-3">
+                    <div id="ltv-cac-ratio-container" class="bg-green-600 p-5 rounded-lg text-center">
+                        <p class="text-white/80 text-xs uppercase tracking-widest mb-1">LTV:CAC Ratio</p>
+                        <div id="ltv-cac-ratio" class="text-2xl md:text-3xl font-bold text-white font-mono">7:1</div>
+                        <p id="ltv-cac-health" class="text-xs text-white/60 mt-1">Excellent</p>
+                    </div>
+                    <div class="bg-slate-800 p-5 rounded-lg text-center">
+                        <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">CAC Payback Period</p>
+                        <div id="ltv-payback" class="text-2xl md:text-3xl font-bold text-slate-300 font-mono">7.1 months</div>
+                        <p class="text-xs text-slate-500 mt-1">Months to recover CAC</p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const ltvArpuInput = document.getElementById('ltv-arpu');
+                const ltvChurnInput = document.getElementById('ltv-churn');
+                const ltvMarginInput = document.getElementById('ltv-margin');
+                const ltvCacInput = document.getElementById('ltv-cac');
+                const ltvLifespanDiv = document.getElementById('ltv-lifespan');
+                const ltvSimpleDiv = document.getElementById('ltv-simple');
+                const ltvMarginResultDiv = document.getElementById('ltv-margin-result');
+                const ltvCacRatioDiv = document.getElementById('ltv-cac-ratio');
+                const ltvCacRatioContainer = document.getElementById('ltv-cac-ratio-container');
+                const ltvCacHealthDiv = document.getElementById('ltv-cac-health');
+                const ltvPaybackDiv = document.getElementById('ltv-payback');
+
+                function formatCurrency(value) {
+                    const num = value.replace(/,/g, '');
+                    if (num === '' || isNaN(num)) return '';
+                    return parseInt(num).toLocaleString();
+                }
+
+                function formatLargeCurrency(value) {
+                    if (value >= 1000000) {
+                        return '$' + (value / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+                    } else if (value >= 1000) {
+                        return '$' + (value / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+                    }
+                    return '$' + Math.round(value).toLocaleString();
+                }
+
+                function calculateLTV() {
+                    const arpu = parseFloat(ltvArpuInput.value.replace(/,/g, '')) || 0;
+                    const churn = parseFloat(ltvChurnInput.value) || 0;
+                    const margin = parseFloat(ltvMarginInput.value) || 0;
+                    const cac = parseFloat(ltvCacInput.value.replace(/,/g, '')) || 0;
+
+                    // Calculate lifespan (in months)
+                    const lifespan = churn > 0 ? (1 / (churn / 100)) : 0;
+                    ltvLifespanDiv.innerText = lifespan > 0 ? Math.round(lifespan) + ' months' : '--';
+
+                    // Calculate Simple LTV
+                    const simpleLtv = arpu * lifespan;
+                    ltvSimpleDiv.innerText = simpleLtv > 0 ? formatLargeCurrency(simpleLtv) : '--';
+
+                    // Calculate Gross Margin LTV
+                    const marginLtv = arpu * lifespan * (margin / 100);
+                    ltvMarginResultDiv.innerText = marginLtv > 0 ? formatLargeCurrency(marginLtv) : '--';
+
+                    // Calculate LTV:CAC Ratio
+                    const ltvCacRatio = cac > 0 ? marginLtv / cac : 0;
+                    ltvCacRatioDiv.innerText = ltvCacRatio > 0 ? ltvCacRatio.toFixed(1) + ':1' : '--';
+
+                    // Color code the ratio
+                    if (ltvCacRatio < 1) {
+                        ltvCacRatioContainer.className = 'bg-red-600 p-5 rounded-lg text-center';
+                        ltvCacHealthDiv.innerText = 'Critical - Losing money';
+                    } else if (ltvCacRatio < 3) {
+                        ltvCacRatioContainer.className = 'bg-yellow-600 p-5 rounded-lg text-center';
+                        ltvCacHealthDiv.innerText = 'Unhealthy - Unsustainable';
+                    } else if (ltvCacRatio <= 5) {
+                        ltvCacRatioContainer.className = 'bg-green-600 p-5 rounded-lg text-center';
+                        ltvCacHealthDiv.innerText = 'Healthy - Target range';
+                    } else {
+                        ltvCacRatioContainer.className = 'bg-green-500 p-5 rounded-lg text-center';
+                        ltvCacHealthDiv.innerText = 'Excellent';
+                    }
+
+                    // Calculate CAC Payback Period (in months)
+                    const monthlyGrossProfit = arpu * (margin / 100);
+                    const payback = monthlyGrossProfit > 0 ? cac / monthlyGrossProfit : 0;
+                    ltvPaybackDiv.innerText = payback > 0 ? payback.toFixed(1) + ' months' : '--';
+                }
+
+                function setupCurrencyInput(input) {
+                    input.addEventListener('input', function() {
+                        const cursorPos = this.selectionStart;
+                        const oldLength = this.value.length;
+                        this.value = formatCurrency(this.value);
+                        const newLength = this.value.length;
+                        this.setSelectionRange(cursorPos + (newLength - oldLength), cursorPos + (newLength - oldLength));
+                        calculateLTV();
+                    });
+                }
+
+                setupCurrencyInput(ltvArpuInput);
+                setupCurrencyInput(ltvCacInput);
+                ltvChurnInput.addEventListener('input', calculateLTV);
+                ltvMarginInput.addEventListener('input', calculateLTV);
+
+                // Initial calculation
+                calculateLTV();
+            </script>
+        </div>
+
+        <!-- WHAT IS LTV SECTION -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-slate-900">Part 1: What is LTV (Customer Lifetime Value)?</h2>
+
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                <strong>Customer Lifetime Value (LTV) is the total revenue a business can expect from a single customer account throughout their entire relationship.</strong> For B2B SaaS companies, LTV is arguably the most important metric because it determines how much you can afford to spend on sales, marketing, and customer acquisition.
+            </p>
+
+            <div class="bg-white border border-slate-200 rounded-lg p-8 mb-8">
+                <h3 class="font-serif text-xl font-bold text-slate-900 mb-4">The LTV Formulas</h3>
+                <div class="space-y-4">
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <p class="font-mono text-sm text-slate-600"><strong>Simple LTV:</strong> ARPU x Customer Lifespan</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <p class="font-mono text-sm text-slate-600"><strong>LTV with Gross Margin:</strong> ARPU x Gross Margin x (1 / Monthly Churn Rate)</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <p class="font-mono text-sm text-slate-600"><strong>Customer Lifespan:</strong> 1 / Monthly Churn Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO 1: How to Increase LTV -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-slate-900">Watch: How to Increase SaaS Customer Lifetime Value</h2>
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                In this video, TK Kader explains why LTV is the most important SaaS metric and shares three strategies to dramatically increase your customer lifetime value.
+            </p>
+
+            <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-8 bg-slate-100 group"
+                 style="background-image: url('https://img.youtube.com/vi/plT1R3hZfag/maxresdefault.jpg');"
+                 onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/plT1R3hZfag?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+        </section>
+
+        <!-- LTV:CAC RATIO SECTION -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-slate-900">Part 2: What is LTV:CAC Ratio?</h2>
+
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                <strong>LTV:CAC Ratio compares your Customer Lifetime Value to your Customer Acquisition Cost.</strong> This ratio is often called "the most important SaaS metric" because it tells you whether your unit economics are sustainable. If you're spending more to acquire a customer than they're worth, you'll never build a profitable business.
+            </p>
+
+            <div class="overflow-x-auto mb-8">
+                <table class="w-full border-collapse font-sans text-base">
+                    <thead>
+                        <tr class="bg-slate-900 text-white">
+                            <th class="p-4 text-left font-bold">LTV:CAC Ratio</th>
+                            <th class="p-4 text-left font-bold">Health</th>
+                            <th class="p-4 text-left font-bold">Interpretation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-200 bg-red-50">
+                            <td class="p-4 font-semibold text-slate-900">&lt; 1:1</td>
+                            <td class="p-4 text-red-600 font-semibold">Critical</td>
+                            <td class="p-4 text-slate-600">Losing money on every customer</td>
+                        </tr>
+                        <tr class="border-b border-slate-200 bg-yellow-50">
+                            <td class="p-4 font-semibold text-slate-900">1:1 - 3:1</td>
+                            <td class="p-4 text-yellow-600 font-semibold">Unhealthy</td>
+                            <td class="p-4 text-slate-600">Unsustainable unit economics</td>
+                        </tr>
+                        <tr class="border-b border-slate-200 bg-green-50">
+                            <td class="p-4 font-semibold text-slate-900">3:1 - 5:1</td>
+                            <td class="p-4 text-green-600 font-semibold">Healthy</td>
+                            <td class="p-4 text-slate-600">Target range for most SaaS</td>
+                        </tr>
+                        <tr class="border-b border-slate-200">
+                            <td class="p-4 font-semibold text-slate-900">&gt; 5:1</td>
+                            <td class="p-4 text-green-700 font-semibold">Excellent</td>
+                            <td class="p-4 text-slate-600">May indicate underinvestment in growth</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-slate-900 text-white p-6 rounded-lg">
+                <p class="font-sans text-sm"><strong>Key insight:</strong> A 3:1 ratio means you earn $3 for every $1 spent on acquisition. This provides enough margin to cover overhead, invest in product development, and grow profitably. Below 3:1, you're likely struggling to reach profitability.</p>
+            </div>
+        </section>
+
+        <!-- VIDEO 2: LTV:CAC Ratio -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-slate-900">Watch: Calculating Your LTV:CAC Ratio</h2>
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                In this video, TK Kader breaks down exactly how to calculate your LTV:CAC ratio and explains why it's "the most important SaaS metric" for startup success.
+            </p>
+
+            <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-8 bg-slate-100 group"
+                 style="background-image: url('https://img.youtube.com/vi/wMLMig8tSd0/maxresdefault.jpg');"
+                 onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/wMLMig8tSd0?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+        </section>
+
+        <!-- HOW TO CALCULATE LTV -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-slate-900">Part 3: How to Calculate LTV (Step by Step)</h2>
+
+            <div class="space-y-6">
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Calculate Your ARPU</h3>
+                            <p class="font-sans text-slate-600">Divide your Monthly Recurring Revenue (MRR) by your total number of customers. Example: $100,000 MRR / 1,000 customers = $100 ARPU.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Determine Your Churn Rate</h3>
+                            <p class="font-sans text-slate-600">Calculate the percentage of customers who cancel each month. Example: 20 cancellations / 1,000 customers = 2% monthly churn.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Calculate Customer Lifespan</h3>
+                            <p class="font-sans text-slate-600">Divide 1 by your monthly churn rate. Example: 1 / 0.02 = 50 months average customer lifespan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm">4</span>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Apply Your Gross Margin</h3>
+                            <p class="font-sans text-slate-600">Multiply by your gross margin to get the profit-adjusted LTV. Example: $100 ARPU x 50 months x 70% margin = $3,500 LTV.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm">5</span>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">Calculate LTV:CAC Ratio</h3>
+                            <p class="font-sans text-slate-600">Divide your LTV by your Customer Acquisition Cost. Example: $3,500 LTV / $500 CAC = 7:1 LTV:CAC ratio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY INSIGHT BOX -->
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-8 mb-16">
+            <span class="font-sans font-bold text-yellow-800 text-xs uppercase tracking-widest mb-3 block">Key Takeaway</span>
+            <p class="font-serif text-xl text-slate-900 leading-relaxed italic">
+                "Customers who match your Ideal Customer Profile (ICP) typically have 2-3x higher LTV than non-ICP customers. The #1 way to increase your LTV is to sell to the right customers in the first place."
+            </p>
+        </div>
+
+        <!-- 3 STRATEGIES TO INCREASE LTV -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-slate-900">Part 4: 3 Strategies to Increase LTV</h2>
+
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                Based on TK Kader's framework, here are the three most effective ways to increase your Customer Lifetime Value:
+            </p>
+
+            <div class="space-y-6">
+                <div class="bg-white border-2 border-slate-200 rounded-lg p-8">
+                    <h3 class="font-serif text-2xl font-bold text-slate-900 mb-4">Strategy 1: Focus on ICP-Fit Customers</h3>
+                    <p class="font-sans text-slate-700 leading-relaxed mb-4">
+                        <strong>Customers matching your Ideal Customer Profile have higher engagement and lower churn.</strong> They get more value from your product, which means they stay longer and spend more over time. The #1 way to increase LTV is to sell to the right customers in the first place.
+                    </p>
+                    <p class="font-sans text-slate-600 text-sm">
+                        <strong>Action:</strong> Review your <a href="/" class="text-red-600 hover:underline">Ideal Customer Profile</a> and ensure sales is prioritizing ICP-fit prospects over anyone with a pulse.
+                    </p>
+                </div>
+
+                <div class="bg-white border-2 border-slate-200 rounded-lg p-8">
+                    <h3 class="font-serif text-2xl font-bold text-slate-900 mb-4">Strategy 2: Increase ARPU Through Expansion</h3>
+                    <p class="font-sans text-slate-700 leading-relaxed mb-4">
+                        <strong>Grow revenue from existing customers through upsells, cross-sells, and usage-based pricing.</strong> Net Revenue Retention above 100% means your customer base is growing even without new sales. This multiplies LTV without increasing CAC.
+                    </p>
+                    <p class="font-sans text-slate-600 text-sm">
+                        <strong>Action:</strong> Build expansion paths into your product tiers and pricing model. Train customer success to identify expansion opportunities.
+                    </p>
+                </div>
+
+                <div class="bg-white border-2 border-slate-200 rounded-lg p-8">
+                    <h3 class="font-serif text-2xl font-bold text-slate-900 mb-4">Strategy 3: Reduce Churn With Proactive Success</h3>
+                    <p class="font-sans text-slate-700 leading-relaxed mb-4">
+                        <strong>Every month of reduced churn multiplies your LTV.</strong> Better onboarding decreases time-to-value. Proactive customer success prevents at-risk accounts from churning. Small improvements in churn have massive compounding effects on lifetime value.
+                    </p>
+                    <p class="font-sans text-slate-600 text-sm">
+                        <strong>Action:</strong> Track leading indicators of churn (login frequency, feature adoption) and intervene before customers cancel.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW LTV CONNECTS TO ICP -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 text-slate-900">Part 5: How LTV Connects to Your ICP</h2>
+
+            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+                <strong>Your Ideal Customer Profile directly determines your LTV.</strong> ICP-fit customers get more value from your product, which leads to:
+            </p>
+
+            <ul class="space-y-4 mb-8">
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="font-sans text-slate-700"><strong>Higher engagement</strong> — They actually use your product because it solves a real problem</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="font-sans text-slate-700"><strong>Lower churn</strong> — They don't cancel because they're getting ongoing value</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="font-sans text-slate-700"><strong>More expansion</strong> — They're likely to upgrade and buy more over time</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span class="font-sans text-slate-700"><strong>Better referrals</strong> — Happy customers refer other ICP-fit companies</span>
+                </li>
+            </ul>
+
+            <div class="bg-slate-900 text-white p-8 rounded-lg">
+                <p class="font-sans text-lg leading-relaxed">
+                    <strong>The bottom line:</strong> If your LTV:CAC ratio is unhealthy, don't just throw more money at acquisition or slash your CAC. First, examine whether you're selling to the right customers. A tighter ICP focus often fixes unit economics faster than any other lever.
+                </p>
+            </div>
+        </section>
+
+        <!-- GLOSSARY -->
+        <section class="mb-16 pt-12 border-t border-slate-200">
+            <h2 class="font-serif text-3xl font-bold mb-8 text-slate-900">LTV Glossary: Key Terms</h2>
+            <dl class="grid md:grid-cols-2 gap-6 font-sans">
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">LTV (Lifetime Value)</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Total revenue expected from a customer over their entire relationship.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">CLV (Customer Lifetime Value)</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Same as LTV—the terms are used interchangeably.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">ARPU</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Average Revenue Per User—monthly revenue divided by customers.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">MRR</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Monthly Recurring Revenue—predictable monthly subscription revenue.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">ARR</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Annual Recurring Revenue—MRR multiplied by 12.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">Churn Rate</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Percentage of customers who cancel in a given period.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">CAC</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Customer Acquisition Cost—total cost to acquire one customer.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">LTV:CAC Ratio</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Lifetime value divided by acquisition cost. Target is 3:1+.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">Gross Margin</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Revenue minus cost of goods sold, expressed as a percentage.</dd>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <dt class="font-bold text-slate-900">Payback Period</dt>
+                    <dd class="text-slate-600 mt-1 text-sm">Months required to recover CAC through gross profit.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="mb-16 pt-12 border-t border-slate-200">
+            <h2 class="font-serif text-3xl font-bold mb-8 text-slate-900">Frequently Asked Questions</h2>
+            <dl class="space-y-8 font-sans">
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">What is LTV (Customer Lifetime Value)?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">Customer Lifetime Value (LTV) is the total revenue a business can expect from a single customer account throughout their entire relationship. For SaaS companies, LTV is calculated by multiplying Average Revenue Per User (ARPU) by Customer Lifespan by Gross Margin. LTV helps you understand how much you can afford to spend on customer acquisition.</dd>
+                </div>
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">How do you calculate LTV for SaaS?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">The standard SaaS LTV formula is: LTV = ARPU x Gross Margin x (1 / Monthly Churn Rate). For example, if your ARPU is $100/month, gross margin is 70%, and monthly churn is 2%, your LTV = $100 x 0.70 x 50 = $3,500.</dd>
+                </div>
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">What is a good LTV:CAC ratio?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">A healthy LTV:CAC ratio is 3:1 or higher, meaning you earn $3 in lifetime value for every $1 spent acquiring a customer. Below 1:1 means you're losing money on every customer. 1:1 to 3:1 is unsustainable long-term. Above 5:1 may indicate you're underinvesting in growth.</dd>
+                </div>
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">How does LTV connect to ICP?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">Customers who match your <a href="/" class="text-red-600 hover:underline">Ideal Customer Profile (ICP)</a> typically have 2-3x higher LTV than non-ICP customers. ICP-fit customers get more value from your product, have higher engagement, lower churn, and are more likely to expand their usage over time.</dd>
+                </div>
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">What is the difference between LTV and CLV?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">LTV (Lifetime Value) and CLV (Customer Lifetime Value) are the same metric—both refer to the total revenue expected from a customer over their entire relationship with your company. The terms are used interchangeably in SaaS.</dd>
+                </div>
+                <div>
+                    <dt class="font-bold text-slate-900 text-lg">What is CAC payback period?</dt>
+                    <dd class="text-slate-600 mt-2 leading-relaxed text-lg">CAC payback period is the number of months it takes to recover your Customer Acquisition Cost through gross profit. It's calculated as: CAC / (ARPU x Gross Margin). A good SaaS payback period is under 12 months.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- CTA SECTION -->
+        <div class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg mb-16">
+            <h2 class="font-serif text-3xl font-bold mb-4">Ready to Build Your Unstoppable ICP?</h2>
+            <p class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed">
+                Now that you understand LTV, learn how to build a 3-part Ideal Customer Profile that attracts high-LTV customers. ICP-fit customers have 2-3x higher lifetime value.
+            </p>
+            <a href="/" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1 shadow-lg shadow-red-200">
+                Read the Full ICP Guide &rarr;
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER CTA -->
+    <div class="bg-red-600 py-20 px-4 text-center relative overflow-hidden">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Stop Guessing. Start Growing.</h2>
+            <p class="text-xl text-white/90 mb-10 font-sans font-medium">Grab a complimentary copy of the 5-Point AI/SaaS Growth Strategy Guide and learn how to transform your GTM Strategy with an Unstoppable Ideal Customer Profile and scale growth.</p>
+            <a href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic" target="_blank" class="inline-flex items-center gap-2 bg-white text-red-700 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
+                Download the 5-Point AI/SaaS Growth Strategy Guide
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-16 text-center text-slate-500 text-sm bg-slate-900 font-sans">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-left">
+            <div>
+                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-12 w-auto mb-6" />
+                <p class="leading-relaxed text-slate-400">TK Kader is the author of the Unstoppable Ideal Customer Profile method. He served as SVP Strategy at Marketo (acquired by Adobe for $4.75bn) and Founder of ToutApp (backed by A16Z, acquired by Marketo). He now works with AI/SaaS Founders to transform their GTM Strategy to unlock scalable growth.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4">Resources</h4>
+                <ul class="space-y-3">
+                    <li><a href="/" class="hover:text-white transition-colors">Ideal Customer Profile Guide</a></li>
+                    <li><a href="/tam-sam-som-calculator.html" class="hover:text-white transition-colors">TAM SAM SOM Calculator</a></li>
+                    <li><a href="/ltv-calculator.html" class="hover:text-white transition-colors">LTV Calculator</a></li>
+                    <li><a href="https://www.tkkader.com" target="_blank" class="hover:text-white transition-colors">About TK Kader</a></li>
+                    <li><a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" target="_blank" class="hover:text-white transition-colors">SaaS GTM Strategy Program</a></li>
+                    <li><a href="https://www.youtube.com/@TKKader" target="_blank" class="hover:text-white transition-colors">YouTube Channel about SaaS GTM</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4">Legal</h4>
+                <ul class="space-y-3">
+                    <li><a href="https://www.tkkader.com/privacy" target="_blank" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="https://www.tkkader.com/terms" target="_blank" class="hover:text-white transition-colors">Terms of Service</a></li>
+                </ul>
+                <p class="mt-6 text-xs opacity-40">&copy; 2026 Ideal Customer Profile, LLC.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

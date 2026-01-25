@@ -107,6 +107,51 @@ Free interactive calculator: https://www.idealcustomerprofile.com/tam-sam-som-ca
 
 ---
 
+## LTV (Customer Lifetime Value) for B2B SaaS
+
+### What is LTV?
+
+**Customer Lifetime Value (LTV) is the total revenue a business can expect from a single customer account throughout their entire relationship.** For B2B SaaS companies, LTV is arguably the most important metric because it determines how much you can afford to spend on sales, marketing, and customer acquisition.
+
+### LTV Formulas
+
+- **Simple LTV:** ARPU x Customer Lifespan
+- **LTV with Gross Margin:** ARPU x Gross Margin x (1 / Monthly Churn Rate)
+- **Customer Lifespan:** 1 / Monthly Churn Rate
+
+Example: $100 ARPU x 70% margin x 50 months (2% churn) = $3,500 LTV
+
+### LTV:CAC Ratio Benchmarks
+
+| LTV:CAC Ratio | Health | Interpretation |
+|---------------|--------|----------------|
+| Below 1:1 | Critical | Losing money on every customer |
+| 1:1 - 3:1 | Unhealthy | Unsustainable unit economics |
+| 3:1 - 5:1 | Healthy | Target range for most SaaS |
+| Above 5:1 | Excellent | May indicate underinvestment in growth |
+
+### How LTV Connects to ICP
+
+**Customers who match your Ideal Customer Profile (ICP) typically have 2-3x higher LTV than non-ICP customers.** ICP-fit customers get more value from your product, which leads to:
+- Higher engagement
+- Lower churn
+- More expansion revenue
+- Better referrals
+
+The #1 way to increase LTV is to sell to the right customers in the first place.
+
+### 3 Strategies to Increase LTV
+
+1. **Focus on ICP-fit customers** - They have higher engagement and lower churn
+2. **Increase ARPU through expansion** - Upsells, cross-sells, usage-based pricing
+3. **Reduce churn with proactive success** - Better onboarding, customer success intervention
+
+### LTV Calculator
+
+Free interactive calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
+
+---
+
 ## Key Statistics
 
 - **68% higher win rate:** SaaS companies with a defined ICP have 68% higher win rates (Source: TOPO/Gartner Research)
@@ -203,6 +248,15 @@ A: Your ICP maps to your SAM (the segment you carve out). Your Initial Customer 
 **Q: What's a realistic SOM percentage?**
 A: For early-stage companies, SOM is typically 1-5% of SAM. Be honest about near-term capture rate based on competition, sales capacity, and market penetration.
 
+**Q: What is LTV (Customer Lifetime Value)?**
+A: Customer Lifetime Value (LTV) is the total revenue a business can expect from a single customer account throughout their entire relationship. For SaaS, LTV = ARPU x Gross Margin x (1 / Monthly Churn Rate).
+
+**Q: What is a good LTV:CAC ratio?**
+A: A healthy LTV:CAC ratio is 3:1 or higher—you earn $3 for every $1 spent on acquisition. Below 1:1 means you're losing money on every customer. Above 5:1 may indicate underinvestment in growth.
+
+**Q: How does LTV connect to ICP?**
+A: Customers matching your ICP typically have 2-3x higher LTV than non-ICP customers. ICP-fit customers get more value, have higher engagement, lower churn, and more expansion revenue.
+
 ---
 
 ## Key Concepts & Terminology
@@ -212,6 +266,16 @@ A: For early-stage companies, SOM is typically 1-5% of SAM. Be honest about near
 - **SAM (Serviceable Available Market):** Segment of TAM you can serve; maps to your ICP
 - **SOM (Serviceable Obtainable Market):** Realistic near-term capture; maps to your Initial Customer Profile
 - **Initial Customer Profile:** Subset of ICP that gets you to your next revenue milestone
+- **LTV (Customer Lifetime Value):** Total revenue expected from a customer over their entire relationship
+- **CLV (Customer Lifetime Value):** Same as LTV—the terms are used interchangeably
+- **ARPU (Average Revenue Per User):** Monthly revenue divided by number of customers
+- **CAC (Customer Acquisition Cost):** Total cost to acquire one customer
+- **LTV:CAC Ratio:** Lifetime value divided by acquisition cost; target is 3:1 or higher
+- **Churn Rate:** Percentage of customers who cancel in a given period
+- **Payback Period:** Months required to recover CAC through gross profit
+- **MRR (Monthly Recurring Revenue):** Predictable monthly subscription revenue
+- **ARR (Annual Recurring Revenue):** MRR multiplied by 12
+- **Gross Margin:** Revenue minus cost of goods sold, expressed as a percentage
 - **Firmographics:** Static company data points (revenue, size, industry, geography, tech stack)
 - **Triggers:** Dynamic events that signal buying readiness (funding, hires, expansion)
 - **Buyer Persona:** Profile of the individual person within the ICP company
@@ -228,8 +292,12 @@ A: For early-stage companies, SOM is typically 1-5% of SAM. Be honest about near
 ## Interactive Tools
 
 ### TAM SAM SOM Calculator
-Free calculator to size your B2B SaaS market opportunity:
+Free calculator to size your B2B AI SaaS market opportunity:
 https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
+
+### LTV Calculator
+Free calculator to calculate Customer Lifetime Value, LTV:CAC Ratio, and CAC Payback Period:
+https://www.idealcustomerprofile.com/ltv-calculator.html
 
 ### Bad ICP Calculator
 Calculate how much money you're wasting on wrong-fit leads:
@@ -241,6 +309,7 @@ https://www.idealcustomerprofile.com/#calculator
 
 - Main ICP Guide: https://www.idealcustomerprofile.com
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
+- LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
 - Author Website: https://www.tkkader.com
 - AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
