@@ -147,6 +147,15 @@
                 "uploadDate": "2024-01-01",
                 "contentUrl": "https://www.youtube.com/watch?v=XMem2vKeXbk",
                 "embedUrl": "https://www.youtube.com/embed/XMem2vKeXbk"
+              },
+              {
+                "@type": "VideoObject",
+                "name": "TAM: Total Addressable Market - 3 Principles You Need To Know",
+                "description": "How to conceptualize, calculate, and communicate your Total Addressable Market using the TAM, ICP, and Initial Customer Profile framework.",
+                "thumbnailUrl": "https://img.youtube.com/vi/c9P8i_9LPU0/maxresdefault.jpg",
+                "uploadDate": "2024-01-01",
+                "contentUrl": "https://www.youtube.com/watch?v=c9P8i_9LPU0",
+                "embedUrl": "https://www.youtube.com/embed/c9P8i_9LPU0"
               }
             ]
           }
@@ -159,6 +168,15 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "description": "Calculates the estimated annual waste in Sales and Marketing spend due to an undefined Ideal Customer Profile."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TAM SAM SOM Calculator",
+        "alternateName": "Market Sizing Calculator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate your Total Addressable Market (TAM), Serviceable Available Market (SAM), and Serviceable Obtainable Market (SOM) for B2B SaaS market sizing."
       },
       {
         "@context": "https://schema.org",
@@ -260,6 +278,22 @@
               "@type": "Answer",
               "text": "AI allows you to enrich your firmographic data instantly. Tools can now track buying signals (hiring, tech stack changes) in real-time, allowing you to target your ICP with unprecedented precision."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TAM SAM SOM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TAM (Total Addressable Market) is the total market demand for your product. SAM (Serviceable Available Market) is the segment of TAM you can serve based on your product and geography. SOM (Serviceable Obtainable Market) is the realistic portion of SAM you can capture. These three metrics help you size your market opportunity and connect directly to your ICP strategy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you calculate TAM SAM SOM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculate TAM by multiplying the number of target accounts by your Average Contract Value (ACV). Calculate SAM by multiplying TAM by the percentage of accounts you can actually serve (based on geography, product fit). Calculate SOM by multiplying SAM by your realistic market share percentage. Your SOM should align with your Initial Customer Profile—the subset of your ICP that gets you to your next revenue milestone."
+            }
           }
         ]
       },
@@ -354,14 +388,15 @@
                 <ul id="toc-nav" class="space-y-4 font-sans text-sm border-l border-slate-200 pl-4">
                     <li><a href="#foundation" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">1. The Framework</a></li>
                     <li><a href="#why-icp" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">2. Why Define Your ICP?</a></li>
-                    <li><a href="#mistakes" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">3. The 3 ICP Mistakes</a></li>
-                    <li><a href="#calculator" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">4. ICP Cost Calculator</a></li>
-                    <li><a href="#strategy" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">5. Operationalize Your ICP</a></li>
-                    <li><a href="#casestudy" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">6. Case Study: Lavu</a></li>
-                    <li><a href="#boodlebox" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">7. Case Study: BoodleBox</a></li>
-                    <li><a href="#gtm-plan" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">8. The Scalable GTM Plan</a></li>
-                    <li><a href="#faq" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">9. FAQ</a></li>
-                    <li><a href="#glossary" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">10. Glossary</a></li>
+                    <li><a href="#market-sizing" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">3. TAM, SAM, SOM & ICP</a></li>
+                    <li><a href="#mistakes" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">4. The 3 ICP Mistakes</a></li>
+                    <li><a href="#calculator" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">5. ICP Cost Calculator</a></li>
+                    <li><a href="#strategy" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">6. Operationalize Your ICP</a></li>
+                    <li><a href="#casestudy" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">7. Case Study: Lavu</a></li>
+                    <li><a href="#boodlebox" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">8. Case Study: BoodleBox</a></li>
+                    <li><a href="#gtm-plan" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">9. The Scalable GTM Plan</a></li>
+                    <li><a href="#faq" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">10. FAQ</a></li>
+                    <li><a href="#glossary" class="toc-link block text-slate-600 hover:text-red-600 transition-colors">11. Glossary</a></li>
                 </ul>
                 
                 <div class="mt-12 p-6 bg-slate-50 border border-slate-200 rounded-lg">
@@ -507,6 +542,172 @@
 
                 <div class="bg-slate-900 text-white p-6 rounded-lg">
                     <p class="font-sans text-sm"><strong>The bottom line:</strong> The difference between a well-defined ICP and a vague target market is the difference between focused growth and scattered resources. Companies that nail their ICP spend less to acquire customers, experience lower churn, and scale faster because every team (sales, marketing, product) is aligned around the same target.</p>
+                </div>
+            </section>
+
+            <!-- MARKET SIZING / TAM SAM SOM -->
+            <section id="market-sizing" class="mb-28 scroll-mt-28">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest">Market Sizing</span>
+                    <div class="h-px bg-red-100 flex-1"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900">How Do You Size Your Market with TAM SAM SOM?</h2>
+
+                <p class="font-sans text-lg text-slate-700 leading-loose mb-8"><strong>As you think about defining your Ideal Customer Profile, it's critical to understand how it fits within your overall market opportunity.</strong> That's where TAM, SAM, and SOM come in. TAM (Total Addressable Market) is everyone who could theoretically buy your product. SAM (Serviceable Available Market) is the segment you can actually serve based on your product and geography. SOM (Serviceable Obtainable Market) is what you can realistically capture in the near term. Here's the connection most founders miss: your ICP maps directly to your SAM—it's the specific segment you're carving out—and your Initial Customer Profile (the subset that gets you to your next milestone) maps to your SOM.</p>
+
+                <div class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
+                     style="background-image: url('https://img.youtube.com/vi/c9P8i_9LPU0/maxresdefault.jpg');"
+                     onclick="this.onclick=null;this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/c9P8i_9LPU0?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                    <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-8 mb-12">
+                    <span class="font-sans font-bold text-yellow-800 text-xs uppercase tracking-widest mb-3 block">Key Takeaway</span>
+                    <p class="font-serif text-xl text-slate-900 leading-relaxed italic">
+                        "Your ICP doesn't exist in a vacuum—it lives within your market sizing framework. Start with your TAM: an existing market where money is already being spent. Your SAM is the segment you carve out based on your product and reach—this is where your ICP lives. Your SOM is your realistic near-term capture—this is your Initial Customer Profile, the accounts that get you to your next revenue milestone. Understanding all three helps you focus your resources and build a realistic path to growth."
+                    </p>
+                </div>
+
+                <!-- TAM SAM SOM CALCULATOR -->
+                <div id="tam-calculator" class="bg-slate-900 text-white rounded-xl p-10 mb-12 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-red-600 rounded-full opacity-20 blur-3xl"></div>
+                    <h3 class="font-serif text-2xl font-bold mb-2 relative z-10">TAM SAM SOM Calculator</h3>
+                    <p class="text-slate-400 mb-8 font-sans text-sm relative z-10">Size your market opportunity and connect it to your ICP.</p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8 relative z-10">
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Number of Target Accounts</label>
+                            <input type="text" id="tam-accounts" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 10,000" value="10,000" inputmode="numeric">
+                            <p class="text-xs text-slate-500 mt-1">Companies fitting your ICP firmographics</p>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">Average Contract Value (ACV)</label>
+                            <input type="text" id="tam-acv" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 25,000" value="25,000" inputmode="numeric">
+                            <p class="text-xs text-slate-500 mt-1">Annual contract value in dollars</p>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">% of Accounts You Can Serve</label>
+                            <input type="number" id="tam-sam-pct" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 50" value="50" min="0" max="100">
+                            <p class="text-xs text-slate-500 mt-1">Geographic/product limitations → SAM</p>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">% Realistic Market Share</label>
+                            <input type="number" id="tam-som-pct" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="e.g. 10" value="10" min="0" max="100">
+                            <p class="text-xs text-slate-500 mt-1">Near-term capture rate → SOM</p>
+                        </div>
+                    </div>
+
+                    <!-- Results Funnel -->
+                    <div class="relative z-10 space-y-3">
+                        <div class="bg-slate-700 p-5 rounded-lg text-center">
+                            <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">TAM (Total Addressable Market)</p>
+                            <div id="tam-result" class="text-3xl md:text-4xl font-bold text-white font-mono">$250,000,000</div>
+                            <p class="text-xs text-slate-500 mt-1">Everyone you could sell to</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-lg text-center mx-4">
+                            <p class="text-slate-400 text-xs uppercase tracking-widest mb-1">SAM / Your ICP Segment</p>
+                            <div id="sam-result" class="text-2xl md:text-3xl font-bold text-slate-300 font-mono">$125,000,000</div>
+                            <p class="text-xs text-slate-500 mt-1">Your ideal customer segment</p>
+                        </div>
+                        <div class="bg-red-600 p-5 rounded-lg text-center mx-8">
+                            <p class="text-white/80 text-xs uppercase tracking-widest mb-1">SOM / Initial Customer Profile</p>
+                            <div id="som-result" class="text-2xl md:text-3xl font-bold text-white font-mono">$12,500,000</div>
+                            <p class="text-xs text-white/60 mt-1">Your realistic near-term capture</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        const tamAccountsInput = document.getElementById('tam-accounts');
+                        const tamAcvInput = document.getElementById('tam-acv');
+                        const tamSamPctInput = document.getElementById('tam-sam-pct');
+                        const tamSomPctInput = document.getElementById('tam-som-pct');
+                        const tamResultDiv = document.getElementById('tam-result');
+                        const samResultDiv = document.getElementById('sam-result');
+                        const somResultDiv = document.getElementById('som-result');
+
+                        function formatCurrency(value) {
+                            const num = value.replace(/,/g, '');
+                            if (num === '' || isNaN(num)) return '';
+                            return parseInt(num).toLocaleString();
+                        }
+
+                        function formatLargeCurrency(value) {
+                            if (value >= 1000000000) {
+                                return '$' + (value / 1000000000).toFixed(1).replace(/\.0$/, '') + 'B';
+                            } else if (value >= 1000000) {
+                                return '$' + (value / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+                            } else if (value >= 1000) {
+                                return '$' + (value / 1000).toFixed(0) + 'K';
+                            }
+                            return '$' + value.toLocaleString();
+                        }
+
+                        function calculateTamSamSom() {
+                            const accounts = parseFloat(tamAccountsInput.value.replace(/,/g, '')) || 0;
+                            const acv = parseFloat(tamAcvInput.value.replace(/,/g, '')) || 0;
+                            const samPct = parseFloat(tamSamPctInput.value) || 0;
+                            const somPct = parseFloat(tamSomPctInput.value) || 0;
+
+                            const tam = accounts * acv;
+                            const sam = tam * (samPct / 100);
+                            const som = sam * (somPct / 100);
+
+                            tamResultDiv.innerText = formatLargeCurrency(tam);
+                            samResultDiv.innerText = formatLargeCurrency(sam);
+                            somResultDiv.innerText = formatLargeCurrency(som);
+                        }
+
+                        function setupCurrencyInput(input) {
+                            input.addEventListener('input', function() {
+                                const cursorPos = this.selectionStart;
+                                const oldLength = this.value.length;
+                                this.value = formatCurrency(this.value);
+                                const newLength = this.value.length;
+                                this.setSelectionRange(cursorPos + (newLength - oldLength), cursorPos + (newLength - oldLength));
+                                calculateTamSamSom();
+                            });
+                        }
+
+                        setupCurrencyInput(tamAccountsInput);
+                        setupCurrencyInput(tamAcvInput);
+                        tamSamPctInput.addEventListener('input', calculateTamSamSom);
+                        tamSomPctInput.addEventListener('input', calculateTamSamSom);
+                    </script>
+                </div>
+
+                <!-- TAM vs SAM vs SOM Table -->
+                <h3 class="font-serif font-bold text-2xl text-slate-900 mt-12 mb-6">TAM vs SAM vs SOM: How They Connect to Your ICP</h3>
+                <div class="overflow-x-auto mb-8">
+                    <table class="w-full border-collapse font-sans text-base">
+                        <thead>
+                            <tr class="bg-slate-900 text-white">
+                                <th class="p-4 text-left font-bold">Metric</th>
+                                <th class="p-4 text-left font-bold">Definition</th>
+                                <th class="p-4 text-left font-bold">ICP Connection</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-200">
+                                <td class="p-4 font-semibold text-slate-900">TAM</td>
+                                <td class="p-4 text-slate-600">Total Addressable Market—everyone who could theoretically buy</td>
+                                <td class="p-4 text-slate-600">Start with an existing market where money is already being spent</td>
+                            </tr>
+                            <tr class="border-b border-slate-200 bg-slate-50">
+                                <td class="p-4 font-semibold text-slate-900">SAM</td>
+                                <td class="p-4 text-slate-600">Serviceable Available Market—segment you can actually serve</td>
+                                <td class="p-4 text-slate-600">Maps to your <strong>ICP</strong>—the specific segment you carve out</td>
+                            </tr>
+                            <tr class="border-b border-slate-200">
+                                <td class="p-4 font-semibold text-slate-900">SOM</td>
+                                <td class="p-4 text-slate-600">Serviceable Obtainable Market—realistic near-term capture</td>
+                                <td class="p-4 text-slate-600">Maps to your <strong>Initial Customer Profile</strong>—gets you to next milestone</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-slate-900 text-white p-6 rounded-lg">
+                    <p class="font-sans text-sm"><strong>Key insight:</strong> Your SOM should align with your Initial Customer Profile. Start with your Initial Customer Profile (the subset that gets you from $100K to $1M ARR), expand to your full ICP (SAM), then work toward dominating your TAM. This shows investors you have discipline and a realistic path to growth.</p>
                 </div>
             </section>
 
@@ -958,7 +1159,7 @@
     <script>
         // Table of Contents scroll-spy
         const tocLinks = document.querySelectorAll('.toc-link');
-        const sections = document.querySelectorAll('section[id], div[id="calculator"]');
+        const sections = document.querySelectorAll('section[id], div[id="calculator"], div[id="tam-calculator"]');
 
         function updateActiveLink() {
             let currentSection = '';
