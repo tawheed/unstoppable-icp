@@ -193,6 +193,75 @@ Free interactive calculator: https://www.idealcustomerprofile.com/cac-payback-ca
 
 ---
 
+## B2B SaaS Lead Generation
+
+### What is B2B SaaS Lead Generation?
+
+**B2B SaaS lead generation is the process of identifying and attracting potential business customers for your software product.** The goal is simple: more people should know about you today than yesterday. Effective B2B lead generation focuses on quality over quantity—targeting prospects that match your Ideal Customer Profile (ICP).
+
+### The 3 B2B Lead Generation Channels That Work
+
+**These three channels are mostly free, compound over time, and work even better together.**
+
+#### Channel 1: LinkedIn
+- Business buyers are on LinkedIn (not Twitter for most B2B)
+- LinkedIn still provides organic reach (unlike Facebook)
+- Two tactics that compound:
+  1. Post content weekly—share your expertise and manifesto
+  2. Connection requests + DMs to ICP prospects
+- Connections see your posts AND you can DM them—that's the compound effect
+
+#### Channel 2: Webinars & Events
+- Builds the "trust" factor (know → trust → buy)
+- Talk about "the thing about the thing"—your manifesto, not product demos
+- Share webinar invites on LinkedIn, ask customers to share
+- Turn best-performing posts into webinar topics
+- Creates a valuable reason to reach out to ICP prospects
+
+#### Channel 3: Outbound
+- Email at scale, cold calling, direct mail (FedEx envelopes have 99% open rate)
+- No pay-per-click costs—you control the targeting
+- Works best when combined with LinkedIn and webinars
+- Prospects who've seen your content are warmer
+
+### The B2B Lead Generation Formula
+
+**You need three things for B2B lead generation:**
+1. **Targeting (ICP)** — Who are you going after?
+2. **Machine (Channels)** — How do you reach them?
+3. **Bullets (Messaging)** — What do you say?
+
+Most companies fail because they skip the targeting—they build a machine that fires at everyone and wonder why nothing converts.
+
+### How ICP Connects to Lead Generation
+
+Your Ideal Customer Profile is the targeting layer of your lead generation strategy. Without it, you waste resources on prospects who won't buy or won't stay.
+
+ICP-fit leads have:
+- 3-5x higher conversion rates
+- Shorter sales cycles
+- Higher lifetime value
+- Lower customer acquisition cost
+
+**The #1 B2B lead generation mistake is targeting too broadly.**
+
+### B2B vs B2C Lead Generation
+
+| Factor | B2B Lead Generation | B2C Lead Generation |
+|--------|---------------------|---------------------|
+| Target | Companies (accounts) | Individual consumers |
+| Sales Cycle | Weeks to months | Minutes to days |
+| Decision Makers | Multiple (buying committee) | Usually one person |
+| Contract Value | $5K-$500K+ annually | $10-$500 typically |
+| Trust Required | High (content, relationships) | Lower (reviews, impulse) |
+| Best Channels | LinkedIn, webinars, outbound | Facebook, Google, influencers |
+
+### B2B SaaS Lead Generation Guide
+
+Comprehensive guide to B2B lead generation: https://www.idealcustomerprofile.com/b2b-saas-lead-generation.html
+
+---
+
 ## Key Statistics
 
 - **68% higher win rate:** SaaS companies with a defined ICP have 68% higher win rates (Source: TOPO/Gartner Research)
@@ -336,6 +405,12 @@ A: ICP-fit customers convert faster and at lower cost, dramatically reducing CAC
 - **10x Rule:** Be 10x better in a small segment rather than marginally better in a large market
 - **Broadway Show:** TK Kader's term for the consistent daily sales and marketing activities that drive growth
 - **Manifesto:** Messaging framework for Strategic Narrative, Positioning, and Competitive Differentiation
+- **Lead:** A potential customer who has shown interest in your product or service
+- **MQL (Marketing Qualified Lead):** A lead that has engaged with marketing content and meets basic ICP criteria
+- **SQL (Sales Qualified Lead):** A lead that sales has verified as ready for direct engagement
+- **Outbound:** Proactive outreach to prospects via email, phone, LinkedIn, or direct mail
+- **Inbound:** Leads that come to you through content, SEO, ads, or referrals
+- **Pipeline:** The total value of all active sales opportunities at various stages
 
 ---
 
@@ -365,6 +440,7 @@ https://www.idealcustomerprofile.com/#calculator
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 - LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
 - CAC Payback Calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
+- B2B SaaS Lead Generation Guide: https://www.idealcustomerprofile.com/b2b-saas-lead-generation.html
 - Author Website: https://www.tkkader.com
 - AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
