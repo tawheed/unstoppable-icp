@@ -152,6 +152,47 @@ Free interactive calculator: https://www.idealcustomerprofile.com/ltv-calculator
 
 ---
 
+## CAC Payback Period for B2B SaaS
+
+### What is CAC Payback Period?
+
+**CAC Payback Period is the number of months it takes to recover your Customer Acquisition Cost through gross profit.** It tells you how fast you can reinvest in growth. The shorter your payback period, the faster you can redeploy capital into acquiring more customers.
+
+### CAC Payback Formula
+
+CAC Payback Period = CAC / (Monthly ARPU x Gross Margin)
+
+Example: $500 CAC / ($100 ARPU x 70% margin) = 7.1 months
+
+### CAC Payback Benchmarks
+
+| Payback Period | Health | Interpretation |
+|----------------|--------|----------------|
+| Under 6 months | Excellent | Strong unit economics |
+| 6-12 months | Healthy | Target for most SaaS |
+| 12-18 months | Acceptable | Common for enterprise |
+| 18-24 months | Concerning | Cash flow strain |
+| Over 24 months | Critical | Unsustainable |
+
+### How CAC Payback Connects to ICP
+
+**ICP-fit customers convert faster and at lower cost, dramatically reducing CAC payback period.** When you target the right customers:
+- Higher conversion rates = lower CAC
+- Shorter sales cycles = less cost per deal
+- More efficient marketing = less wasted spend
+
+### 3 Strategies to Reduce CAC Payback
+
+1. **Target ICP-fit customers** - Higher conversion rates and lower CAC
+2. **Increase ARPU through pricing** - Higher revenue accelerates payback
+3. **Improve gross margin** - More profit per dollar of revenue
+
+### CAC Payback Calculator
+
+Free interactive calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
+
+---
+
 ## Key Statistics
 
 - **68% higher win rate:** SaaS companies with a defined ICP have 68% higher win rates (Source: TOPO/Gartner Research)
@@ -257,6 +298,15 @@ A: A healthy LTV:CAC ratio is 3:1 or higher—you earn $3 for every $1 spent on 
 **Q: How does LTV connect to ICP?**
 A: Customers matching your ICP typically have 2-3x higher LTV than non-ICP customers. ICP-fit customers get more value, have higher engagement, lower churn, and more expansion revenue.
 
+**Q: What is CAC payback period?**
+A: CAC Payback Period is the number of months it takes to recover your Customer Acquisition Cost through gross profit. Formula: CAC / (Monthly ARPU x Gross Margin). A healthy payback is under 12 months.
+
+**Q: What is a good CAC payback period for SaaS?**
+A: Under 6 months is excellent. 6-12 months is healthy for most B2B SaaS. 12-18 months is acceptable for enterprise. Over 24 months is critical and unsustainable.
+
+**Q: How does CAC payback connect to ICP?**
+A: ICP-fit customers convert faster and at lower cost, dramatically reducing CAC payback period. Higher conversion rates, shorter sales cycles, and more efficient marketing all reduce CAC.
+
 ---
 
 ## Key Concepts & Terminology
@@ -299,6 +349,10 @@ https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 Free calculator to calculate Customer Lifetime Value, LTV:CAC Ratio, and CAC Payback Period:
 https://www.idealcustomerprofile.com/ltv-calculator.html
 
+### CAC Payback Calculator
+Free calculator to calculate how many months to recover your Customer Acquisition Cost:
+https://www.idealcustomerprofile.com/cac-payback-calculator.html
+
 ### Bad ICP Calculator
 Calculate how much money you're wasting on wrong-fit leads:
 https://www.idealcustomerprofile.com/#calculator
@@ -310,6 +364,7 @@ https://www.idealcustomerprofile.com/#calculator
 - Main ICP Guide: https://www.idealcustomerprofile.com
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 - LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
+- CAC Payback Calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
 - Author Website: https://www.tkkader.com
 - AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
