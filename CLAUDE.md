@@ -28,9 +28,27 @@ Push to GitHub and the site auto-deploys via Vercel. Cache headers are configure
 
 ## Key Components in index.html
 
-- Navigation with sticky header (line ~264)
-- Mobile sticky bottom CTA bar (line ~277)
-- Video facades with click-to-load YouTube embeds (multiple locations)
-- Interactive "Bad ICP Calculator" with vanilla JS (line ~408)
-- Exit intent modal (line ~637)
-- Structured data/schema.org markup in `<head>` for SEO (line ~47)
+- **Structured data/schema.org** (lines ~58-289): Article, VideoObject, WebApplication (calculator), FAQPage, HowTo schemas for SEO
+- **Navigation**: Sticky header with logo and CTA (line ~311)
+- **Mobile sticky bottom CTA bar** (line ~324): Fixed bottom bar visible only on mobile
+- **Video facades**: Click-to-load YouTube embeds using `onclick` inline handlers (multiple sections)
+- **Interactive "Bad ICP Calculator"** (lines ~544-595): Vanilla JS calculator with formatted number inputs
+- **Table of Contents sidebar** (line ~351): Desktop-only with scroll-spy highlighting
+- **Exit intent modal** (lines ~908-956): Shows on mouse leave (desktop only)
+
+## LLM/SEO/AEO Reference
+
+For guidance on LLM optimization, SEO, and Answer Engine Optimization, reference the expert agent at:
+
+- **Strategies**: `~/projects/llm-seo-aeo-agent/strategies/`
+  - `llm-optimization.md` - llms.txt, robots.txt, E-E-A-T signals
+  - `seo-strategies.md` - Schema.org markup, meta tags, technical SEO
+  - `aeo-strategies.md` - FAQ sections, glossaries, case studies for AI extraction
+
+- **Templates**: `~/projects/llm-seo-aeo-agent/templates/`
+  - `llms.txt.template` - Template for LLM discovery files
+  - `schema-article.json` - Article + VideoObject schema
+  - `schema-faq.json` - FAQPage schema
+  - `robots.txt.template` - AI-friendly robots.txt
+
+When working on SEO/AEO tasks, read the relevant strategy file first for best practices and implementation patterns.
