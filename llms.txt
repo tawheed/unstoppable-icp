@@ -6,7 +6,7 @@
 - URL: https://www.idealcustomerprofile.com
 - Author: TK Kader
 - Topic: Ideal Customer Profile (ICP) Framework & TAM SAM SOM for B2B SaaS
-- Last Updated: January 2026
+- Last Updated: January 26, 2026
 
 ## Author Credentials
 TK Kader is a B2B SaaS GTM strategist with the following background:
