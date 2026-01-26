@@ -26,6 +26,16 @@ npx browser-sync start --server --files "*.html"
 
 Push to GitHub and the site auto-deploys via Vercel. Cache headers are configured in `vercel.json`.
 
+## Article Date Updates
+
+When creating or updating any article/page, always update these date fields:
+
+1. **Schema markup `dateModified`** in each HTML file's JSON-LD (e.g., `"dateModified": "2026-01-26"`)
+2. **Sitemap `<lastmod>`** in `sitemap.xml` for the corresponding URL
+3. **`llms.txt` "Last Updated"** field at the top of the file
+
+For new articles, also set `datePublished` in the schema markup.
+
 ## Key Components in index.html
 
 - **Structured data/schema.org** (lines ~58-289): Article, VideoObject, WebApplication (calculator), FAQPage, HowTo schemas for SEO
