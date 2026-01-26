@@ -1,0 +1,13 @@
+{
+  "name": "ideal-customer-profile",
+  "version": "1.0.0",
+  "description": "ICP Framework & Guide for B2B SaaS",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "serve": "npx browser-sync start --server --files '*.html, dist/*.css'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

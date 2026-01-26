@@ -8,19 +8,34 @@ This is a static marketing micro-site for "Ideal Customer Profile" - a single-pa
 
 ## Architecture
 
-- **Single HTML file**: `index.html` contains all markup, styles, and scripts
-- **No build process**: Static HTML served directly
-- **Styling**: Tailwind CSS via CDN (`cdn.tailwindcss.com`)
+- **Static HTML files**: Multiple pages (index.html, saas-marketing.html, calculators, etc.)
+- **Build process**: Tailwind CLI compiles CSS from `src/input.css` to `dist/output.css`
+- **Styling**: Tailwind CSS (built locally, ~22KB minified vs ~300KB CDN)
 - **Fonts**: Google Fonts (Crimson Pro for headings, Inter for body text)
-- **No package.json or dependencies**: Pure static site
 
 ## Development
 
-Run a local server with live reload:
-
+Install dependencies (first time only):
 ```bash
-npx browser-sync start --server --files "*.html"
+npm install
 ```
+
+Build CSS and watch for changes:
+```bash
+npm run dev
+```
+
+Or build minified CSS for production:
+```bash
+npm run build
+```
+
+Run local server with live reload:
+```bash
+npm run serve
+```
+
+**Important**: Always run `npm run build` before committing if you've added new Tailwind classes.
 
 ## Deployment
 
