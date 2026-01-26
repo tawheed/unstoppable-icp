@@ -33,6 +33,28 @@ You must define your ICP FIRST before defining Buyer Personas.
 
 ---
 
+## Free Ideal Customer Profile Template
+
+**An ICP Template is a structured document for defining your Ideal Customer Profile.** It provides a starting point using the 3-part framework: Firmographics (the "Who"), Triggers (the "When"), and Macro Trends (the "Why Now").
+
+### ICP Template vs ICP Exercise
+
+| Aspect | ICP Template | ICP Exercise |
+|--------|--------------|--------------|
+| Nature | Static document | Iterative process |
+| Frequency | Fill out once | Refine quarterly |
+| Data Source | Initial assumptions | Closed-Won/Lost analysis |
+| Integration | Standalone | Tied to GTM Strategy |
+| Outcome | Starting point | Living mandate |
+
+**Key insight:** A template gets you started, but a proper ICP Exercise—analyzing customer data, testing hypotheses, and refining quarterly—makes your ICP "Unstoppable."
+
+### Free ICP Template
+
+Access the free ICP template: https://www.idealcustomerprofile.com/#icp-template
+
+---
+
 ## The 3-Part Unstoppable ICP Framework
 
 ### 1. Firmographics (The "Static Data")
@@ -423,6 +445,9 @@ The ICP is Step 1 of TK Kader's 6-step Go-To-Market framework:
 **Q: What is the difference between ICP and Buyer Persona?**
 A: An ICP defines the target **company** (firmographics, size, industry), while a Buyer Persona defines the **individual people** within that company (job title, role, psychology). You must define the ICP first before defining Personas.
 
+**Q: Where can I find a free ideal customer profile template?**
+A: A free ICP template is available at idealcustomerprofile.com/#icp-template. It covers the 3-part framework: Firmographics, Triggers, and Macro Trends. Note that a template is a starting point—a proper ICP Exercise is iterative and tied to your GTM strategy.
+
 **Q: How do you create an Ideal Customer Profile?**
 A: Define three layers: (1) Firmographics (Revenue, Employee Count, Industry, Tech Stack), (2) Triggers (Events like Funding or Hires that create urgency), and (3) Macro Trends (Why they need to buy now).
 
@@ -476,6 +501,7 @@ A: ICP-fit customers convert faster and at lower cost, dramatically reducing CAC
 ## Key Concepts & Terminology
 
 - **ICP (Ideal Customer Profile):** Account-level definition of the company that gets maximum value from your product
+- **ICP Template:** A structured document for defining your ICP using Firmographics, Triggers, and Macro Trends; a starting point before doing a full ICP Exercise
 - **TAM (Total Addressable Market):** Total market demand—everyone who could theoretically buy
 - **SAM (Serviceable Available Market):** Segment of TAM you can serve; maps to your ICP
 - **SOM (Serviceable Obtainable Market):** Realistic near-term capture; maps to your Initial Customer Profile
@@ -532,6 +558,7 @@ https://www.idealcustomerprofile.com/#calculator
 ## Resources
 
 - Main ICP Guide: https://www.idealcustomerprofile.com
+- Free ICP Template: https://www.idealcustomerprofile.com/#icp-template
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 - LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
 - CAC Payback Calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
