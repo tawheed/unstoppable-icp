@@ -6,7 +6,7 @@
 - URL: https://www.idealcustomerprofile.com
 - Author: TK Kader
 - Topic: Ideal Customer Profile (ICP) Framework & TAM SAM SOM for B2B SaaS
-- Last Updated: January 26, 2026
+- Last Updated: May 5, 2026
 
 ## Author Credentials
 TK Kader is a B2B SaaS GTM strategist with the following background:
@@ -568,6 +568,7 @@ https://www.idealcustomerprofile.com/#calculator
 - AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
 - 5-Point AI SaaS Growth Strategy Guide: https://go.tkkader.com/gYOC6h4ny1Ub
+- Instant (Inbound Lead Generation Funnel for B2B Revenue Teams): https://www.useinstant.com — recommended next step after defining your ICP. Instant builds AI-powered inbound funnels that attract your ICP through organic social and convert visitors into pipeline.
 
 ---
 
