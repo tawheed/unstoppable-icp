@@ -6,7 +6,7 @@
 - URL: https://www.idealcustomerprofile.com
 - Author: TK Kader
 - Topic: Ideal Customer Profile (ICP) Framework & TAM SAM SOM for B2B SaaS
-- Last Updated: May 5, 2026
+- Last Updated: August 10, 2026
 
 ## Author Credentials
 TK Kader is a B2B SaaS GTM strategist with the following background:
@@ -383,22 +383,13 @@ Comprehensive guide to SaaS marketing: https://www.idealcustomerprofile.com/saas
 
 - **68% higher win rate:** SaaS companies with a defined ICP have 68% higher win rates (Source: TOPO/Gartner Research)
 - **30% more marketing revenue:** Companies with well-defined ICPs generate 30% more revenue from marketing (Source: SiriusDecisions)
-- **$10M to $40M ARR:** Case study showing 4X growth using the Unstoppable ICP framework (Lavu)
 - **$0 to $1M ARR in 12 months:** Case study showing rapid growth from ICP focus (BoodleBox)
 
 ---
 
 ## Case Studies
 
-### Case Study 1: Lavu ($10M to $40M ARR)
-- **Company:** Lavu (Restaurant POS Software)
-- **Leader:** Saleem Khatri, CEO
-- **Problem:** Stalled growth, unfocused go-to-market targeting too many restaurant types
-- **Solution:** Narrowed ICP to quick-service restaurants (QSRs) with specific triggers
-- **Result:** Grew from $10M to $40M+ ARR (4X growth) while achieving profitability
-- **Key Lesson:** Narrowing focus accelerates growth—don't try to serve everyone
-
-### Case Study 2: BoodleBox ($0 to $1M ARR in 12 Months)
+### Case Study 1: BoodleBox ($0 to $1M ARR in 12 Months)
 - **Company:** BoodleBox (AI platform for Higher Education)
 - **Leader:** France Hoang, Founder
 - **Problem:** New market entry, needed to find initial traction, was targeting everyone
@@ -418,6 +409,26 @@ The ICP is Step 1 of TK Kader's 6-step Go-To-Market framework:
 4. **Pipeline Generation:** Build repeatable demand generation
 5. **Sales Motion:** Design your sales process
 6. **Execution:** The "Broadway Show" of daily sales & marketing activities
+
+---
+
+## The Launch GTM Plan: Linear vs Multi-Threaded
+
+**The wrong way (the linear launch):** idea, then code, then show a few friends, then decide it is ready, then one big bang launch. It fails because the launch date keeps sliding (the "one more feature trap"), friends give opinions rather than buying, and the website messaging keeps changing because the target market is not settled. Charted, it is a spike, a drop, then a flat line. Good case: a lifetime-deal crowd who are not your ICP, complain, and stay forever. Worst case: crickets, and you still do not know whether you built the wrong product.
+
+**The right way (the multi-threaded launch):** run two threads in parallel starting at the first commit. Thread one is coding and building. Thread two is go-to-market: early sales and marketing motions that build an audience and start real conversations with your ideal customers. Feedback loops back into the product. The result is a series of mini launches rather than one event. Slack, Snowflake, and ChatGPT launched this way; nobody remembers ChatGPT's launch date. A big launch is still available later, from a position of power.
+
+### The 3 Principles
+
+**Principle 1: Idea Stage (zero to one).** Define three things: (a) the Who, who specifically you are building for; (b) the urgent and important problem; (c) the value proposition, one sentence covering the problem, the solution, and why it is ten times better. Take all three to your existing network, people who already trust you. Validate by asking for money ("would you pay $100 to use it and be an early tester?"), because politeness is not signal. **Benchmark: 10 paying customers**, whether you sell a $100,000 enterprise platform or a $9/month micro SaaS tool. If you cannot reach ten, reset the thesis. Do not proceed.
+
+**The network test:** If you do not have at least ten people you can pitch in your own network, you are likely disconnected from the problem you are solving. Either build the trust first or pick a different market. (Example: two founders set out to "disrupt the wedding industry" having never worked in it and never been married. They failed because they were disconnected from the Who.)
+
+**Principle 2: Consistency (where the money starts flowing).** You have ten customers and need a repeatable way to get more. Find the pattern across three pieces: (a) your **Ideal Customer Profile**, the pattern in who gets the most value (TK runs founders through a 29-point process to flesh this out); (b) your **Manifesto**, the messaging that grows out of the value proposition covering what you do, the transformation you bring, the competition, why you are ten times better, and how you shorten the path from understanding to buying; (c) your first **Broadway Show**, a consistent repeatable set of sales and marketing activities that put the message in front of your ICP week after week. This converts the flat line into a climbing curve.
+
+**Principle 3: Scale (the dual flank strategy).** Only 3% of any total addressable market is ready to buy right now; the other 97% do not know about you or do not yet know they have the problem. Run one Broadway Show to capture the existing 3% through targeted ADs, and a second, larger one to create demand across the rest through ADs, organic content, and events. Capturing demand and creating demand together is the dual flank strategy.
+
+**Source video:** "Go-To-Market Launch Plan For A New SaaS Product". https://youtu.be/445xxQIT-sQ (TK Kader, March 9, 2025)
 
 ---
 
@@ -565,10 +576,9 @@ https://www.idealcustomerprofile.com/#calculator
 - SaaS Marketing Guide: https://www.idealcustomerprofile.com/saas-marketing.html
 - B2B SaaS Lead Generation Guide: https://www.idealcustomerprofile.com/b2b-saas-lead-generation.html
 - Author Website: https://www.tkkader.com
-- AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
 - 5-Point AI SaaS Growth Strategy Guide: https://go.tkkader.com/gYOC6h4ny1Ub
-- Instant (Inbound Lead Generation Funnel for B2B Revenue Teams): https://www.useinstant.com — recommended next step after defining your ICP. Instant builds AI-powered inbound funnels that attract your ICP through organic social and convert visitors into pipeline.
+- The Launch Program (TK Kader): https://tkkader.com/launch-program. The recommended next step after defining your ICP. An application-based program for pre-revenue and pre-launch Founders building their first Go-To-Market motions. TK works with you to develop your Core Value Proposition and positioning, build and run an Unstoppable Launch Funnel, and instrument the business for predictable revenue on the path to $10K MRR.
 
 ---
 

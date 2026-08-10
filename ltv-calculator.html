@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://img.youtube.com">
     <link rel="preconnect" href="https://www.tkkader.com">
+    <link rel="preconnect" href="https://www.getunstoppable.com">
         <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
@@ -206,6 +207,34 @@
     </script>
 
     <style>
+      /* Make the embedded Unstoppable header sticky.
+         sales-header.js appends its .ush-header INTO #unstoppable-header, and a
+         sticky element is confined to its parent's box. So the sticky must live on
+         the wrapper (a direct child of <body>, so its containing block is the full
+         page), NOT on .ush-header itself, which would have no room to travel.
+         z-index 50 matches the nav this replaced: above content, below the
+         exit-intent modal at z-[60]. */
+      #unstoppable-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      /* Match the embed's bar to the page container (max-w-7xl mx-auto px-4 md:px-6).
+         The script caps .ush-bar at 1120px and appends its stylesheet at runtime, so
+         a plain .ush-bar rule would lose on source order. The #id scope wins on
+         specificity instead. Its 24px padding already equals px-6; the media query
+         below matches px-4 under the md breakpoint. */
+      #unstoppable-header .ush-bar {
+        max-width: 80rem;
+      }
+      @media (max-width: 767px) {
+        #unstoppable-header .ush-bar {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
         body { font-family: 'Inter', sans-serif; background-color: #FFFEFC; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Crimson Pro', serif; }
 
@@ -224,26 +253,17 @@
 </head>
 <body class="text-slate-800 bg-[#FFFEFC] selection:bg-yellow-200 selection:text-slate-900 pb-20 md:pb-0">
 
-    <!-- NAVIGATION -->
-    <nav class="sticky top-0 z-50 bg-[#FFFEFC]/95 backdrop-blur border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="/" class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans hover:opacity-80 transition-opacity">
-                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm" />
-                <span>Ideal Customer Profile<span class="text-red-600">.com</span></span>
-            </a>
-            <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105">
-                Get Help Building Your ICP &rarr;
-            </a>
-        </div>
-    </nav>
+    <!-- UNSTOPPABLE STANDARD HEADER -->
+    <div id="unstoppable-header"></div>
+    <script src="https://www.getunstoppable.com/sales-header.js" async></script>
 
     <!-- MOBILE STICKY BOTTOM BAR -->
     <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-4 z-50 flex items-center justify-between shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
         <div class="text-xs font-bold text-slate-500 font-sans">
             Calculate your <span class="text-red-600">LTV</span> now.
         </div>
-        <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
-            GTM Program &rarr;
+        <a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=mobile_sticky" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
+            Launch Program &rarr;
         </a>
     </div>
 
@@ -765,39 +785,39 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="py-16 text-center text-slate-300 text-sm bg-slate-900 font-sans">
+    <footer class="py-16 text-center text-slate-600 text-sm bg-[#fefefe] border-t border-slate-200 font-sans">
         <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-left">
             <div>
-                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-12 w-auto mb-6" />
-                <p class="leading-relaxed text-slate-300">
-                    <a href="https://www.tkkader.com" target="_blank" class="hover:text-white transition-colors underline">TK Kader</a> is the author of the Unstoppable Ideal Customer Profile method. He served as SVP Strategy at Marketo (acquired by Adobe for $4.75bn) and Founder of ToutApp (backed by A16Z, acquired by Marketo). He now works with AI/SaaS Founders to transform their GTM Strategy to unlock scalable growth inside the <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" target="_blank" class="hover:text-white transition-colors underline">AI SaaS GTM Program</a>.
+                <a href="https://www.getunstoppable.com?utm_source=icp&utm_medium=organic&utm_campaign=footer_logo" target="_blank" class="flex items-center gap-3 mb-6 w-fit hover:opacity-80 transition-opacity"><img src="/u-mark.png" alt="Unstoppable" class="h-12 w-12 rounded-lg" /><span class="font-sans font-black text-xl tracking-tight text-slate-900">UNSTOPPABLE</span></a>
+                <p class="leading-relaxed text-slate-600">
+                    <a href="https://www.tkkader.com" target="_blank" class="hover:text-slate-900 transition-colors underline">TK Kader</a> is the author of the Unstoppable Ideal Customer Profile method. He served as SVP Strategy at Marketo (acquired by Adobe for $4.75bn) and Founder of ToutApp (backed by A16Z, acquired by Marketo). He now works with AI/SaaS Founders to transform their GTM Strategy to unlock scalable growth inside the <a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=footer_about" target="_blank" class="hover:text-slate-900 transition-colors underline">Launch Program</a>.
                 </p>
             </div>
             <div>
-                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4">AI SaaS GTM Calculators</h4>
+                <h4 class="font-bold text-slate-900 uppercase tracking-wider text-xs mb-4">AI SaaS GTM Calculators</h4>
                 <ul class="space-y-3">
-                    <li><a href="/tam-sam-som-calculator.html" class="hover:text-white transition-colors">TAM SAM SOM Calculator</a></li>
-                    <li><a href="/ltv-calculator.html" class="hover:text-white transition-colors">LTV Calculator</a></li>
-                    <li><a href="/cac-payback-calculator.html" class="hover:text-white transition-colors">CAC Payback Calculator</a></li>
+                    <li><a href="/tam-sam-som-calculator.html" class="hover:text-slate-900 transition-colors">TAM SAM SOM Calculator</a></li>
+                    <li><a href="/ltv-calculator.html" class="hover:text-slate-900 transition-colors">LTV Calculator</a></li>
+                    <li><a href="/cac-payback-calculator.html" class="hover:text-slate-900 transition-colors">CAC Payback Calculator</a></li>
                 </ul>
-                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4 mt-8">Guides</h4>
+                <h4 class="font-bold text-slate-900 uppercase tracking-wider text-xs mb-4 mt-8">Guides</h4>
                 <ul class="space-y-3">
-                    <li><a href="/saas-marketing.html" class="hover:text-white transition-colors">SaaS Marketing Guide</a></li>
-                    <li><a href="/b2b-saas-lead-generation.html" class="hover:text-white transition-colors">B2B SaaS Lead Generation Guide</a></li>
-                    <li><a href="https://www.useinstant.com/content-marketing-lead-generation/?utm_source=icp&utm_medium=organic" target="_blank" class="hover:text-white transition-colors">Content Marketing Lead Generation</a></li>
+                    <li><a href="/saas-marketing.html" class="hover:text-slate-900 transition-colors">SaaS Marketing Guide</a></li>
+                    <li><a href="/b2b-saas-lead-generation.html" class="hover:text-slate-900 transition-colors">B2B SaaS Lead Generation Guide</a></li>
+                    <li><a href="/#icp-template" class="hover:text-slate-900 transition-colors">Free ICP Template</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4">About</h4>
+                <h4 class="font-bold text-slate-900 uppercase tracking-wider text-xs mb-4">About</h4>
                 <ul class="space-y-3">
-                    <li><a href="https://www.tkkader.com" target="_blank" class="hover:text-white transition-colors">About TK Kader</a></li>
-                    <li><a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" target="_blank" class="hover:text-white transition-colors">Work w/TK inside the AI SaaS GTM Program</a></li>
-                    <li><a href="https://www.youtube.com/@TKKader" target="_blank" class="hover:text-white transition-colors">TK's YouTube Channel</a></li>
+                    <li><a href="https://www.getunstoppable.com?utm_source=icp&utm_medium=organic&utm_campaign=footer_about" target="_blank" class="hover:text-slate-900 transition-colors">About Unstoppable</a></li>
+                    <li><a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=footer_about" target="_blank" class="hover:text-slate-900 transition-colors">Work w/TK inside the Launch Program</a></li>
+                    <li><a href="https://www.youtube.com/@TKKader" target="_blank" class="hover:text-slate-900 transition-colors">TK's YouTube Channel</a></li>
                 </ul>
-                <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-4 mt-8">Legal</h4>
+                <h4 class="font-bold text-slate-900 uppercase tracking-wider text-xs mb-4 mt-8">Legal</h4>
                 <ul class="space-y-3">
-                    <li><a href="https://www.tkkader.com/privacy" target="_blank" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                    <li><a href="https://www.tkkader.com/terms" target="_blank" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li><a href="https://www.tkkader.com/privacy" target="_blank" class="hover:text-slate-900 transition-colors">Privacy Policy</a></li>
+                    <li><a href="https://www.tkkader.com/terms" target="_blank" class="hover:text-slate-900 transition-colors">Terms of Service</a></li>
                 </ul>
                 <p class="mt-6 text-xs opacity-60">&copy; 2026 Ideal Customer Profile, LLC.</p>
             </div>
