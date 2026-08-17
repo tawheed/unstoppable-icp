@@ -53,7 +53,6 @@
     <link rel="preconnect" href="https://www.youtube.com" />
     <link rel="preconnect" href="https://img.youtube.com" />
     <link rel="preconnect" href="https://www.tkkader.com" />
-    <link rel="preconnect" href="https://www.getunstoppable.com" />
     <link rel="preconnect" href="https://cdn.tailwindcss.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
@@ -122,7 +121,7 @@
       rel="stylesheet"
     />
 
-    <!-- MASTER SCHEMA (Article + VideoObject + Tool + Course + FAQ) -->
+    <!-- MASTER SCHEMA (Article + VideoObject + Tool + Review + FAQ) -->
     <script type="application/ld+json">
       [
         {
@@ -151,7 +150,7 @@
               "@type": "Article",
               "headline": "Ideal Customer Profile (ICP) Template & Framework Guide",
               "datePublished": "2026-01-20",
-              "dateModified": "2026-08-10",
+              "dateModified": "2026-08-17",
               "author": { "@id": "https://www.tkkader.com/#person" },
               "publisher": {
                 "@type": "Organization",
@@ -191,6 +190,15 @@
                 },
                 {
                   "@type": "VideoObject",
+                  "name": "How Saleem from Lavu 4X'd ARR to $40M+",
+                  "description": "Case Study: How Lavu used the Unstoppable GTM Strategy to grow from $10M to $40M ARR.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/K8YoRPB1ft8/maxresdefault.jpg",
+                  "uploadDate": "2024-01-01",
+                  "contentUrl": "https://www.youtube.com/watch?v=K8YoRPB1ft8",
+                  "embedUrl": "https://www.youtube.com/embed/K8YoRPB1ft8"
+                },
+                {
+                  "@type": "VideoObject",
                   "name": "How BoodleBox Went from $0 to $1M ARR in 12 Months",
                   "description": "Case Study: How BoodleBox used the Unstoppable ICP framework to dominate the Higher Ed niche.",
                   "thumbnailUrl": "https://img.youtube.com/vi/jBQJo-GU4H8/maxresdefault.jpg",
@@ -200,13 +208,12 @@
                 },
                 {
                   "@type": "VideoObject",
-                  "name": "Go-To-Market Launch Plan For A New SaaS Product",
-                  "description": "The linear launch versus the multi-threaded launch, and the 3 principles of a Go-To-Market launch plan for a new SaaS product: the Idea Stage, Consistency, and Scale. TK Kader explains why the best SaaS companies never hit one big launch button.",
-                  "thumbnailUrl": "https://img.youtube.com/vi/445xxQIT-sQ/maxresdefault.jpg",
-                  "uploadDate": "2025-03-09",
-                  "duration": "PT30M9S",
-                  "contentUrl": "https://www.youtube.com/watch?v=445xxQIT-sQ",
-                  "embedUrl": "https://www.youtube.com/embed/445xxQIT-sQ"
+                  "name": "The 6-Step SaaS Go-To-Market Strategy",
+                  "description": "A breakdown of the 6 steps to building a scalable GTM strategy for B2B SaaS and AI companies.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/XMem2vKeXbk/maxresdefault.jpg",
+                  "uploadDate": "2024-01-01",
+                  "contentUrl": "https://www.youtube.com/watch?v=XMem2vKeXbk",
+                  "embedUrl": "https://www.youtube.com/embed/XMem2vKeXbk"
                 },
                 {
                   "@type": "VideoObject",
@@ -252,20 +259,26 @@
         },
         {
           "@context": "https://schema.org",
-          "@type": "Course",
-          "name": "The Launch Program",
-          "url": "https://tkkader.com/launch-program",
-          "description": "For pre-revenue and pre-launch Founders building their first Go-To-Market motions. Accelerate growth to $10K MRR without getting stuck in the one more feature trap.",
-          "provider": {
-            "@type": "Organization",
-            "name": "TK Kader",
-            "sameAs": "https://www.tkkader.com"
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "Course",
+            "name": "AI/SaaS GTM Program",
+            "description": "The Unstoppable Go-To-Market Strategy Program for B2B AI/SaaS Founders.",
+            "provider": {
+              "@type": "Organization",
+              "name": "TK Kader",
+              "sameAs": "https://www.tkkader.com"
+            }
           },
-          "offers": {
-            "@type": "Offer",
-            "category": "Paid",
-            "url": "https://tkkader.com/launch-program"
-          }
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Saleem Khatri"
+          },
+          "reviewBody": "Using this framework, we grew Lavu from $10M to $40M ARR."
         },
         {
           "@context": "https://schema.org",
@@ -387,34 +400,6 @@
     </script>
 
     <style>
-      /* Make the embedded Unstoppable header sticky.
-         sales-header.js appends its .ush-header INTO #unstoppable-header, and a
-         sticky element is confined to its parent's box. So the sticky must live on
-         the wrapper (a direct child of <body>, so its containing block is the full
-         page), NOT on .ush-header itself, which would have no room to travel.
-         z-index 50 matches the nav this replaced: above content, below the
-         exit-intent modal at z-[60]. */
-      #unstoppable-header {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-      }
-
-      /* Match the embed's bar to the page container (max-w-7xl mx-auto px-4 md:px-6).
-         The script caps .ush-bar at 1120px and appends its stylesheet at runtime, so
-         a plain .ush-bar rule would lose on source order. The #id scope wins on
-         specificity instead. Its 24px padding already equals px-6; the media query
-         below matches px-4 under the md breakpoint. */
-      #unstoppable-header .ush-bar {
-        max-width: 80rem;
-      }
-      @media (max-width: 767px) {
-        #unstoppable-header .ush-bar {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
-
       html, body {
         overscroll-behavior: none;
       }
@@ -530,12 +515,37 @@
       <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=978251355657625&amp;ev=PageView&amp;noscript=1" />
     </noscript>
 
-    <!-- UNSTOPPABLE STANDARD HEADER -->
-    <div id="unstoppable-header"></div>
-    <script src="https://www.getunstoppable.com/sales-header.js" async></script>
-
     <!-- HERO GRADIENT WRAPPER -->
     <div class="hero-gradient">
+      <!-- NAVIGATION -->
+      <nav
+        class="sticky top-0 z-50 backdrop-blur-sm border-b border-slate-100/50"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        >
+          <div
+            class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans"
+          >
+            <img
+              src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png"
+              alt="TK Kader Logo"
+              class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm"
+            />
+            <span
+              >Ideal Customer Profile<span class="text-red-600">.com</span></span
+            >
+          </div>
+          <a
+            href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=sticky_nav"
+            target="_blank"
+            class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105"
+          >
+            Get the Free 5-Point Guide &rarr;
+          </a>
+        </div>
+      </nav>
+
       <!-- HERO SECTION -->
       <header class="pt-14 pb-12 text-center px-4 max-w-5xl mx-auto">
         <h1
@@ -551,7 +561,8 @@
           <strong class="text-slate-900 font-semibold bg-yellow-100 px-1"
             >68% higher win rate</strong
           >. Early-Stage Companies are more likely to hit true
-          <strong>Product Market Fit</strong> with an ICP. This guide includes a
+          <strong>Product Market Fit</strong> with an ICP, Mid-Stage Companies are
+          able to <strong>Accelerate Growth</strong>. This guide includes a
           free Ideal Customer Profile template, the
           <strong class="text-slate-900 font-semibold bg-yellow-100 px-1"
             >3-Part ICP Framework</strong
@@ -568,11 +579,11 @@
         Build your <span class="text-red-600">Unstoppable</span> ICP.
       </div>
       <a
-        href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=mobile_sticky"
+        href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=mobile_sticky"
         class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center"
         target="_blank"
       >
-        Launch Program &rarr;
+        Free Guide &rarr;
       </a>
     </div>
 
@@ -629,30 +640,44 @@
             </li>
             <li>
               <a
-                href="#gtm-plan"
+                href="#strategy"
                 class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
-                >6. The Launch GTM Plan</a
+                >6. Operationalize Your ICP</a
+              >
+            </li>
+            <li>
+              <a
+                href="#casestudy"
+                class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
+                >7. Case Study: Lavu</a
               >
             </li>
             <li>
               <a
                 href="#boodlebox"
                 class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
-                >7. Case Study: BoodleBox</a
+                >8. Case Study: BoodleBox</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gtm-plan"
+                class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
+                >9. The Scalable GTM Plan</a
               >
             </li>
             <li>
               <a
                 href="#faq"
                 class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
-                >8. FAQ</a
+                >10. FAQ</a
               >
             </li>
             <li>
               <a
                 href="#glossary"
                 class="toc-link block text-slate-600 hover:text-red-600 transition-colors"
-                >9. Glossary</a
+                >11. Glossary</a
               >
             </li>
           </ul>
@@ -742,7 +767,7 @@
               <em>could</em> sell to. Your ICP is who you should sell to
               <em>right now</em>. This distinction is critical because trying to
               sell to your entire TAM immediately results in diluted messaging
-              and wasted AD spend.
+              and wasted ad spend.
             </p>
             <p>
               The biggest mistake in early-stage B2B sales is creating a "Buyer
@@ -1447,9 +1472,9 @@
 
           <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
             The two steps that matter: <strong>Frame your ICP</strong> with the free framework, then
-            <strong>put it to work</strong> inside the <a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=icp_template_intro" target="_blank" class="text-red-600 underline hover:text-red-700 font-semibold">Launch Program</a>, where
-            TK works with you to turn that ICP into positioning, messaging, and a funnel that drives
-            revenue. Use the template below to document your first iteration.
+            <strong>put it to work</strong> with <a href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=icp_template_intro" target="_blank" class="text-[#1d7874] underline hover:text-[#155a57] font-semibold">Instant</a>—the
+            inbound engine built to attract your ICP and turn them into pipeline. Use the template
+            below to document your first iteration.
           </p>
 
           <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
@@ -1534,7 +1559,7 @@
             </table>
           </div>
 
-          <!-- Two Steps: Frame the ICP / Work Together -->
+          <!-- Two Steps: Frame the ICP / Attract the ICP -->
           <div class="grid md:grid-cols-2 gap-6 mb-12">
             <!-- Step 1: Frame Your ICP (5-Point Guide) -->
             <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
@@ -1556,41 +1581,40 @@
               </a>
             </div>
 
-            <!-- Step 2: Work Together (Launch Program) -->
+            <!-- Step 2: Attract Your ICP (Instant) -->
             <div class="bg-slate-900 text-white rounded-lg p-6 flex flex-col relative overflow-hidden">
-              <div aria-hidden="true" class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-red-600 opacity-20 blur-3xl"></div>
+              <div aria-hidden="true" class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-[#1d7874] opacity-20 blur-3xl"></div>
               <div class="relative flex flex-col h-full">
-                <div class="flex items-center justify-between gap-3 mb-3">
-                  <span class="font-sans text-xs font-bold text-red-400 uppercase tracking-widest">Step 2 &middot; Work Together</span>
-                  <span class="font-sans text-[10px] font-bold bg-red-600 text-white uppercase tracking-widest px-2 py-1 rounded-full">Recommended</span>
+                <div class="flex items-center gap-3 mb-3">
+                  <img src="/instant-logo.png" alt="Instant" class="h-9 w-9 rounded-md" />
+                  <span class="font-sans text-xs font-bold text-[#5dd9d3] uppercase tracking-widest">Step 2 &middot; Inbound Engine</span>
                 </div>
-                <h4 class="font-serif text-xl font-bold mb-3">Build the Whole Motion</h4>
+                <h4 class="font-serif text-xl font-bold mb-3">Attract Your ICP</h4>
                 <p class="font-sans text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
-                  For pre-revenue and pre-launch Founders building their first Go-To-Market motions.
-                  Inside the Launch Program, TK works with you to accelerate growth to $10K MRR
-                  without getting stuck in the one more feature trap.
+                  Once you know who your ICP is, you need to fill your pipeline with them. Instant
+                  builds an inbound lead generation funnel that attracts your ICP through organic
+                  social and converts visitors into qualified leads&mdash;automatically.
                 </p>
                 <ul class="font-sans text-slate-300 text-sm space-y-1 mb-5">
                   <li class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                    Build and run an Unstoppable Launch Funnel
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    AI-built landing pages tuned to your ICP
                   </li>
                   <li class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                    Develop your Core Value Proposition and positioning
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    Built-in lead capture &amp; email follow-up
                   </li>
                   <li class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-red-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                    Instrument your business for predictable revenue
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    Inbound pipeline running in days, not months
                   </li>
                 </ul>
-                <p class="font-sans text-xs text-slate-400 mb-4">Application-based</p>
                 <a
-                  href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=two_column_work_together"
+                  href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=icp_page_two_column"
                   target="_blank"
-                  class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-3 rounded-full transition-colors"
+                  class="inline-flex items-center justify-center gap-2 bg-[#1d7874] hover:bg-[#155a57] text-white font-semibold px-5 py-3 rounded-full transition-colors"
                 >
-                  Apply to Join
+                  Build Your Inbound Funnel
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
@@ -1702,8 +1726,8 @@
           </div>
         </section>
 
-        <!-- PART 6: THE LAUNCH GTM PLAN -->
-        <section id="gtm-plan" class="mb-28 scroll-mt-28">
+        <!-- PART 6: STRATEGY -->
+        <section id="strategy" class="mb-28 scroll-mt-28">
           <div class="flex items-center gap-4 mb-6">
             <span
               class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest"
@@ -1714,60 +1738,30 @@
           <h2
             class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900"
           >
-            How Do You Launch a New SaaS Product?
+            How Do You Operationalize an ICP for B2B SaaS?
           </h2>
 
-          <p class="font-sans text-lg text-slate-700 leading-loose mb-6">
-            <strong
-              >You do not launch with one big bang. You run a
-              <em>multi-threaded launch</em>: two threads running in parallel
-              from the first commit, one building the product and one running
-              go-to-market.</strong
-            >
-            It progresses through three principles:
-          </p>
-
-          <ul class="font-sans text-lg text-slate-700 space-y-4 mb-8">
-            <li class="flex items-start gap-3">
-              <span class="text-red-600 font-bold flex-shrink-0">1.</span>
-              <span
-                ><strong class="text-slate-900">Idea Stage.</strong> Validate
-                your Who, the urgent problem, and your value proposition against
-                your own network.</span
-              >
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-red-600 font-bold flex-shrink-0">2.</span>
-              <span
-                ><strong class="text-slate-900">Consistency.</strong> Flesh out
-                your Ideal Customer Profile, your messaging Manifesto, and your
-                first Broadway Show.</span
-              >
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-red-600 font-bold flex-shrink-0">3.</span>
-              <span
-                ><strong class="text-slate-900">Scale.</strong> Run a dual flank
-                strategy at the whole market.</span
-              >
-            </li>
-          </ul>
-
           <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
-            Slack, Snowflake, and ChatGPT did not big bang launch. They did
-            this.
+            <strong
+              >To operationalize an ICP, you must embed it into your CRM, weekly
+              sales meetings, and product roadmap—not just a slide deck.</strong
+            >
+            Use the 10x Rule: identify a segment where your solution is 10x
+            better than the alternative. Then analyze your last 10 Closed-Won
+            deals to find patterns in industry, tech stack, and company size.
+            Flag any deal outside your ICP immediately to prevent wasted
+            resources.
           </p>
 
-          <!-- Video Facade -->
           <div
             class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
             style="
-              background-image: url(&quot;https://img.youtube.com/vi/445xxQIT-sQ/maxresdefault.jpg&quot;);
+              background-image: url(&quot;https://img.youtube.com/vi/aWRwBAYOiF8/maxresdefault.jpg&quot;);
             "
             onclick="
               this.onclick = null;
               this.innerHTML =
-                '<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/445xxQIT-sQ?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>';
+                '<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/aWRwBAYOiF8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>';
             "
           >
             <div class="play-button">
@@ -1775,489 +1769,201 @@
             </div>
           </div>
 
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
-          >
-            <p>
-              Most founders treat a launch as a moment. A giant button you press
-              once the product is finally ready, after which the money arrives.
-              Ask a founder who is deep in the build when they are getting in
-              front of real users and the fear shows up immediately. Is the
-              product good enough? Do we have the right features? Is the MVP
-              done? If I show it to people, will someone steal the idea?
-            </p>
-            <p>
-              That fear postpones the launch, and the postponement is the damage.
-              Launch day eventually arrives and it is either crickets, or it is a
-              wave of attention that teaches you nothing about how to grow
-              predictably. The problem is not the product. It is the shape of the
-              plan.
-            </p>
-          </div>
-
-          <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
-            The Linear Launch: Why It Fails
-          </h3>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-8"
-          >
-            <p>
-              The linear model is a sequence. Get an idea. Code it. Show a few
-              friends. Decide it is ready. Launch. Collect money. It is
-              completely logical, which is exactly why so many founders run it,
-              and it fails for three reasons.
-            </p>
-            <p>
-              First, the launch date keeps sliding, because every friend you show
-              it to says some version of "this is cool, but if you added one more
-              thing I would definitely buy." So you go back to coding. That is
-              the
-              <strong>one more feature trap</strong>. Second, you are asking your
-              network for <em>opinions</em>, not asking them to buy, and nobody
-              wants to be unkind to your face. Third, you put up a website whose
-              messaging you know you will rewrite, because you have not actually
-              settled who your target market is.
-            </p>
-            <p>
-              Plotted on a chart, a linear launch is a spike, a drop, and then a
-              flat line. There are only two ways it lands:
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6 mb-12">
-            <div class="bg-amber-50 border border-amber-200 p-6 rounded-lg">
-              <div
-                class="text-sm uppercase tracking-widest text-amber-800 font-bold mb-2"
-              >
-                The good case
-              </div>
-              <p class="text-slate-600 text-sm">
-                You get featured, or you sell a lifetime deal, and a crowd of
-                users floods in. Many are not your ICP. They bought a cheap tool,
-                they complain about it, and now you are stuck supporting them
-                forever.
-              </p>
-            </div>
-            <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
-              <div
-                class="text-sm uppercase tracking-widest text-red-800 font-bold mb-2"
-              >
-                The worst case
-              </div>
-              <p class="text-slate-600 text-sm">
-                Nothing happens. Nobody pays attention. And you still have no
-                idea whether you just spent months building a product the market
-                does not want.
-              </p>
-            </div>
-          </div>
-
-          <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
-            The Multi-Threaded Launch: The Right Way
-          </h3>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
-          >
-            <p>
-              A multi-threaded launch runs
-              <strong>two threads at the same time</strong>, starting at the first
-              commit if not earlier. Thread one is coding and building. Thread
-              two is go-to-market: the early sales and marketing motions that
-              build an audience and get you into real conversations with the
-              people you are building for.
-            </p>
-            <p>
-              You build a little, then go talk about what you are building. You
-              pull people in, you ask for feedback, and that feedback loops
-              straight back into the product. It tells you whether you are
-              solving the right problem before you have spent a year on the wrong
-              one. Repeat that loop and you do not get one launch, you get
-              <strong>a series of mini launches</strong>, each one a little bigger
-              than the last.
-            </p>
-            <p>
-              Nobody remembers the day ChatGPT launched. It accumulated a
-              following quietly and then went vertical, and now every model
-              release is its own launch. That is what a position of power looks
-              like. You can still throw the big launch later, and when you do, you
-              will arrive with customers, proof points, and certainty about who
-              you are talking to.
-            </p>
-          </div>
-
-          <div class="bg-slate-900 text-white p-8 rounded-lg mb-12">
-            <h3 class="font-serif font-bold text-2xl mb-4 text-white">
-              The 3 Principles of a Launch GTM Plan
-            </h3>
-            <ul class="space-y-4 font-sans">
-              <li class="flex items-start gap-3">
-                <span class="text-red-500 font-bold">1.</span>
-                <span
-                  ><strong>Idea Stage:</strong> Go from zero to one. Nail your
-                  Who, the urgent problem, and your value proposition. Sell to
-                  your own network.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-red-500 font-bold">2.</span>
-                <span
-                  ><strong>Consistency:</strong> Find the pattern. Build your ICP,
-                  your Manifesto, and your first Broadway Show.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-red-500 font-bold">3.</span>
-                <span
-                  ><strong>Scale:</strong> Run the dual flank strategy. Capture
-                  existing demand and create new demand.</span
-                >
-              </li>
-            </ul>
-          </div>
-
-          <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
-            Principle 1: The Idea Stage (Zero to One)
-          </h3>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-8"
-          >
-            <p>
-              At the idea stage your entire go-to-market job is to lay out your
-              core GTM thesis. Three things, and no more:
-            </p>
-          </div>
-
-          <div class="space-y-6 mb-8">
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >1</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    The Who
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    Who specifically are you building this for? Often you are
-                    building for yourself, which is fine, as long as you confirm
-                    there are other people like you who share the same insight.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >2</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    The Urgent and Important Problem
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    Not a nice-to-have. The problem has to be urgent enough that
-                    someone will act on it now, and important enough that they
-                    will pay to make it go away.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >3</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    The Value Proposition
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    One sentence that states the problem you solve, the solution
-                    you offer, and why it is ten times better than the
-                    alternative. This is the thing you actually pitch.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-8"
-          >
-            <p>
-              Then you take all three to your <strong>existing network</strong>,
-              the people who already trust you. Trust is the requirement, not a
-              nicety. Without it you will not get honest feedback, and a stranger
-              at this stage has no reason to engage with a product that does not
-              exist yet.
-            </p>
-            <p>
-              People will still be nice to you. Some will say it is a brilliant
-              idea, some will say it is terrible, and neither tells you anything.
-              <strong>So ask for money.</strong> "If we solved it this way, would
-              you pay $100 to use it and be an early tester?" That question
-              separates genuine interest from politeness in about four seconds.
-            </p>
-            <p>
-              <strong>The benchmark is ten customers.</strong> It does not matter
-              whether you are selling a $100,000 enterprise platform or a $9 per
-              month micro SaaS tool. Ten people who already trust you, who agree
-              the problem is urgent, and who pay. If you cannot get to ten, go
-              back and reset the thesis. Do not move on to Principle 2. This is
-              precisely where the linear model goes wrong, and founders have spent
-              millions and burned years building the wrong thing because they
-              skipped it.
-            </p>
-          </div>
-
-          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-8 mb-8">
+          <!-- Highlight Box -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-8 mb-12">
             <span
               class="font-sans font-bold text-yellow-800 text-xs uppercase tracking-widest mb-3 block"
               >Key Takeaway</span
             >
             <p class="font-serif text-xl text-slate-900 leading-relaxed italic">
-              "If you do not have at least ten people you can pitch in your own
-              network, chances are you are disconnected from the problem you are
-              solving. Either make friends fast and build the trust first, or
-              stop and pick a different market."
+              "Don't just write an ICP; mobilize it. Use the 10x Rule (be 10x
+              better in a small segment) and Revenue Data (analyze last 10 wins)
+              to align Sales, Marketing, and Product. If a deal is non-ICP, it
+              should be flagged immediately."
             </p>
-            <p class="font-sans text-slate-600 mt-4 text-sm">TK Kader</p>
           </div>
 
           <div
             class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
           >
             <p>
-              Two founders in TK's accelerator batch announced they were going to
-              disrupt the wedding industry. Neither had worked in it. Neither had
-              ever been married. They failed, and the reason was not execution.
-              They were disconnected from the Who, so they never understood the
-              problem they claimed to solve.
+              Defining an ICP is only step one. Step two is Operationalizing it.
+              This means your ICP shouldn't just exist in a slide deck; it
+              should live in your CRM, your weekly sales meeting, and your
+              product roadmap. This is the core of a
+              <a
+                href="https://www.tkkader.com/go-to-market-strategy/"
+                target="_blank"
+                >scalable SaaS Go-To-Market (GTM) Strategy</a
+              >.
             </p>
             <p>
-              Once your network is exhausted, then you can go wider. Post on
-              LinkedIn or X about the urgent problem and who you serve, share your
-              value proposition, and ask people to get on a call so you can
-              understand their needs. Nothing fancy. But do that
-              <em>after</em> the network, not instead of it.
-            </p>
-          </div>
-
-          <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
-            Principle 2: Consistency (Where the Money Starts Flowing)
-          </h3>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-8"
-          >
-            <p>
-              You have ten customers. Now you need ten more, and then ten more
-              after that. The name of the game is no longer proof, it is
-              <strong>consistency</strong>.
+              To truly operationalize your ICP, you need to apply the 10x Rule.
+              You must identify a segment of the market where your solution is
+              not just marginally better, but 10x better than the alternative.
+              Often, the alternative is a spreadsheet or manual process. If you
+              can prove a 10x ROI for a specific vertical, you have found your
+              "Unstoppable" niche.
             </p>
             <p>
-              Here is the catch. To land those first ten you probably did eighty
-              different things and said eighty different things. Somewhere in
-              there is a pattern. Finding it is the work of this stage, and it
-              breaks into three pieces:
+              Finally, stop guessing and Follow the Revenue. Analyze your last
+              10 Closed-Won deals. What patterns emerge? Are they all from the
+              same industry? Do they all use the same tech stack? Conversely,
+              look at your Closed-Lost deals. Often, you will find that you are
+              losing deals that never should have been in the pipeline to begin
+              with because they were outside your ICP.
             </p>
-          </div>
 
-          <div class="space-y-6 mb-8">
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >1</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    Your Ideal Customer Profile
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    Look at the customers you have and find the pattern in who
-                    gets the most value. A segment, a company type, a title, a
-                    trigger. TK runs founders through a 29-point process to flesh
-                    this out, because it is what tells you who is buying and who
-                    is not, so you can go find more of the former. Start with the
-                    <a href="#icp-template" class="text-red-600 hover:underline"
-                      >free ICP template</a
-                    >
-                    and the 3-Part Framework above.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >2</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    Your Messaging Manifesto
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    The value proposition is one sentence. The
-                    <strong>Manifesto</strong> is everything that grows out of it:
-                    what you do, the transformation you bring to the market, who
-                    the competition is, why you are ten times better, and how you
-                    shorten the distance between understanding you and buying from
-                    you. Get this right and you stop rewriting your homepage every
-                    month. It also settles your cold email, your LinkedIn posts,
-                    your lead magnet, your pitch deck, and your ADs.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="bg-white border border-slate-200 rounded-lg p-6">
-              <div class="flex items-start gap-4">
-                <span
-                  class="flex-shrink-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm"
-                  >3</span
-                >
-                <div>
-                  <h4 class="font-serif text-xl font-bold text-slate-900 mb-2">
-                    Your First Broadway Show
-                  </h4>
-                  <p class="font-sans text-slate-600">
-                    A <strong>Broadway Show</strong> is a consistent, repeatable
-                    set of sales and marketing activities that puts your message
-                    in front of your ICP week after week. This is what converts
-                    the flat line into a curve that climbs, because the same
-                    message reaches more of the right people every single week.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
-          >
-            <p>
-              Notice what makes this possible. A linear launch leaves you with a
-              spike and no data. A multi-threaded launch leaves you with ten
-              customers, a record of what you said to each of them, and who
-              responded. That is the raw material an actual go-to-market strategy
-              is built from, and it is the reason your ICP at this stage is
-              grounded in evidence rather than assumption.
-            </p>
-          </div>
-
-          <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
-            Principle 3: Scale (The Dual Flank)
-          </h3>
-
-          <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-8"
-          >
-            <p>
-              Consistency earns you the right to scale. You know who you are
-              selling to and exactly what to say, and when your ICP reads your
-              Manifesto they nod. Now you can press on the gas, whether that is
-              raising a round on the strength of a repeatable motion or feeding
-              profits back into the machine.
-            </p>
-            <p>Here is the shape of the market you are pressing into:</p>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-green-50 border border-green-200 p-6 rounded-lg">
-              <div class="text-4xl font-bold text-green-700 mb-2">3%</div>
-              <div
-                class="text-sm uppercase tracking-widest text-green-800 font-bold mb-2"
-              >
-                Ready to buy now
-              </div>
-              <p class="text-slate-600 text-sm">
-                Actively researching a solution. You capture this demand by
-                targeting them directly with ADs, now that your messaging and
-                targeting are proven.
-              </p>
-            </div>
-            <div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
-              <div class="text-4xl font-bold text-blue-700 mb-2">97%</div>
-              <div
-                class="text-sm uppercase tracking-widest text-blue-800 font-bold mb-2"
-              >
-                Not in market yet
-              </div>
-              <p class="text-slate-600 text-sm">
-                They do not know about you, or do not yet know they have the
-                problem. You create this demand by educating them until they
-                become buyers.
+            <div class="bg-slate-900 text-white p-8 rounded-lg my-8">
+              <p class="font-serif text-xl leading-relaxed">
+                The Unstoppable ICP method follows a rigorous
+                <strong>29-point analysis</strong> to define your Ideal Customer
+                Profile and hone in on the subset of the market that is most
+                likely to purchase your solution now.
               </p>
             </div>
           </div>
 
           <div
-            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
           >
-            <p>
-              Running at both at once is the
-              <strong>dual flank strategy</strong>. One Broadway Show captures the
-              demand that already exists in the 3%. A second, larger one creates
-              demand across the rest of the market through ADs, organic content,
-              and events, teaching people they have a problem and why you are ten
-              times better at solving it. Capturing demand and creating demand,
-              running together. That is when it stops being a launch and starts
-              being a machine.
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              Transform Your GTM Strategy
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Grab a complimentary copy of the <strong>5-Point AI/SaaS Growth Strategy Guide</strong>
+              and learn how to transform your GTM Strategy with an Unstoppable Ideal Customer
+              Profile and scale growth.
             </p>
-          </div>
-
-          <!-- Launch Program: substantive post-framework CTA -->
-          <div class="relative overflow-hidden bg-slate-900 text-white p-10 md:p-14 rounded-2xl">
-            <div aria-hidden="true" class="absolute -top-32 -left-24 w-96 h-96 rounded-full bg-red-600 opacity-25 blur-3xl"></div>
-            <div aria-hidden="true" class="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-red-500 opacity-15 blur-3xl"></div>
-            <div class="relative">
-              <div class="flex items-center gap-4 mb-6">
-                <div class="flex flex-col">
-                  <span class="font-serif text-2xl font-bold text-white leading-none">The Launch Program</span>
-                  <span class="font-sans text-xs font-bold text-red-400 uppercase tracking-widest mt-1">For Pre-Revenue Founders</span>
-                </div>
-              </div>
-              <h3 class="font-serif text-3xl md:text-5xl font-bold mb-5 leading-tight max-w-3xl">
-                You've got the playbook. Now go build the business.
-              </h3>
-              <p class="font-sans text-slate-300 text-lg md:text-xl leading-relaxed max-w-3xl mb-8">
-                An ICP on its own is just a document. The hard part is everything after it: the
-                positioning, the messaging, and the Launch Funnel that turns all of it into real
-                revenue. Inside the <strong class="text-white">Launch Program</strong>, TK works with
-                you to build and run that motion, so you get to your first customers instead of
-                shipping one more feature.
-              </p>
-              <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-                <a
-                  href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=launch_plan_closing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-lg shadow-red-600/40"
-                >
-                  Apply to Join
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                  </svg>
-                </a>
-                <span class="font-sans text-sm text-slate-400">Application-based. TK reviews every application personally.</span>
-              </div>
-            </div>
+            <a
+              href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=part6_operationalize"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1 shadow-lg shadow-red-200"
+            >
+              Download the Free Guide &rarr;
+            </a>
           </div>
         </section>
 
-        <!-- PART 7: BOODLEBOX -->
-        <section id="boodlebox" class="mb-28 scroll-mt-28">
+        <!-- PART 7: CASE STUDY -->
+        <section id="casestudy" class="mb-28 scroll-mt-28">
           <div class="flex items-center gap-4 mb-6">
             <span
               class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest"
               >Part 7</span
+            >
+            <div class="h-px bg-red-100 flex-1"></div>
+          </div>
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900"
+          >
+            How Did Lavu Grow from $10M to $40M ARR Using an ICP?
+          </h2>
+
+          <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+            <strong
+              >Lavu grew from $10M to $40M+ ARR by narrowing their ICP from "all
+              restaurants" to a specific restaurant segment where their POS
+              features delivered 10x value.</strong
+            >
+            CEO Saleem Khatri analyzed revenue data using this exact ICP
+            framework to identify their best customers. By saying "no" to
+            non-ICP prospects, they aligned marketing, sales, and product teams,
+            dramatically reducing churn while achieving 4x revenue growth and
+            profitability.
+          </p>
+
+          <div
+            class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
+            style="
+              background-image: url(&quot;https://img.youtube.com/vi/K8YoRPB1ft8/maxresdefault.jpg&quot;);
+            "
+            onclick="
+              this.onclick = null;
+              this.innerHTML =
+                '<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/K8YoRPB1ft8?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>';
+            "
+          >
+            <div class="play-button">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </div>
+          </div>
+
+          <div class="bg-green-50 border-l-4 border-green-600 p-8 mb-10">
+            <span
+              class="font-sans font-bold text-green-800 text-xs uppercase tracking-widest mb-2 block"
+              >The Outcome</span
+            >
+            <p class="font-serif text-3xl font-bold text-slate-900">
+              $10M to $40M+ ARR
+            </p>
+            <p class="font-sans text-slate-600 mt-2">
+              Saleem Khatri, CEO of Lavu, used this exact framework to escape
+              the "Dead Zone."
+            </p>
+          </div>
+
+          <div
+            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
+          >
+            <p>
+              Saleem Khatri took over as CEO of Lavu when the company was at
+              roughly $10M ARR. This is what we call the "Dead Zone" - where
+              growth often stalls because what got you to $10M (Founder-led
+              sales, brute force) won't get you to $100M.
+            </p>
+            <p>
+              The problem was a lack of focus. Lavu, a POS system for
+              restaurants, was selling to everyone: food trucks, fine dining,
+              pizzerias, and coffee shops. Their messaging was diluted, and
+              their product team was overwhelmed trying to build features for
+              everyone.
+            </p>
+            <p>
+              Using this exact ICP framework, Saleem did the hard work of
+              redefining his ICP. They analyzed the revenue data and realized
+              their "Unstoppable" segment was a specific type of restaurant
+              where their feature set was undeniable. They said "No" to the
+              rest. This focus allowed them to align their marketing, sales, and
+              product teams, drastically reducing churn and leading to a massive
+              acceleration from $10M to $40M+ ARR while achieving profitability.
+            </p>
+          </div>
+
+          <div
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
+          >
+            <span class="font-sans font-bold text-[#1d7874] text-xs uppercase tracking-widest mb-3 block">Your Next Move</span>
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              Lavu defined their ICP. Now go attract yours.
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Lavu went from $10M to $40M+ ARR by getting their ICP right. Once you've defined yours,
+              the next move is filling the pipeline. <strong>Instant</strong> builds the inbound funnel
+              that attracts your ICP&mdash;automatically.
+            </p>
+            <a
+              href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=case_study_lavu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-[#1d7874] text-white px-8 py-4 rounded-full font-bold hover:bg-[#155a57] transition-transform hover:-translate-y-1 shadow-lg shadow-[#1d7874]/30"
+            >
+              Build Your Inbound Funnel &rarr;
+            </a>
+          </div>
+        </section>
+
+        <!-- PART 8: BOODLEBOX -->
+        <section id="boodlebox" class="mb-28 scroll-mt-28">
+          <div class="flex items-center gap-4 mb-6">
+            <span
+              class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest"
+              >Part 8</span
             >
             <div class="h-px bg-red-100 flex-1"></div>
           </div>
@@ -2340,40 +2046,179 @@
             </p>
           </div>
 
-          <!-- Launch Program: same closing CTA as the Launch GTM Plan section -->
+          <div
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
+          >
+            <span class="font-sans font-bold text-[#1d7874] text-xs uppercase tracking-widest mb-3 block">Your Next Move</span>
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              BoodleBox stopped selling to everyone. Now go attract your ICP.
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Once France defined BoodleBox's ICP, they could finally focus their go-to-market motion.
+              The next step after the ICP is the funnel. <strong>Instant</strong> attracts your ICP and
+              converts them into pipeline&mdash;automatically.
+            </p>
+            <a
+              href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=case_study_boodlebox"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-[#1d7874] text-white px-8 py-4 rounded-full font-bold hover:bg-[#155a57] transition-transform hover:-translate-y-1 shadow-lg shadow-[#1d7874]/30"
+            >
+              Build Your Inbound Funnel &rarr;
+            </a>
+          </div>
+        </section>
+
+        <!-- PART 9: THE GTM PLAN -->
+        <section id="gtm-plan" class="mb-28 scroll-mt-28">
+          <div class="flex items-center gap-4 mb-6">
+            <span
+              class="font-sans font-bold text-red-600 text-sm uppercase tracking-widest"
+              >Part 9</span
+            >
+            <div class="h-px bg-red-100 flex-1"></div>
+          </div>
+          <h2
+            class="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-900"
+          >
+            What Are the 6 Steps to Build a B2B SaaS GTM Strategy?
+          </h2>
+
+          <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+            <strong
+              >The 6 steps to build a scalable B2B SaaS GTM strategy are: (1)
+              Define your Target Market (ICP), (2) Identify the Macro Trend
+              creating urgency, (3) Establish Positioning (SMB vs Enterprise),
+              (4) Map Competition to prove 10x differentiation, (5) Create your
+              Messaging "Manifesto," and (6) Execute your "Broadway Show" of
+              sales and marketing activities.</strong
+            >
+            This is the exact framework used by companies that have scaled from
+            $10M to $40M+ ARR.
+          </p>
+
+          <!-- Video Facade -->
+          <div
+            class="video-facade w-full aspect-video rounded-lg shadow-sm mb-12 bg-slate-100 group"
+            style="
+              background-image: url(&quot;https://img.youtube.com/vi/XMem2vKeXbk/maxresdefault.jpg&quot;);
+            "
+            onclick="
+              this.onclick = null;
+              this.innerHTML =
+                '<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/XMem2vKeXbk?autoplay=1\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>';
+            "
+          >
+            <div class="play-button">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </div>
+          </div>
+
+          <div
+            class="font-sans text-lg text-slate-700 leading-loose space-y-6 mb-12"
+          >
+            <p>
+              Defining your Ideal Customer Profile (ICP) is the critical Step 1
+              of building a scalable Go-To-Market strategy. But it doesn't stop
+              there. Once you have defined your "Who," you must execute the next
+              5 steps to turn that definition into revenue.
+            </p>
+            <p>
+              In this comprehensive breakdown, we walk through the full 6-step
+              roadmap: from identifying the <strong>Macro Trend</strong> (Step
+              2) that creates urgency, to mapping out the
+              <strong>Competitive Landscape</strong> (Step 4), and finally
+              nailing your <strong>Messaging & Execution</strong> (Steps 5 & 6).
+              This is the exact playbook used by the most successful SaaS and AI
+              companies.
+            </p>
+          </div>
+
+          <div class="bg-slate-900 text-white p-8 rounded-lg mb-10">
+            <h3 class="font-serif font-bold text-2xl mb-4 text-white">
+              The 6-Step Unstoppable GTM Framework
+            </h3>
+            <ul class="space-y-4 font-sans">
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">1.</span>
+                <span
+                  ><strong>Target Market (ICP):</strong> The bounding box of who
+                  you serve.</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">2.</span>
+                <span
+                  ><strong>Macro Trend:</strong> The "Why Now?" that creates
+                  urgency.</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">3.</span>
+                <span
+                  ><strong>Positioning:</strong> Which segment (SMB vs
+                  Enterprise) do you own?</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">4.</span>
+                <span
+                  ><strong>Competition:</strong> How are you 10x better than the
+                  alternatives?</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">5.</span>
+                <span
+                  ><strong>Messaging:</strong> The "Manifesto" that educates the
+                  market.</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 font-bold">6.</span>
+                <span
+                  ><strong>Execution:</strong> The "Broadway Show" of sales &
+                  marketing activities.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Instant: substantive post-framework CTA -->
           <div class="relative overflow-hidden bg-slate-900 text-white p-10 md:p-14 rounded-2xl">
-            <div aria-hidden="true" class="absolute -top-32 -left-24 w-96 h-96 rounded-full bg-red-600 opacity-25 blur-3xl"></div>
-            <div aria-hidden="true" class="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-red-500 opacity-15 blur-3xl"></div>
+            <div aria-hidden="true" class="absolute -top-32 -left-24 w-96 h-96 rounded-full bg-[#1d7874] opacity-25 blur-3xl"></div>
+            <div aria-hidden="true" class="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-[#5dd9d3] opacity-15 blur-3xl"></div>
             <div class="relative">
               <div class="flex items-center gap-4 mb-6">
+                <img src="/instant-logo.png" alt="Instant" class="h-14 w-14 rounded-lg" />
                 <div class="flex flex-col">
-                  <span class="font-serif text-2xl font-bold text-white leading-none">The Launch Program</span>
-                  <span class="font-sans text-xs font-bold text-red-400 uppercase tracking-widest mt-1">For Pre-Revenue Founders</span>
+                  <span class="font-serif text-2xl font-bold text-white leading-none">Instant</span>
+                  <span class="font-sans text-xs font-bold text-[#5dd9d3] uppercase tracking-widest mt-1">For B2B Revenue Teams</span>
                 </div>
               </div>
               <h3 class="font-serif text-3xl md:text-5xl font-bold mb-5 leading-tight max-w-3xl">
-                You've got the playbook. Now go build the business.
+                You've got the playbook. Now build the funnel.
               </h3>
               <p class="font-sans text-slate-300 text-lg md:text-xl leading-relaxed max-w-3xl mb-8">
-                An ICP on its own is just a document. The hard part is everything after it: the
-                positioning, the messaging, and the Launch Funnel that turns all of it into real
-                revenue. Inside the <strong class="text-white">Launch Program</strong>, TK works with
-                you to build and run that motion, so you get to your first customers instead of
-                shipping one more feature.
+                An ICP without a funnel is just a document. Once you know who you're targeting, you need
+                a system that attracts them, captures their info, and starts the conversation&mdash;automatically.
+                That's exactly what <strong class="text-white">Instant</strong> does: AI-built inbound lead
+                generation funnels that fill your pipeline with your ICP.
               </p>
               <div class="flex flex-col sm:flex-row sm:items-center gap-4">
                 <a
-                  href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=case_study_boodlebox"
+                  href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=part9_closing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-lg shadow-red-600/40"
+                  class="inline-flex items-center justify-center gap-2 bg-[#1d7874] hover:bg-[#155a57] text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-lg shadow-[#1d7874]/40"
                 >
-                  Apply to Join
+                  Build Your Inbound Funnel
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                 </a>
-                <span class="font-sans text-sm text-slate-400">Application-based. TK reviews every application personally.</span>
               </div>
             </div>
           </div>
@@ -2404,8 +2249,8 @@
                 We provide a <a href="#icp-template" class="text-red-600 underline hover:text-red-700">free ICP template</a>
                 in this guide that covers the 3-part framework: Firmographics (the "Who"),
                 Triggers (the "When"), and Macro Trends (the "Why Now"). Once you have
-                your ICP, the <a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=faq" target="_blank" class="text-red-600 underline hover:text-red-700 font-semibold">Launch Program</a>
-                is where TK works with you to turn it into positioning, messaging, and revenue.
+                your ICP, <a href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=faq" target="_blank" class="text-[#1d7874] underline hover:text-[#155a57] font-semibold">Instant</a>
+                builds the inbound funnel that attracts them and turns them into pipeline.
               </dd>
             </div>
             <div>
@@ -2626,7 +2471,7 @@
       <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-left">
         <div>
           <a
-            href="https://www.getunstoppable.com"
+            href="https://www.getunstoppable.com?utm_source=icp&utm_medium=organic&utm_campaign=footer_logo"
             target="_blank"
             class="flex items-center gap-3 mb-6 w-fit hover:opacity-80 transition-opacity"
           >

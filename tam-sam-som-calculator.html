@@ -8,8 +8,6 @@
     <meta name="author" content="TK Kader">
     <meta name="keywords" content="TAM SAM SOM calculator, TAM calculator, market sizing calculator, total addressable market, serviceable available market, serviceable obtainable market, B2B SaaS market size, SaaS market sizing">
 
-    <!-- FAVICON -->
-
     <!-- CANONICAL -->
     <link rel="canonical" href="https://www.idealcustomerprofile.com/tam-sam-som-calculator" />
 
@@ -32,7 +30,6 @@
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://img.youtube.com">
     <link rel="preconnect" href="https://www.tkkader.com">
-    <link rel="preconnect" href="https://www.getunstoppable.com">
         <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
@@ -197,34 +194,6 @@
     </script>
 
     <style>
-      /* Make the embedded Unstoppable header sticky.
-         sales-header.js appends its .ush-header INTO #unstoppable-header, and a
-         sticky element is confined to its parent's box. So the sticky must live on
-         the wrapper (a direct child of <body>, so its containing block is the full
-         page), NOT on .ush-header itself, which would have no room to travel.
-         z-index 50 matches the nav this replaced: above content, below the
-         exit-intent modal at z-[60]. */
-      #unstoppable-header {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-      }
-
-      /* Match the embed's bar to the page container (max-w-7xl mx-auto px-4 md:px-6).
-         The script caps .ush-bar at 1120px and appends its stylesheet at runtime, so
-         a plain .ush-bar rule would lose on source order. The #id scope wins on
-         specificity instead. Its 24px padding already equals px-6; the media query
-         below matches px-4 under the md breakpoint. */
-      #unstoppable-header .ush-bar {
-        max-width: 80rem;
-      }
-      @media (max-width: 767px) {
-        #unstoppable-header .ush-bar {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
-
         body { font-family: 'Inter', sans-serif; background-color: #FFFEFC; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Crimson Pro', serif; }
 
@@ -249,17 +218,26 @@
     </noscript>
 
 
-    <!-- UNSTOPPABLE STANDARD HEADER -->
-    <div id="unstoppable-header"></div>
-    <script src="https://www.getunstoppable.com/sales-header.js" async></script>
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-[#FFFEFC]/95 backdrop-blur border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans hover:opacity-80 transition-opacity">
+                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm" />
+                <span>Ideal Customer Profile<span class="text-red-600">.com</span></span>
+            </a>
+            <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105">
+                Get Help Building Your ICP &rarr;
+            </a>
+        </div>
+    </nav>
 
     <!-- MOBILE STICKY BOTTOM BAR -->
     <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-4 z-50 flex items-center justify-between shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
         <div class="text-xs font-bold text-slate-500 font-sans">
             Size your <span class="text-red-600">market</span> opportunity.
         </div>
-        <a href="https://tkkader.com/launch-program?utm_source=icp&utm_medium=organic&utm_campaign=mobile_sticky" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
-            Launch Program &rarr;
+        <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
+            GTM Program &rarr;
         </a>
     </div>
 
