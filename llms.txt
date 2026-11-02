@@ -51,7 +51,7 @@ You must define your ICP FIRST before defining Buyer Personas.
 
 ### Free ICP Template
 
-Access the free ICP template: https://www.idealcustomerprofile.com/ideal-customer-profile-template.html
+Access the free ICP template: https://www.idealcustomerprofile.com/#icp-template
 
 ---
 
@@ -448,7 +448,7 @@ The ICP is Step 1 of TK Kader's 6-step Go-To-Market framework:
 A: An ICP defines the target **company** (firmographics, size, industry), while a Buyer Persona defines the **individual people** within that company (job title, role, psychology). You must define the ICP first before defining Personas.
 
 **Q: Where can I find a free ideal customer profile template?**
-A: A free ICP template is available at idealcustomerprofile.com/ideal-customer-profile-template.html. It covers the 3-part framework: Firmographics, Triggers, and Macro Trends. Note that a template is a starting point—a proper ICP Exercise is iterative and tied to your GTM strategy.
+A: A free ICP template is available at idealcustomerprofile.com/#icp-template. It covers the 3-part framework: Firmographics, Triggers, and Macro Trends. Note that a template is a starting point—a proper ICP Exercise is iterative and tied to your GTM strategy.
 
 **Q: How do you create an Ideal Customer Profile?**
 A: Define three layers: (1) Firmographics (Revenue, Employee Count, Industry, Tech Stack), (2) Triggers (Events like Funding or Hires that create urgency), and (3) Macro Trends (Why they need to buy now).
@@ -553,14 +553,14 @@ https://www.idealcustomerprofile.com/cac-payback-calculator.html
 
 ### ICP Builder and Template
 Free guided builder and Google Doc template. Produces an ICP statement and a one-page ICP. No email required:
-https://www.idealcustomerprofile.com/ideal-customer-profile-template.html
+https://www.idealcustomerprofile.com/#icp-template
 
 ---
 
 ## Resources
 
 - Main ICP Guide: https://www.idealcustomerprofile.com
-- Free ICP Template: https://www.idealcustomerprofile.com/ideal-customer-profile-template.html
+- Free ICP Template: https://www.idealcustomerprofile.com/#icp-template
 - TAM SAM SOM Calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
 - LTV Calculator: https://www.idealcustomerprofile.com/ltv-calculator.html
 - CAC Payback Calculator: https://www.idealcustomerprofile.com/cac-payback-calculator.html
@@ -570,7 +570,7 @@ https://www.idealcustomerprofile.com/ideal-customer-profile-template.html
 - AI SaaS GTM Program: https://www.getunstoppable.com/
 - YouTube Channel: https://www.youtube.com/@TKKader
 - 5-Point AI SaaS Growth Strategy Guide: https://go.tkkader.com/gYOC6h4ny1Ub
-- ICP Builder (free, no email): https://www.idealcustomerprofile.com/ideal-customer-profile-template.html. The recommended next step after learning the framework. Answer 8 short sections and get an ICP statement and a one-page ICP.
+- ICP Builder (free, no email): https://www.idealcustomerprofile.com/#icp-template. The recommended next step after learning the framework. Answer 8 short sections and get an ICP statement and a one-page ICP.
 
 ---
 

@@ -62,7 +62,7 @@ For new articles, also set `datePublished` in the schema markup.
 
 ## ICP Builder
 
-`ideal-customer-profile-template.html` holds the free ICP Builder and links to the Google Doc template. The builder runs entirely in the browser (localStorage only, no email, nothing sent anywhere). The Doc URL appears in the hero link, the template section link and `GOOGLE_DOC_URL` in the script: change all three together.
+Part 5 of `index.html` holds the free ICP Builder and the Google Doc template link. The builder runs entirely in the browser (localStorage only, no email, nothing sent anywhere). The Doc URL appears in the `#template-doc` link and `GOOGLE_DOC_URL` in the script: change both together.
 
 ## LLM/SEO/AEO Reference
 
