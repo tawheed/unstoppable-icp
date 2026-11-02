@@ -1,6 +1,12 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
+  "redirects": [
+    { "source": "/CLAUDE.md", "destination": "/", "permanent": true },
+    { "source": "/DESIGN-GUIDE.md", "destination": "/", "permanent": true },
+    { "source": "/tailwind.config.js", "destination": "/", "permanent": true },
+    { "source": "/src/:path*", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)\\.html",

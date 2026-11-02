@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC Payback Period Calculator - Free SaaS Payback Calculator</title>
-    <meta name="description" content="Free CAC Payback Period Calculator for B2B SaaS founders. Calculate how many months to recover your Customer Acquisition Cost. Learn how ICP focus reduces payback period.">
+    <title>CAC Payback Period: Formula + Calculator for SaaS</title>
+    <meta name="description" content="CAC Payback Period = CAC / (Monthly ARPU x Gross Margin). Use the free calculator, see SaaS benchmarks, and learn how ICP focus shortens your payback.">
     <meta name="author" content="TK Kader">
     <meta name="keywords" content="CAC payback period calculator, payback period calculator, SaaS payback period, customer acquisition cost payback, CAC recovery, SaaS metrics calculator, B2B SaaS payback">
 
@@ -14,8 +14,8 @@
     <!-- OPEN GRAPH -->
     <meta property="og:site_name" content="Ideal Customer Profile by TK Kader" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CAC Payback Period Calculator - Free SaaS Payback Calculator" />
-    <meta property="og:description" content="Free CAC Payback Period Calculator for B2B SaaS founders. Calculate how many months to recover your Customer Acquisition Cost." />
+    <meta property="og:title" content="CAC Payback Period: Formula + Calculator for SaaS" />
+    <meta property="og:description" content="CAC Payback Period = CAC / (Monthly ARPU x Gross Margin). Use the free calculator, see SaaS benchmarks, and learn how ICP focus shortens your payback." />
     <meta property="og:url" content="https://www.idealcustomerprofile.com/cac-payback-calculator.html" />
     <meta property="og:image" content="https://img.youtube.com/vi/DhLTRqplnTM/maxresdefault.jpg" />
 
@@ -79,8 +79,6 @@
       window.fbq('track', 'PageView');
     </script>
 
-    <!-- TAILWIND CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -253,6 +251,8 @@
         .calc-input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; transition: border-color 0.2s; }
         .calc-input:focus { outline: none; border-color: #DC2626; }
     </style>
+    <!-- TAILWIND CSS (compiled; bump ?v= after npm run build) -->
+    <link rel="stylesheet" href="/dist/output.css?v=20261102" />
 </head>
 <body class="text-slate-800 bg-[#FFFEFC] selection:bg-yellow-200 selection:text-slate-900 pb-20 md:pb-0">
     <!-- Pixel fallbacks. Here, not in <head>: a noscript in head may only hold link/style/meta. -->
@@ -266,10 +266,9 @@
     <nav class="sticky top-0 z-50 bg-[#FFFEFC]/95 backdrop-blur border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="/" class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans hover:opacity-80 transition-opacity">
-                <img src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png" alt="TK Kader Logo" class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm" />
                 <span>Ideal Customer Profile<span class="text-red-600">.com</span></span>
             </a>
-            <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105">
+            <a href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic" class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105">
                 Get Help Building Your ICP &rarr;
             </a>
         </div>
@@ -280,7 +279,7 @@
         <div class="text-xs font-bold text-slate-500 font-sans">
             Calculate your <span class="text-red-600">payback</span> period.
         </div>
-        <a href="https://www.tkkader.com/gtm?utm_source=icp&utm_medium=organic" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
+        <a href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic" class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center" target="_blank">
             GTM Program &rarr;
         </a>
     </div>
@@ -297,10 +296,10 @@
     <!-- HERO SECTION -->
     <header class="pt-8 pb-8 text-center px-4 max-w-4xl mx-auto">
         <h1 class="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-[1.1] tracking-tight">
-            CAC Payback Period Calculator
+            CAC Payback Period: Formula + Calculator
         </h1>
         <p class="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-sans font-light">
-            Calculate how many months it takes to recover your <strong class="text-slate-900 font-semibold">Customer Acquisition Cost (CAC)</strong> through gross profit. A healthy SaaS payback period is under 12 months. Learn how focusing on your ICP dramatically reduces payback time.
+            <strong class="text-slate-900 font-semibold">CAC Payback Period = CAC / (Monthly ARPU x Gross Margin).</strong> It's the number of months it takes to recover your <strong class="text-slate-900 font-semibold">Customer Acquisition Cost (CAC)</strong> through gross profit. A healthy SaaS payback period is under 12 months. Run your numbers below, then learn how focusing on your ICP dramatically reduces payback time.
         </p>
     </header>
 
@@ -835,7 +834,7 @@
                 <ul class="space-y-3">
                     <li><a href="/saas-marketing.html" class="hover:text-slate-900 transition-colors">SaaS Marketing Guide</a></li>
                     <li><a href="/b2b-saas-lead-generation.html" class="hover:text-slate-900 transition-colors">B2B SaaS Lead Generation Guide</a></li>
-                    <li><a href="/#icp-template" class="hover:text-slate-900 transition-colors">Free ICP Template</a></li>
+                    <li><a href="/ideal-customer-profile-template.html" class="hover:text-slate-900 transition-colors">Free ICP Template</a></li>
                 </ul>
             </div>
             <div>

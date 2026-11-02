@@ -57,9 +57,12 @@ For new articles, also set `datePublished` in the schema markup.
 - **Navigation**: Sticky header with logo and CTA (line ~311)
 - **Mobile sticky bottom CTA bar** (line ~324): Fixed bottom bar visible only on mobile
 - **Video facades**: Click-to-load YouTube embeds using `onclick` inline handlers (multiple sections)
-- **Interactive "Bad ICP Calculator"** (lines ~544-595): Vanilla JS calculator with formatted number inputs
 - **Table of Contents sidebar** (line ~351): Desktop-only with scroll-spy highlighting
 - **Exit intent modal** (lines ~908-956): Shows on mouse leave (desktop only)
+
+## ICP Builder
+
+`ideal-customer-profile-template.html` holds the free ICP Builder and links to the Google Doc template. The builder runs entirely in the browser (localStorage only, no email, nothing sent anywhere). The Doc URL appears in the hero link, the template section link and `GOOGLE_DOC_URL` in the script: change all three together.
 
 ## LLM/SEO/AEO Reference
 
