@@ -471,7 +471,7 @@
       }
     </style>
       <!-- TAILWIND CSS (compiled; bump ?v= after npm run build) -->
-    <link rel="stylesheet" href="/dist/output.css?v=20261102" />
+    <link rel="stylesheet" href="/dist/output.css?v=20261102b" />
   </head>
   <body
     class="text-slate-800 bg-[#FFFEFC] selection:bg-yellow-200 selection:text-slate-900 pb-20 md:pb-0"
@@ -2422,9 +2422,8 @@
     <script>
     (function () {
         var STORAGE_KEY = 'icp-builder-v1';
-        // The Google Doc's "make a copy" URL. The link above the builder holds the same URL in the HTML.
-        var GOOGLE_DOC_URL = 'https://docs.google.com/document/d/1J61Bo_4vWDh9XgogkX0FWGaH4yU9-JgeaAUBJvOb4HQ/copy';
         var GTM_URL = 'https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=icp_builder_result';
+        var GTM_STEP_URL = 'https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=icp_builder_step';
 
         var STEPS = [
             { title: 'Your Company', intro: 'Start with what you sell. This keeps the rest of your ICP anchored to a real problem.', fields: [
@@ -2620,6 +2619,7 @@
                             (index > 0 ? '<button type="button" data-nav="back" class="text-slate-300 font-semibold hover:text-white transition-colors">&larr; Back</button>' : '<span></span>') +
                             '<button type="button" data-nav="next" class="bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors">' + (index === STEPS.length - 1 ? 'Build My ICP &rarr;' : 'Next &rarr;') + '</button>' +
                         '</div>' +
+                        '<p class="text-sm text-slate-400 font-sans border-t border-slate-700 mt-8 pt-6">Want help? In the Unstoppable GTM Program, we help you follow the 29-point ICP Framework. <a href="' + GTM_STEP_URL + '" target="_blank" rel="noopener" data-gtm-step class="text-white underline hover:text-slate-200">Learn more &rarr;</a></p>' +
                     '</div>' +
                 '</div>' +
                 '<p class="text-xs text-slate-500 font-sans mt-4 text-center">Free, with no email required. Your answers stay in this browser and are never sent anywhere.</p>';
@@ -2632,12 +2632,10 @@
             var gapList = gaps();
             var gapsHtml = gapList.length ?
                 '<div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-10"><h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Worth Going Back To</h4><ul class="list-disc pl-5 space-y-1 font-sans text-slate-700">' + gapList.map(function (gap) { return '<li>' + esc(gap) + '</li>'; }).join('') + '</ul></div>' : '';
-            var docButton = GOOGLE_DOC_URL ? '<a href="' + esc(GOOGLE_DOC_URL) + '" target="_blank" rel="noopener" data-doc-link class="bg-white border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-full font-bold hover:bg-slate-50 transition-colors">Get the Google Doc</a>' : '';
-
             root.innerHTML =
                 '<div id="icp-result" class="bg-white border border-slate-200 rounded-xl p-6 md:p-10 shadow-xl">' +
                     '<h3 id="builder-heading" tabindex="-1" class="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-3 focus:outline-none">Your Ideal Customer Profile</h3>' +
-                    '<p class="font-sans text-slate-600 mb-8">Here\'s your first iteration. Edit the statement, then copy the whole thing.</p>' +
+                    '<p class="font-sans text-slate-600 mb-8">Here\'s your first iteration. Edit the statement until it sounds like you.</p>' +
                     '<label for="icp-statement" class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">ICP Statement</label>' +
                     '<textarea id="icp-statement" rows="7" class="calc-input font-sans text-slate-800">' + esc(currentStatement()) + '</textarea>' +
                     '<button type="button" data-action="regenerate" class="text-sm text-red-600 font-semibold hover:underline mt-2 mb-10">Rebuild from my answers</button>' +
@@ -2645,11 +2643,7 @@
                     '<div class="overflow-x-auto mb-10"><table class="w-full border-collapse font-sans text-base"><tbody>' + rows + '</tbody></table></div>' +
                     gapsHtml +
                     '<div class="flex flex-wrap items-center gap-3 mb-10">' +
-                        '<button type="button" data-action="copy" class="bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition-colors">Copy My ICP</button>' +
-                        docButton +
                         '<button type="button" data-action="edit" class="text-slate-600 font-semibold hover:text-slate-900 transition-colors px-2">Edit Answers</button>' +
-                        '<button type="button" data-action="reset" class="text-slate-500 font-semibold hover:text-slate-900 transition-colors px-2">Start Over</button>' +
-                        '<span id="copy-status" role="status" class="text-sm font-semibold text-green-600"></span>' +
                     '</div>' +
                     '<div class="bg-slate-900 text-white p-8 rounded-lg">' +
                         '<h4 class="font-serif text-2xl font-bold mb-3">Your ICP Is a First Iteration</h4>' +
@@ -2684,36 +2678,6 @@
             }
         }
 
-        function resultAsText() {
-            var lines = ['MY IDEAL CUSTOMER PROFILE', '', currentStatement(), ''];
-            documentRows().forEach(function (row) {
-                if (row[1]) lines.push(row[0] + ': ' + row[1]);
-            });
-            lines.push('', 'Built with the free ICP Builder: https://www.idealcustomerprofile.com/#builder');
-            return lines.join('\n');
-        }
-        function copyToClipboard(value, statusEl, doneText) {
-            function done(ok) {
-                if (statusEl) statusEl.textContent = ok ? doneText : 'Copy failed. Select the text and copy it manually.';
-            }
-            function fallback() {
-                var area = document.createElement('textarea');
-                area.value = value;
-                area.style.position = 'fixed';
-                area.style.opacity = '0';
-                document.body.appendChild(area);
-                area.select();
-                var ok = false;
-                try { ok = document.execCommand('copy'); } catch (e) {}
-                document.body.removeChild(area);
-                done(ok);
-            }
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(value).then(function () { done(true); }, fallback);
-            } else {
-                fallback();
-            }
-        }
         root.addEventListener('input', function (event) {
             var target = event.target;
             if (target.dataset.field) {
@@ -2762,25 +2726,12 @@
                 var statementEl = document.getElementById('icp-statement');
                 if (statementEl) statementEl.value = statement();
                 fitStatement();
-            } else if (data.action === 'copy') {
-                copyToClipboard(resultAsText(), document.getElementById('copy-status'), 'Copied.');
-                track('icp_builder_copied');
             } else if (data.action === 'edit') {
                 state.step = 0;
                 save();
                 render(true);
-            } else if (data.action === 'reset') {
-                if (button.dataset.confirming) {
-                    state = { step: 0, answers: {} };
-                    started = false;
-                    try { window.localStorage.removeItem(STORAGE_KEY); } catch (e) {}
-                    render(true);
-                } else {
-                    button.dataset.confirming = '1';
-                    button.textContent = 'Click again to erase everything';
-                }
-            } else if (button.hasAttribute('data-doc-link')) {
-                track('icp_doc_clicked', { location: 'builder_result' });
+            } else if (button.hasAttribute('data-gtm-step')) {
+                track('icp_gtm_clicked', { location: 'builder_step', step_number: state.step + 1 });
             } else if (button.hasAttribute('data-gtm-link')) {
                 track('icp_gtm_clicked', { location: 'builder_result' });
             }

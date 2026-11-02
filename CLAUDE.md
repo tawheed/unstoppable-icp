@@ -62,7 +62,7 @@ For new articles, also set `datePublished` in the schema markup.
 
 ## ICP Builder
 
-Part 5 of `index.html` holds the free ICP Builder and the Google Doc template link. The builder runs entirely in the browser (localStorage only, no email, nothing sent anywhere). The Doc URL appears in the `#template-doc` link and `GOOGLE_DOC_URL` in the script: change both together.
+Part 5 of `index.html` holds the free ICP Builder and the Google Doc template link. The builder runs entirely in the browser (localStorage only, no email, nothing sent anywhere). The Doc URL is in the `#template-doc` link.
 
 ## LLM/SEO/AEO Reference
 
