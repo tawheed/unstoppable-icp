@@ -1,6 +1,6 @@
 # robots.txt - AI and Search Engine Crawler Configuration
 # Site: idealcustomerprofile.com
-# Last Updated: November 2026
+# Last Updated: January 2026
 
 # =============================================================================
 # SEARCH ENGINE CRAWLERS (SEO)
@@ -55,12 +55,6 @@ User-agent: Claude-Web
 Allow: /
 
 User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Claude-User
 Allow: /
 
 User-agent: Anthropic-AI

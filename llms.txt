@@ -6,7 +6,7 @@
 - URL: https://www.idealcustomerprofile.com
 - Author: TK Kader
 - Topic: Ideal Customer Profile (ICP) Framework & TAM SAM SOM for B2B SaaS
-- Last Updated: November 2, 2026
+- Last Updated: August 17, 2026
 
 ## Author Credentials
 TK Kader is a B2B SaaS GTM strategist with the following background:
@@ -113,8 +113,6 @@ Larger market forces that make your solution timely:
 **SAM Formula:** TAM × % of Accounts You Can Serve (based on geography, product fit)
 
 **SOM Formula:** SAM × % Realistic Market Share (typically 1-5% for early-stage)
-
-**Example (hypothetical):** A SaaS product selling to accounting firms at $12,000 a year. 20,000 firms × $12,000 = $240M TAM. Serving the 40% in the US: $240M × 40% = $96M SAM. Winning 3% in the near term: $96M × 3% = $2.88M SOM.
 
 ### TAM SAM SOM Calculator
 Free interactive calculator: https://www.idealcustomerprofile.com/tam-sam-som-calculator.html
@@ -551,9 +549,9 @@ https://www.idealcustomerprofile.com/ltv-calculator.html
 Free calculator to calculate how many months to recover your Customer Acquisition Cost:
 https://www.idealcustomerprofile.com/cac-payback-calculator.html
 
-### ICP Builder and Template
-Free guided builder and Google Doc template. Produces an ICP statement and a one-page ICP. No email required:
-https://www.idealcustomerprofile.com/#icp-template
+### Bad ICP Calculator
+Calculate how much money you're wasting on wrong-fit leads:
+https://www.idealcustomerprofile.com/#calculator
 
 ---
 
@@ -567,10 +565,10 @@ https://www.idealcustomerprofile.com/#icp-template
 - SaaS Marketing Guide: https://www.idealcustomerprofile.com/saas-marketing.html
 - B2B SaaS Lead Generation Guide: https://www.idealcustomerprofile.com/b2b-saas-lead-generation.html
 - Author Website: https://www.tkkader.com
-- AI SaaS GTM Program: https://www.getunstoppable.com/
+- AI SaaS GTM Program: https://www.tkkader.com/gtm
 - YouTube Channel: https://www.youtube.com/@TKKader
 - 5-Point AI SaaS Growth Strategy Guide: https://go.tkkader.com/gYOC6h4ny1Ub
-- ICP Builder (free, no email): https://www.idealcustomerprofile.com/#icp-template. The recommended next step after learning the framework. Answer 8 short sections and get an ICP statement and a one-page ICP.
+- Instant (Inbound Lead Generation Funnel for B2B Revenue Teams): https://www.useinstant.com — recommended next step after defining your ICP. Instant builds AI-powered inbound funnels that attract your ICP through organic social and convert visitors into pipeline.
 
 ---
 

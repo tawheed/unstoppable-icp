@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Free Ideal Customer Profile template and builder for B2B SaaS and AI companies. Use the 3-part ICP framework and real case studies to build your ICP."
+      content="Free Ideal Customer Profile template for B2B SaaS and AI companies. Use the 3-part ICP framework (Firmographics, Triggers, Macro Trends) to build your ICP. Includes the Bad ICP Calculator and real case studies showing growth from $10M to $40M ARR. 68% higher win rates."
     />
     <meta name="author" content="TK Kader" />
     <meta
@@ -31,7 +31,7 @@
     />
     <meta
       property="og:description"
-      content="Free ICP template for B2B SaaS and AI companies. Includes the 3-part framework and case studies showing $10M to $40M ARR growth. 68% higher win rates."
+      content="Free ICP template for B2B SaaS and AI companies. Includes the 3-part framework, Bad ICP Calculator, and case studies showing $10M to $40M ARR growth. 68% higher win rates."
     />
     <meta property="og:url" content="https://www.idealcustomerprofile.com/" />
     <meta
@@ -147,7 +147,7 @@
               "@type": "Article",
               "headline": "Ideal Customer Profile (ICP) Template & Framework Guide",
               "datePublished": "2026-01-20",
-              "dateModified": "2026-11-02",
+              "dateModified": "2026-08-17",
               "author": { "@id": "https://www.tkkader.com/#person" },
               "publisher": {
                 "@type": "Organization",
@@ -228,6 +228,14 @@
         {
           "@context": "https://schema.org",
           "@type": "WebApplication",
+          "name": "Bad ICP Calculator",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Calculates the estimated annual waste in Sales and Marketing spend due to an undefined Ideal Customer Profile."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
           "name": "TAM SAM SOM Calculator",
           "alternateName": "Market Sizing Calculator",
           "applicationCategory": "BusinessApplication",
@@ -251,7 +259,7 @@
           "@type": "Review",
           "itemReviewed": {
             "@type": "Course",
-            "name": "The Unstoppable GTM Program",
+            "name": "AI/SaaS GTM Program",
             "description": "The Unstoppable Go-To-Market Strategy Program for B2B AI/SaaS Founders.",
             "provider": {
               "@type": "Organization",
@@ -286,7 +294,7 @@
               "name": "Where can I find a free ideal customer profile template?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our free ICP template and ICP Builder are on this page. They cover the 3-part framework: Firmographics (the \"Who\"), Triggers (the \"When\"), and Macro Trends (the \"Why Now\")."
+                "text": "We provide a free ICP template in this guide that covers the 3-part framework: Firmographics (the \"Who\"), Triggers (the \"When\"), and Macro Trends (the \"Why Now\"). Once you have your ICP, Instant builds the inbound funnel that attracts them and turns them into pipeline."
               }
             },
             {
@@ -470,8 +478,8 @@
         z-index: 1;
       }
     </style>
-      <!-- TAILWIND CSS (compiled; bump ?v= after npm run build) -->
-    <link rel="stylesheet" href="/dist/output.css?v=20261102b" />
+    <!-- TAILWIND CSS (compiled; bump ?v= after npm run build) -->
+    <link rel="stylesheet" href="/dist/output.css?v=20261102c" />
   </head>
   <body
     class="text-slate-800 bg-[#FFFEFC] selection:bg-yellow-200 selection:text-slate-900 pb-20 md:pb-0"
@@ -494,15 +502,21 @@
           <div
             class="font-black text-xl md-text-2xl tracking-tighter flex items-center gap-2 font-sans"
           >
+            <img
+              src="https://www.tkkader.com/wp-content/uploads/TK_Abbreviated-Logo-on-Dark-BG-1.png"
+              alt="TK Kader Logo"
+              class="h-10 w-auto bg-slate-900 rounded-md p-2 shadow-sm"
+            />
             <span
               >Ideal Customer Profile<span class="text-red-600">.com</span></span
             >
           </div>
           <a
-            href="#builder"
+            href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=sticky_nav"
+            target="_blank"
             class="hidden md:inline-flex bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-all hover:scale-105"
           >
-            Build My ICP Free &rarr;
+            Get the Free 5-Point Guide &rarr;
           </a>
         </div>
       </nav>
@@ -529,10 +543,6 @@
             >3-Part ICP Framework</strong
           >, and real case studies showing growth with an Unstoppable ICP.
         </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 font-sans">
-          <a href="#foundation" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1 shadow-lg shadow-red-200">Learn the ICP Framework &rarr;</a>
-          <a href="#icp-template" class="inline-block bg-white border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-colors">ICP Template &rarr;</a>
-        </div>
       </header>
     </div>
 
@@ -544,10 +554,11 @@
         Build your <span class="text-red-600">Unstoppable</span> ICP.
       </div>
       <a
-        href="#builder"
+        href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=mobile_sticky"
         class="bg-red-600 text-white px-6 py-2 rounded-full text-sm font-bold text-center"
+        target="_blank"
       >
-        Build My ICP &rarr;
+        Free Guide &rarr;
       </a>
     </div>
 
@@ -651,12 +662,15 @@
               Stop Guessing.
             </p>
             <p class="text-xs text-slate-500 mb-4 font-sans">
-              Use the free ICP Builder to get an ICP statement and a one-page ICP. No email required.
+              Get the 5-Point AI/SaaS Growth Strategy Guide and learn how to
+              transform your GTM Strategy with an Unstoppable Ideal Customer
+              Profile and scale growth.
             </p>
             <a
-              href="#builder"
+              href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=sidebar_toc"
               class="block text-center w-full bg-slate-900 text-white py-2 rounded-full text-xs font-bold hover:bg-black transition-colors"
-              >Build My ICP</a
+              target="_blank"
+              >Download the Guide</a
             >
           </div>
         </div>
@@ -1125,8 +1139,8 @@
                   type="number"
                   id="tam-som-pct"
                   class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500"
-                  placeholder="e.g. 3"
-                  value="3"
+                  placeholder="e.g. 10"
+                  value="10"
                   min="0"
                   max="100"
                 />
@@ -1178,7 +1192,7 @@
                   id="som-result"
                   class="text-2xl md:text-3xl font-bold text-white font-mono"
                 >
-                  $3,750,000
+                  $12,500,000
                 </div>
                 <p class="text-xs text-white/60 mt-1">
                   Your realistic near-term capture
@@ -1431,6 +1445,13 @@
             real data. The template gets you started; the exercise makes it Unstoppable.
           </p>
 
+          <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
+            The two steps that matter: <strong>Frame your ICP</strong> with the free framework, then
+            <strong>put it to work</strong> with <a href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=icp_template_intro" target="_blank" class="text-[#1d7874] underline hover:text-[#155a57] font-semibold">Instant</a>—the
+            inbound engine built to attract your ICP and turn them into pipeline. Use the template
+            below to document your first iteration.
+          </p>
+
           <h3 class="font-serif font-bold text-2xl text-slate-900 mb-6">
             ICP Template: The 3-Part Framework
           </h3>
@@ -1513,37 +1534,170 @@
             </table>
           </div>
 
-          <!-- ICP EXAMPLE -->
-          <div id="example" class="mb-12 scroll-mt-28">
-            <h3 class="font-serif font-bold text-2xl text-slate-900 mb-3">Ideal Customer Profile Example</h3>
-            <p class="font-sans text-lg text-slate-700 leading-loose mb-6">
-              <strong>A good ICP is specific enough that you can say who it excludes.</strong> Here's the template filled out for a hypothetical company: software that helps customer support teams review every conversation.
-            </p>
-            <div class="overflow-x-auto mb-0">
-            <table class="w-full border-collapse font-sans text-base">
-                <tbody>
-                    <tr class="border-b border-slate-200"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top w-1/3">Firmographics</th><td class="p-4 text-slate-600">B2B SaaS, $10M to $50M in revenue, 51 to 200 employees, North America, using Zendesk and Salesforce</td></tr>
-                    <tr class="border-b border-slate-200 bg-slate-50"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top">Triggers</th><td class="p-4 text-slate-600">New VP of Customer Support in the last 90 days, recent funding round, a bad renewal quarter</td></tr>
-                    <tr class="border-b border-slate-200"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top">Macro Trends</th><td class="p-4 text-slate-600">Boards want more output per head, and AI makes reviewing every ticket affordable</td></tr>
-                    <tr class="border-b border-slate-200 bg-slate-50"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top">Buyers</th><td class="p-4 text-slate-600">Economic Buyer: VP of Customer Support. Champion: Support Operations Manager</td></tr>
-                    <tr class="border-b border-slate-200"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top">Disqualifiers</th><td class="p-4 text-slate-600">Support teams under 10 people, companies without a helpdesk, agencies</td></tr>
-                    <tr class="border-b border-slate-200 bg-slate-50"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top">Initial Customer Profile</th><td class="p-4 text-slate-600">Series B SaaS companies in North America with 20+ support agents on Zendesk</td></tr>
-                </tbody>
-            </table>
+          <!-- Two Steps: Frame the ICP / Attract the ICP -->
+          <div class="grid md:grid-cols-2 gap-6 mb-12">
+            <!-- Step 1: Frame Your ICP (5-Point Guide) -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col">
+              <div class="font-sans text-sm font-bold text-slate-500 uppercase tracking-widest mb-2">Step 1 &middot; Free Guide</div>
+              <h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Frame Your ICP</h4>
+              <p class="font-sans text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Get the 5-Point AI/SaaS Growth Strategy Guide and learn how to transform your
+                GTM Strategy with an Unstoppable Ideal Customer Profile and scale growth.
+              </p>
+              <a
+                href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=two_column_frame"
+                target="_blank"
+                class="inline-flex items-center gap-2 text-slate-700 font-semibold hover:text-slate-900 transition-colors"
+              >
+                Download the Free Guide
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Step 2: Attract Your ICP (Instant) -->
+            <div class="bg-slate-900 text-white rounded-lg p-6 flex flex-col relative overflow-hidden">
+              <div aria-hidden="true" class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-[#1d7874] opacity-20 blur-3xl"></div>
+              <div class="relative flex flex-col h-full">
+                <div class="flex items-center gap-3 mb-3">
+                  <img src="/instant-logo.png" alt="Instant" class="h-9 w-9 rounded-md" />
+                  <span class="font-sans text-xs font-bold text-[#5dd9d3] uppercase tracking-widest">Step 2 &middot; Inbound Engine</span>
+                </div>
+                <h4 class="font-serif text-xl font-bold mb-3">Attract Your ICP</h4>
+                <p class="font-sans text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                  Once you know who your ICP is, you need to fill your pipeline with them. Instant
+                  builds an inbound lead generation funnel that attracts your ICP through organic
+                  social and converts visitors into qualified leads&mdash;automatically.
+                </p>
+                <ul class="font-sans text-slate-300 text-sm space-y-1 mb-5">
+                  <li class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    AI-built landing pages tuned to your ICP
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    Built-in lead capture &amp; email follow-up
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#5dd9d3] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    Inbound pipeline running in days, not months
+                  </li>
+                </ul>
+                <a
+                  href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=icp_page_two_column"
+                  target="_blank"
+                  class="inline-flex items-center justify-center gap-2 bg-[#1d7874] hover:bg-[#155a57] text-white font-semibold px-5 py-3 rounded-full transition-colors"
+                >
+                  Build Your Inbound Funnel
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
+        </section>
 
-          <!-- ICP BUILDER -->
-          <div id="builder" class="scroll-mt-28">
-            <h3 class="font-serif font-bold text-2xl text-slate-900 mb-3">Build Your ICP</h3>
-            <p class="font-sans text-lg text-slate-700 leading-loose mb-8">
-              Use the free ICP Builder below, or grab the
-              <a id="template-doc" href="https://docs.google.com/document/d/1J61Bo_4vWDh9XgogkX0FWGaH4yU9-JgeaAUBJvOb4HQ/copy" target="_blank" rel="noopener" class="text-red-600 underline hover:text-red-700 font-semibold">Google Doc template</a>.
-              Answer 8 short sections and finish with an ICP statement and a one-page ICP. No email required.
+        <!-- *** INTERACTIVE CALCULATOR (LINK MAGNET) *** -->
+        <section id="calculator-section" class="mb-28 scroll-mt-28">
+          <div
+            id="calculator"
+            class="bg-slate-900 text-white rounded-xl p-10 mb-16 shadow-2xl relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-red-600 rounded-full opacity-20 blur-3xl"
+            ></div>
+            <h3 class="font-serif text-2xl font-bold mb-2 relative z-10">
+              The Cost of a Bad ICP
+            </h3>
+            <p class="text-slate-400 mb-8 font-sans text-sm relative z-10">
+              Calculate how much money you are wasting on the wrong leads.
             </p>
-            <div id="builder-root">
-              <noscript><p class="font-sans text-slate-700 bg-slate-50 p-6 rounded-lg">The ICP Builder needs JavaScript. You can still use the <a href="https://docs.google.com/document/d/1J61Bo_4vWDh9XgogkX0FWGaH4yU9-JgeaAUBJvOb4HQ/copy" class="text-red-600 underline">Google Doc</a>.</p></noscript>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8 relative z-10">
+              <div>
+                <label
+                  class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2"
+                  >Monthly S&M Spend ($)</label
+                >
+                <input
+                  type="text"
+                  id="spend"
+                  class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500"
+                  placeholder="e.g. 20,000"
+                  value="20,000"
+                  inputmode="numeric"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2"
+                  >% of Leads Disqualified</label
+                >
+                <input
+                  type="number"
+                  id="waste"
+                  class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500"
+                  placeholder="e.g. 70"
+                  value="70"
+                />
+              </div>
             </div>
+
+            <div
+              class="bg-slate-800 p-6 rounded-lg text-center border border-slate-700 relative z-10"
+            >
+              <p class="text-slate-400 text-sm uppercase tracking-widest mb-1">
+                Annual Wasted Capital
+              </p>
+              <div
+                id="result"
+                class="text-4xl md:text-5xl font-bold text-red-500 font-mono"
+              >
+                $168,000
+              </div>
+              <p class="text-xs text-slate-500 mt-2">
+                Money burned chasing people who will never buy.
+              </p>
+            </div>
+            <p class="text-xs text-slate-500 mt-4 relative z-10 italic">
+              * Assumes disqualified leads represent proportional wasted spend
+              (e.g., 70% bad leads = 70% of budget spent acquiring non-buyers).
+            </p>
+
+            <script>
+              const spendInput = document.getElementById("spend");
+              const wasteInput = document.getElementById("waste");
+              const resultDiv = document.getElementById("result");
+
+              function formatWithCommas(value) {
+                const num = value.replace(/,/g, "");
+                if (num === "" || isNaN(num)) return "";
+                return parseInt(num).toLocaleString();
+              }
+
+              function calculate() {
+                const spend =
+                  parseFloat(spendInput.value.replace(/,/g, "")) || 0;
+                const waste = parseFloat(wasteInput.value) || 0;
+                const annualWaste = spend * (waste / 100) * 12;
+                resultDiv.innerText = "$" + annualWaste.toLocaleString();
+              }
+
+              spendInput.addEventListener("input", function () {
+                const cursorPos = this.selectionStart;
+                const oldLength = this.value.length;
+                this.value = formatWithCommas(this.value);
+                const newLength = this.value.length;
+                this.setSelectionRange(
+                  cursorPos + (newLength - oldLength),
+                  cursorPos + (newLength - oldLength),
+                );
+                calculate();
+              });
+              wasteInput.addEventListener("input", calculate);
+            </script>
           </div>
         </section>
 
@@ -1635,22 +1789,37 @@
               with because they were outside your ICP.
             </p>
 
-            <div class="bg-slate-900 text-white p-8 md:p-10 rounded-lg my-8">
-              <h3 class="font-serif text-3xl font-bold mb-4">The Unstoppable GTM Program</h3>
-              <p class="font-serif text-xl leading-relaxed mb-8">
-                In the GTM Program, we help you follow the
-                <strong>29-point ICP Framework</strong>, and then build and run a
-                GTM Strategy to attract your ideal customers and build pipeline.
+            <div class="bg-slate-900 text-white p-8 rounded-lg my-8">
+              <p class="font-serif text-xl leading-relaxed">
+                The Unstoppable ICP method follows a rigorous
+                <strong>29-point analysis</strong> to define your Ideal Customer
+                Profile and hone in on the subset of the market that is most
+                likely to purchase your solution now.
               </p>
-              <a
-                href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=part6_29_point"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-block bg-red-600 text-white font-sans px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1"
-              >
-                Learn More about the Unstoppable GTM Program &rarr;
-              </a>
             </div>
+          </div>
+
+          <div
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
+          >
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              Transform Your GTM Strategy
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Grab a complimentary copy of the <strong>5-Point AI/SaaS Growth Strategy Guide</strong>
+              and learn how to transform your GTM Strategy with an Unstoppable Ideal Customer
+              Profile and scale growth.
+            </p>
+            <a
+              href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=part6_operationalize"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1 shadow-lg shadow-red-200"
+            >
+              Download the Free Guide &rarr;
+            </a>
           </div>
         </section>
 
@@ -1739,20 +1908,27 @@
             </p>
           </div>
 
-          <div class="bg-slate-900 text-white p-8 md:p-10 rounded-lg">
-            <h3 class="font-serif text-3xl font-bold mb-4">The Unstoppable GTM Program</h3>
-            <p class="font-serif text-xl leading-relaxed mb-8">
-              In the GTM Program, we help you follow the
-              <strong>29-point ICP Framework</strong>, and then build and run a
-              GTM Strategy to attract your ideal customers and build pipeline.
+          <div
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
+          >
+            <span class="font-sans font-bold text-[#1d7874] text-xs uppercase tracking-widest mb-3 block">Your Next Move</span>
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              Lavu defined their ICP. Now go attract yours.
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Lavu went from $10M to $40M+ ARR by getting their ICP right. Once you've defined yours,
+              the next move is filling the pipeline. <strong>Instant</strong> builds the inbound funnel
+              that attracts your ICP&mdash;automatically.
             </p>
             <a
-              href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=case_study_lavu"
+              href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=case_study_lavu"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block bg-red-600 text-white font-sans px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1"
+              class="inline-block bg-[#1d7874] text-white px-8 py-4 rounded-full font-bold hover:bg-[#155a57] transition-transform hover:-translate-y-1 shadow-lg shadow-[#1d7874]/30"
             >
-              Learn More about the Unstoppable GTM Program &rarr;
+              Build Your Inbound Funnel &rarr;
             </a>
           </div>
         </section>
@@ -1845,20 +2021,27 @@
             </p>
           </div>
 
-          <div class="bg-slate-900 text-white p-8 md:p-10 rounded-lg">
-            <h3 class="font-serif text-3xl font-bold mb-4">The Unstoppable GTM Program</h3>
-            <p class="font-serif text-xl leading-relaxed mb-8">
-              In the GTM Program, we help you follow the
-              <strong>29-point ICP Framework</strong>, and then build and run a
-              GTM Strategy to attract your ideal customers and build pipeline.
+          <div
+            class="border-2 border-slate-900 p-10 text-center bg-white rounded-lg"
+          >
+            <span class="font-sans font-bold text-[#1d7874] text-xs uppercase tracking-widest mb-3 block">Your Next Move</span>
+            <h3 class="font-serif text-3xl font-bold mb-4">
+              BoodleBox stopped selling to everyone. Now go attract your ICP.
+            </h3>
+            <p
+              class="font-sans text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed"
+            >
+              Once France defined BoodleBox's ICP, they could finally focus their go-to-market motion.
+              The next step after the ICP is the funnel. <strong>Instant</strong> attracts your ICP and
+              converts them into pipeline&mdash;automatically.
             </p>
             <a
-              href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=case_study_boodlebox"
+              href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=case_study_boodlebox"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block bg-red-600 text-white font-sans px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1"
+              class="inline-block bg-[#1d7874] text-white px-8 py-4 rounded-full font-bold hover:bg-[#155a57] transition-transform hover:-translate-y-1 shadow-lg shadow-[#1d7874]/30"
             >
-              Learn More about the Unstoppable GTM Program &rarr;
+              Build Your Inbound Funnel &rarr;
             </a>
           </div>
         </section>
@@ -1928,7 +2111,7 @@
             </p>
           </div>
 
-          <div class="bg-slate-900 text-white p-8 md:p-10 rounded-lg">
+          <div class="bg-slate-900 text-white p-8 rounded-lg mb-10">
             <h3 class="font-serif font-bold text-2xl mb-4 text-white">
               The 6-Step Unstoppable GTM Framework
             </h3>
@@ -1976,20 +2159,42 @@
                 >
               </li>
             </ul>
-            <div class="border-t border-slate-700 mt-8 pt-8">
-            <p class="font-serif text-xl leading-relaxed mb-8">
-              In the GTM Program, we help you follow the
-              <strong>29-point ICP Framework</strong>, and then build and run a
-              GTM Strategy to attract your ideal customers and build pipeline.
-            </p>
-            <a
-              href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=part9_closing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block bg-red-600 text-white font-sans px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-transform hover:-translate-y-1"
-            >
-              Learn More about the Unstoppable GTM Program &rarr;
-            </a>
+          </div>
+
+          <!-- Instant: substantive post-framework CTA -->
+          <div class="relative overflow-hidden bg-slate-900 text-white p-10 md:p-14 rounded-2xl">
+            <div aria-hidden="true" class="absolute -top-32 -left-24 w-96 h-96 rounded-full bg-[#1d7874] opacity-25 blur-3xl"></div>
+            <div aria-hidden="true" class="absolute -bottom-32 -right-24 w-96 h-96 rounded-full bg-[#5dd9d3] opacity-15 blur-3xl"></div>
+            <div class="relative">
+              <div class="flex items-center gap-4 mb-6">
+                <img src="/instant-logo.png" alt="Instant" class="h-14 w-14 rounded-lg" />
+                <div class="flex flex-col">
+                  <span class="font-serif text-2xl font-bold text-white leading-none">Instant</span>
+                  <span class="font-sans text-xs font-bold text-[#5dd9d3] uppercase tracking-widest mt-1">For B2B Revenue Teams</span>
+                </div>
+              </div>
+              <h3 class="font-serif text-3xl md:text-5xl font-bold mb-5 leading-tight max-w-3xl">
+                You've got the playbook. Now build the funnel.
+              </h3>
+              <p class="font-sans text-slate-300 text-lg md:text-xl leading-relaxed max-w-3xl mb-8">
+                An ICP without a funnel is just a document. Once you know who you're targeting, you need
+                a system that attracts them, captures their info, and starts the conversation&mdash;automatically.
+                That's exactly what <strong class="text-white">Instant</strong> does: AI-built inbound lead
+                generation funnels that fill your pipeline with your ICP.
+              </p>
+              <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                <a
+                  href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=part9_closing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2 bg-[#1d7874] hover:bg-[#155a57] text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-lg shadow-[#1d7874]/40"
+                >
+                  Build Your Inbound Funnel
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -2016,8 +2221,11 @@
                 Where can I find a free ideal customer profile template?
               </dt>
               <dd class="text-slate-600 mt-2 leading-relaxed text-lg">
-                Our <a href="#icp-template" class="text-red-600 underline hover:text-red-700 font-semibold">free ICP template and ICP Builder</a>
-                are on this page. They cover the 3-part framework: Firmographics (the "Who"), Triggers (the "When"), and Macro Trends (the "Why Now").
+                We provide a <a href="#icp-template" class="text-red-600 underline hover:text-red-700">free ICP template</a>
+                in this guide that covers the 3-part framework: Firmographics (the "Who"),
+                Triggers (the "When"), and Macro Trends (the "Why Now"). Once you have
+                your ICP, <a href="https://www.useinstant.com/?utm_source=idealcustomerprofile&utm_medium=organic&utm_campaign=faq" target="_blank" class="text-[#1d7874] underline hover:text-[#155a57] font-semibold">Instant</a>
+                builds the inbound funnel that attracts them and turns them into pipeline.
               </dd>
             </div>
             <div>
@@ -2217,17 +2425,16 @@
           Stop Guessing. Start Growing.
         </h2>
         <p class="text-xl text-white/90 mb-10 font-sans font-medium">
-          In the GTM Program, we help you follow the 29-point ICP Framework, and
-          then build and run a GTM Strategy to attract your ideal customers and
-          build pipeline.
+          Grab a complimentary copy of the 5-Point AI/SaaS Growth Strategy Guide
+          and learn how to transform your GTM Strategy with an Unstoppable Ideal
+          Customer Profile and scale growth.
         </p>
         <a
-          href="https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=footer_banner"
+          href="https://go.tkkader.com/gYOC6h4ny1Ub?utm_source=icp&utm_medium=organic&utm_campaign=footer_banner"
           target="_blank"
-          rel="noopener noreferrer"
           class="inline-flex items-center gap-2 bg-white text-red-700 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
         >
-          Learn More about the Unstoppable GTM Program &rarr;
+          Download the 5-Point AI/SaaS Growth Strategy Guide
         </a>
       </div>
     </div>
@@ -2267,7 +2474,7 @@
           <ul class="space-y-3">
             <li><a href="/saas-marketing.html" class="hover:text-slate-900 transition-colors">SaaS Marketing Guide</a></li>
             <li><a href="/b2b-saas-lead-generation.html" class="hover:text-slate-900 transition-colors">B2B SaaS Lead Generation Guide</a></li>
-            <li><a href="#icp-template" class="hover:text-slate-900 transition-colors">Free ICP Template</a></li>
+            <li><a href="/#icp-template" class="hover:text-slate-900 transition-colors">Free ICP Template</a></li>
           </ul>
         </div>
         <div>
@@ -2390,7 +2597,7 @@
       // Table of Contents scroll-spy
       const tocLinks = document.querySelectorAll(".toc-link");
       const sections = document.querySelectorAll(
-        'section[id], div[id="tam-calculator"]',
+        'section[id], div[id="calculator"], div[id="tam-calculator"]',
       );
 
       function updateActiveLink() {
@@ -2418,330 +2625,5 @@
       window.addEventListener("scroll", updateActiveLink);
       updateActiveLink(); // Run on page load
     </script>
-      <!-- ICP BUILDER. Runs entirely in the browser: answers stay in localStorage and are never sent anywhere. -->
-    <script>
-    (function () {
-        var STORAGE_KEY = 'icp-builder-v1';
-        var GTM_URL = 'https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=icp_builder_result';
-        var GTM_STEP_URL = 'https://www.getunstoppable.com/?utm_source=icp&utm_medium=organic&utm_campaign=icp_builder_step';
-
-        var STEPS = [
-            { title: 'Your Company', intro: 'Start with what you sell. This keeps the rest of your ICP anchored to a real problem.', fields: [
-                { id: 'product', type: 'area', label: 'What do you sell?', help: 'One or two plain sentences.', ph: 'e.g. Software that helps support teams review every customer conversation' },
-                { id: 'problem', type: 'area', label: 'What urgent problem does it solve?', help: 'The problem someone would pay to fix right now.', ph: 'e.g. Managers can only review 2% of tickets, so quality issues reach customers first' },
-                { id: 'stage', type: 'radio', label: 'Where is your company today?', help: 'This changes the questions in the next step.', options: ['Pre-revenue', 'Under $1M ARR', '$1M to $10M ARR', '$10M+ ARR'] }
-            ]},
-            { title: 'Your Best Customers', intro: 'Don\'t guess who your best customers are. Start with the Closed-Won deals that got the most value and look for the pattern.',
-              preTitle: 'Your First Customers', preIntro: 'You don\'t have Closed-Won data yet, so start with a hypothesis you can test by asking for money.', fields: [
-                { id: 'customer1', type: 'input', label: 'Best customer #1', preLabel: 'First company you\'d pitch', help: 'Pick the ones who get the most value, not the biggest logos.', ph: 'e.g. Acme Software' },
-                { id: 'customer2', type: 'input', label: 'Best customer #2', preLabel: 'Second company you\'d pitch', ph: 'e.g. Northwind' },
-                { id: 'customer3', type: 'input', label: 'Best customer #3', preLabel: 'Third company you\'d pitch', ph: 'e.g. Globex' },
-                { id: 'shared', type: 'area', label: 'What do they have in common?', preLabel: 'Why these companies?', help: 'Look at size, industry, tools, team shape and how they buy.', ph: 'e.g. 100 to 300 employee SaaS companies with a support team of 20 or more' },
-                { id: 'whyBought', type: 'area', label: 'Why did they buy?', preLabel: 'Why would they pay for this now?', help: 'Use their words if you have them.', ph: 'e.g. A bad renewal quarter made support quality a board-level issue' }
-            ]},
-            { title: 'Firmographics: The Who', intro: 'The static data that filters out the noise. Which companies should you target?', fields: [
-                { id: 'industry', type: 'input', label: 'Industry or vertical', help: 'Be specific. Niching down accelerates growth.', ph: 'e.g. B2B SaaS' },
-                { id: 'revenue', type: 'chips', label: 'Company revenue', options: ['Under $1M', '$1M to $10M', '$10M to $50M', '$50M to $250M', '$250M+'] },
-                { id: 'headcount', type: 'chips', label: 'Employee count', options: ['1 to 10', '11 to 50', '51 to 200', '201 to 1,000', '1,000+'] },
-                { id: 'geography', type: 'input', label: 'Geography', ph: 'e.g. North America' },
-                { id: 'tech', type: 'input', label: 'Technology stack', help: 'Tools that signal fit or that you integrate with.', ph: 'e.g. Zendesk and Salesforce' },
-                { id: 'model', type: 'chips', label: 'Business model', options: ['B2B', 'B2C', 'B2B2C', 'Marketplace'] }
-            ]},
-            { title: 'Triggers: The When', intro: 'Triggers are a proxy for urgency. Where there is chaos, there is budget. What turns a good fit into ready to buy?', fields: [
-                { id: 'triggers', type: 'chips', other: true, label: 'Which events signal they\'re ready to buy?', help: 'Pick the ones you\'ve actually seen, or add your own.', options: ['New executive hire', 'Recent funding round', 'Missed growth targets', 'M&A activity', 'Tech stack change', 'Expansion into new markets', 'Regulatory change'] },
-                { id: 'signal', type: 'input', label: 'Where can you spot these?', help: 'A trigger you can\'t see is one you can\'t act on.', ph: 'e.g. LinkedIn job changes and funding announcements' }
-            ]},
-            { title: 'Macro Trends: The Why Now', intro: 'What is shifting in the market that makes your solution inevitable?', fields: [
-                { id: 'macro', type: 'chips', other: true, label: 'Which forces are working in your favor?', options: ['Shift from growth to efficiency', 'AI adoption', 'Regulatory change', 'Competitive pressure', 'Customer behavior change'] },
-                { id: 'macroWhy', type: 'area', label: 'Why does this make you inevitable now?', ph: 'e.g. Boards want more output per head, and AI now makes reviewing every ticket affordable' }
-            ]},
-            { title: 'Your Buyers', intro: 'Your ICP is the company. These are the people inside it. Define the company first, then the people.', fields: [
-                { id: 'economicBuyer', type: 'input', label: 'Economic Buyer', help: 'Controls the budget and has final signing authority.', ph: 'e.g. VP of Customer Support' },
-                { id: 'champion', type: 'input', label: 'Champion', help: 'Sells your product internally to the Economic Buyer.', ph: 'e.g. Support Operations Manager' },
-                { id: 'users', type: 'input', label: 'Day-to-day users', ph: 'e.g. Team leads and QA reviewers' }
-            ]},
-            { title: 'Disqualifiers', intro: 'A good ICP says who you won\'t sell to. Closed-Lost deals and customers who churned are the best place to look.',
-              preIntro: 'A good ICP says who you won\'t sell to. Without Closed-Lost data yet, write down who you\'d turn away and why.', fields: [
-                { id: 'disqualifiers', type: 'area', label: 'Who is not a fit?', help: 'Saying no here is how you avoid the FOMO trap.', ph: 'e.g. Support teams under 10 people, companies without a helpdesk, agencies' }
-            ]},
-            { title: 'Your Initial Customer Profile', intro: 'Your ICP is where you\'re headed. Your Initial Customer Profile is the smallest segment that gets you to your next milestone. Dominate a beachhead before you expand.', fields: [
-                { id: 'initial', type: 'area', label: 'Which narrow segment will you win first?', ph: 'e.g. Series B SaaS companies in North America with 20+ support agents on Zendesk' },
-                { id: 'milestone', type: 'input', label: 'What milestone does it get you to?', help: 'Size it with the <a href="/tam-sam-som-calculator.html" target="_blank" class="text-red-400 underline">TAM SAM SOM Calculator</a>.', ph: 'e.g. $1M ARR' }
-            ]}
-        ];
-
-        var state = load();
-        var root = document.getElementById('builder-root');
-        var started = !!state.started;
-
-        function load() {
-            try {
-                var saved = JSON.parse(window.localStorage.getItem(STORAGE_KEY));
-                if (saved && typeof saved === 'object') return saved;
-            } catch (e) {}
-            return { step: 0, answers: {} };
-        }
-        function save() {
-            try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
-        }
-        function track(name, params) {
-            if (typeof window.gtag === 'function') {
-                try { window.gtag('event', name, params || {}); } catch (e) {}
-            }
-        }
-        function esc(value) {
-            var div = document.createElement('div');
-            div.textContent = value == null ? '' : String(value);
-            return div.innerHTML.replace(/"/g, '&quot;');
-        }
-        function answers() {
-            if (!state.answers || typeof state.answers !== 'object') state.answers = {};
-            return state.answers;
-        }
-        function text(id) {
-            var value = answers()[id];
-            return typeof value === 'string' ? value.trim() : '';
-        }
-        function values(id) {
-            var value = answers()[id];
-            var items = Array.isArray(value) ? value.slice() : [];
-            var other = text(id + 'Other');
-            if (other) items.push(other);
-            return items;
-        }
-        function list(id, word) {
-            var items = values(id);
-            if (items.length < 2) return items.join('');
-            if (items.length === 2) return items.join(' ' + word + ' ');
-            return items.slice(0, -1).join(', ') + ', ' + word + ' ' + items[items.length - 1];
-        }
-        function join(parts, separator) {
-            return parts.filter(Boolean).join(separator);
-        }
-        function sentence(value) {
-            return value.replace(/[.\s]+$/, '');
-        }
-        function isPreRevenue() {
-            return answers().stage === 'Pre-revenue';
-        }
-
-        function statement() {
-            var who = text('industry') ? sentence(text('industry')) + ' companies' : 'companies';
-            var traits = [];
-            if (values('revenue').length) traits.push('with ' + list('revenue', 'or') + ' in revenue');
-            if (values('headcount').length) traits.push(list('headcount', 'or') + ' employees');
-            if (text('geography')) traits.push('based in ' + sentence(text('geography')));
-            if (text('tech')) traits.push('using ' + sentence(text('tech')));
-            var parts = ['Our Ideal Customer Profile is ' + who + (traits.length ? ' ' + traits.join(', ') : '') + '.'];
-            if (values('triggers').length) parts.push('They\'re ready to buy when we see: ' + sentence(list('triggers', 'or')) + '.');
-            if (text('macroWhy')) parts.push('Why now: ' + sentence(text('macroWhy')) + '.');
-            else if (values('macro').length) parts.push('Why now: ' + sentence(list('macro', 'and')) + '.');
-            if (text('economicBuyer') && text('champion')) parts.push('We sell to the ' + sentence(text('economicBuyer')) + ', with the ' + sentence(text('champion')) + ' as our Champion.');
-            else if (text('economicBuyer')) parts.push('We sell to the ' + sentence(text('economicBuyer')) + '.');
-            else if (text('champion')) parts.push('Our Champion is the ' + sentence(text('champion')) + '.');
-            if (text('disqualifiers')) parts.push('We don\'t sell to: ' + sentence(text('disqualifiers')) + '.');
-            if (text('initial')) parts.push('We start with: ' + sentence(text('initial')) + (text('milestone') ? ', which gets us to ' + sentence(text('milestone')) : '') + '.');
-            return parts.join(' ');
-        }
-        function currentStatement() {
-            return typeof state.statementEdit === 'string' ? state.statementEdit : statement();
-        }
-        function documentRows() {
-            var customers = join([text('customer1'), text('customer2'), text('customer3')], ', ');
-            var pre = isPreRevenue();
-            return [
-                ['What we sell', text('product')],
-                ['Problem we solve', text('problem')],
-                ['Stage', text('stage')],
-                [pre ? 'First companies to pitch' : 'Best customers', customers],
-                [pre ? 'Why these companies' : 'What they share', text('shared')],
-                [pre ? 'Why they\'d pay now' : 'Why they bought', text('whyBought')],
-                ['Firmographics (the Who)', join([text('industry'), list('revenue', 'or') && list('revenue', 'or') + ' revenue', list('headcount', 'or') && list('headcount', 'or') + ' employees', text('geography'), text('tech'), list('model', 'or')], ' | ')],
-                ['Triggers (the When)', join([list('triggers', 'or'), text('signal') && 'Spot them in: ' + text('signal')], ' | ')],
-                ['Macro Trends (the Why Now)', join([list('macro', 'and'), text('macroWhy')], ' | ')],
-                ['Economic Buyer', text('economicBuyer')],
-                ['Champion', text('champion')],
-                ['Day-to-day users', text('users')],
-                ['Disqualifiers', text('disqualifiers')],
-                ['Initial Customer Profile', join([text('initial'), text('milestone') && 'Gets us to: ' + text('milestone')], ' | ')]
-            ];
-        }
-        function gaps() {
-            var found = [];
-            if (!text('problem')) found.push('You haven\'t named the urgent problem you solve.');
-            if (!isPreRevenue() && !text('shared')) found.push('You haven\'t described what your best customers have in common.');
-            if (!text('industry')) found.push('No industry yet. "Everyone" is the FOMO trap.');
-            if (!values('revenue').length && !values('headcount').length) found.push('No company size yet.');
-            if (!values('triggers').length) found.push('No triggers defined. Without them, you know who fits but not when to reach out.');
-            if (!values('macro').length && !text('macroWhy')) found.push('No macro trend. You still need an answer to "why now?"');
-            if (!text('economicBuyer')) found.push('No Economic Buyer named.');
-            if (!text('disqualifiers')) found.push('No disqualifiers. If nobody is excluded, your ICP is too broad.');
-            if (!text('initial')) found.push('No Initial Customer Profile. Pick the beachhead you\'ll win first.');
-            return found;
-        }
-
-        function fieldHtml(field) {
-            var pre = isPreRevenue();
-            var label = pre && field.preLabel ? field.preLabel : field.label;
-            var help = field.help ? '<p class="text-xs text-slate-400 mt-2">' + field.help + '</p>' : '';
-            var labelHtml = '<label class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2" for="f-' + field.id + '">' + esc(label) + '</label>';
-            if (field.type === 'input') {
-                return '<div>' + labelHtml + '<input id="f-' + field.id + '" data-field="' + field.id + '" type="text" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="' + esc(field.ph || '') + '" value="' + esc(answers()[field.id] || '') + '">' + help + '</div>';
-            }
-            if (field.type === 'area') {
-                return '<div>' + labelHtml + '<textarea id="f-' + field.id + '" data-field="' + field.id + '" rows="3" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500" placeholder="' + esc(field.ph || '') + '">' + esc(answers()[field.id] || '') + '</textarea>' + help + '</div>';
-            }
-            var radio = field.type === 'radio';
-            var selected = radio ? [answers()[field.id]] : (Array.isArray(answers()[field.id]) ? answers()[field.id] : []);
-            var chips = field.options.map(function (option) {
-                var on = selected.indexOf(option) !== -1;
-                return '<button type="button" data-chip="' + field.id + '" data-radio="' + (radio ? '1' : '') + '" data-value="' + esc(option) + '" aria-pressed="' + on + '" class="px-4 py-2 rounded-full border text-sm font-semibold transition-colors ' + (on ? 'bg-red-600 border-red-600 text-white' : 'bg-slate-800 border-slate-700 text-slate-300 hover:border-slate-500') + '">' + esc(option) + '</button>';
-            }).join('');
-            var other = field.other ? '<input data-field="' + field.id + 'Other" aria-label="Add your own" type="text" class="calc-input bg-slate-800 border-slate-700 text-white focus:border-red-500 mt-3" placeholder="Add your own" value="' + esc(answers()[field.id + 'Other'] || '') + '">' : '';
-            return '<div><span class="block text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">' + esc(label) + '</span><div class="flex flex-wrap gap-2">' + chips + '</div>' + other + help + '</div>';
-        }
-
-        function renderStep() {
-            var index = state.step;
-            var step = STEPS[index];
-            var pre = isPreRevenue();
-            var percent = Math.round(((index + 1) / STEPS.length) * 100);
-            root.innerHTML =
-                '<div class="bg-slate-900 text-white rounded-xl p-6 md:p-10 shadow-2xl relative overflow-hidden">' +
-                    '<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-red-600 rounded-full opacity-20 blur-3xl"></div>' +
-                    '<div class="relative z-10">' +
-                        '<p class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-3">Step ' + (index + 1) + ' of ' + STEPS.length + '</p>' +
-                        '<div class="h-1.5 bg-slate-700 rounded-full mb-8 overflow-hidden" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + percent + '"><div class="h-full bg-red-600 rounded-full" style="width:' + percent + '%"></div></div>' +
-                        '<h3 id="builder-heading" tabindex="-1" class="font-serif text-3xl font-bold mb-3 focus:outline-none">' + esc(pre && step.preTitle ? step.preTitle : step.title) + '</h3>' +
-                        '<p class="text-slate-300 font-sans mb-8 leading-relaxed">' + esc(pre && step.preIntro ? step.preIntro : step.intro) + '</p>' +
-                        '<div class="space-y-6 mb-10 font-sans">' + step.fields.map(fieldHtml).join('') + '</div>' +
-                        '<div class="flex items-center justify-between gap-4">' +
-                            (index > 0 ? '<button type="button" data-nav="back" class="text-slate-300 font-semibold hover:text-white transition-colors">&larr; Back</button>' : '<span></span>') +
-                            '<button type="button" data-nav="next" class="bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors">' + (index === STEPS.length - 1 ? 'Build My ICP &rarr;' : 'Next &rarr;') + '</button>' +
-                        '</div>' +
-                        '<p class="text-sm text-slate-400 font-sans border-t border-slate-700 mt-8 pt-6">Want help? In the Unstoppable GTM Program, we help you follow the 29-point ICP Framework. <a href="' + GTM_STEP_URL + '" target="_blank" rel="noopener" data-gtm-step class="text-white underline hover:text-slate-200">Learn more &rarr;</a></p>' +
-                    '</div>' +
-                '</div>' +
-                '<p class="text-xs text-slate-500 font-sans mt-4 text-center">Free, with no email required. Your answers stay in this browser and are never sent anywhere.</p>';
-        }
-
-        function renderResult() {
-            var rows = documentRows().map(function (row, i) {
-                return '<tr class="border-b border-slate-200 ' + (i % 2 ? 'bg-slate-50' : '') + '"><th scope="row" class="p-4 text-left font-semibold text-slate-900 align-top w-1/3">' + esc(row[0]) + '</th><td class="p-4 text-slate-600 align-top">' + (row[1] ? esc(row[1]) : '<span class="text-slate-400 italic">Not defined yet</span>') + '</td></tr>';
-            }).join('');
-            var gapList = gaps();
-            var gapsHtml = gapList.length ?
-                '<div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-10"><h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Worth Going Back To</h4><ul class="list-disc pl-5 space-y-1 font-sans text-slate-700">' + gapList.map(function (gap) { return '<li>' + esc(gap) + '</li>'; }).join('') + '</ul></div>' : '';
-            root.innerHTML =
-                '<div id="icp-result" class="bg-white border border-slate-200 rounded-xl p-6 md:p-10 shadow-xl">' +
-                    '<h3 id="builder-heading" tabindex="-1" class="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-3 focus:outline-none">Your Ideal Customer Profile</h3>' +
-                    '<p class="font-sans text-slate-600 mb-8">Here\'s your first iteration. Edit the statement until it sounds like you.</p>' +
-                    '<label for="icp-statement" class="block text-xs uppercase tracking-widest font-bold text-slate-500 mb-2">ICP Statement</label>' +
-                    '<textarea id="icp-statement" rows="7" class="calc-input font-sans text-slate-800">' + esc(currentStatement()) + '</textarea>' +
-                    '<button type="button" data-action="regenerate" class="text-sm text-red-600 font-semibold hover:underline mt-2 mb-10">Rebuild from my answers</button>' +
-                    '<h4 class="font-serif text-2xl font-bold text-slate-900 mb-4 mt-8">Your One-Page ICP</h4>' +
-                    '<div class="overflow-x-auto mb-10"><table class="w-full border-collapse font-sans text-base"><tbody>' + rows + '</tbody></table></div>' +
-                    gapsHtml +
-                    '<div class="flex flex-wrap items-center gap-3 mb-10">' +
-                        '<button type="button" data-action="edit" class="text-slate-600 font-semibold hover:text-slate-900 transition-colors px-2">Edit Answers</button>' +
-                    '</div>' +
-                    '<div class="bg-slate-900 text-white p-8 rounded-lg">' +
-                        '<h4 class="font-serif text-2xl font-bold mb-3">Your ICP Is a First Iteration</h4>' +
-                        '<p class="font-sans text-slate-300 leading-relaxed mb-6">A template gets you started. In the Unstoppable GTM Program, we help you follow the 29-point ICP Framework, and then build and run a GTM Strategy to attract your ideal customers and build pipeline.</p>' +
-                        '<a href="' + GTM_URL + '" target="_blank" rel="noopener" data-gtm-link class="inline-block bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-colors">Learn More about the Unstoppable GTM Program &rarr;</a>' +
-                    '</div>' +
-                '</div>';
-            fitStatement();
-        }
-
-        function fitStatement() {
-            var box = document.getElementById('icp-statement');
-            if (box) { box.style.height = 'auto'; box.style.height = (box.scrollHeight + 4) + 'px'; }
-        }
-
-        function render(moveFocus) {
-            if (typeof state.step !== 'number' || state.step < 0 || state.step > STEPS.length) state.step = 0;
-            if (state.step === STEPS.length) renderResult(); else renderStep();
-            if (moveFocus) {
-                var heading = document.getElementById('builder-heading');
-                if (heading) heading.focus({ preventScroll: true });
-                var builder = document.getElementById('builder');
-                if (builder) builder.scrollIntoView({ block: 'start' });
-            }
-        }
-
-        function markStarted() {
-            if (!started) {
-                started = true;
-                state.started = true;
-                track('icp_builder_started');
-            }
-        }
-
-        root.addEventListener('input', function (event) {
-            var target = event.target;
-            if (target.dataset.field) {
-                answers()[target.dataset.field] = target.value;
-                markStarted();
-                save();
-            } else if (target.id === 'icp-statement') {
-                state.statementEdit = target.value;
-                fitStatement();
-                save();
-            }
-        });
-
-        root.addEventListener('click', function (event) {
-            var button = event.target.closest('button, a');
-            if (!button) return;
-            var data = button.dataset;
-            if (data.chip) {
-                var field = data.chip;
-                var answerSet = answers();
-                if (data.radio) {
-                    answerSet[field] = answerSet[field] === data.value ? '' : data.value;
-                } else {
-                    var items = Array.isArray(answerSet[field]) ? answerSet[field] : [];
-                    var at = items.indexOf(data.value);
-                    if (at === -1) items.push(data.value); else items.splice(at, 1);
-                    answerSet[field] = items;
-                }
-                markStarted();
-                save();
-                var scrollY = window.pageYOffset;
-                render(false);
-                window.scrollTo(0, scrollY);
-                var again = root.querySelector('[data-chip="' + field + '"][data-value="' + data.value.replace(/["\\]/g, '\\$&') + '"]');
-                if (again) again.focus({ preventScroll: true });
-            } else if (data.nav) {
-                markStarted();
-                state.step += data.nav === 'next' ? 1 : -1;
-                if (state.step === STEPS.length) track('icp_builder_completed');
-                else track('icp_builder_step', { step_number: state.step + 1 });
-                save();
-                render(true);
-            } else if (data.action === 'regenerate') {
-                delete state.statementEdit;
-                save();
-                var statementEl = document.getElementById('icp-statement');
-                if (statementEl) statementEl.value = statement();
-                fitStatement();
-            } else if (data.action === 'edit') {
-                state.step = 0;
-                save();
-                render(true);
-            } else if (button.hasAttribute('data-gtm-step')) {
-                track('icp_gtm_clicked', { location: 'builder_step', step_number: state.step + 1 });
-            } else if (button.hasAttribute('data-gtm-link')) {
-                track('icp_gtm_clicked', { location: 'builder_result' });
-            }
-        });
-
-        var templateDoc = document.getElementById('template-doc');
-        if (templateDoc) templateDoc.addEventListener('click', function () { track('icp_doc_clicked', { location: 'template_section' }); });
-
-        render(false);
-    })();
-    </script>
-</body>
+  </body>
 </html>
