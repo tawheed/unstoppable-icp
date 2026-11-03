@@ -8,7 +8,7 @@ This is a static marketing micro-site for "Ideal Customer Profile" - a single-pa
 
 ## Architecture
 
-- **Static HTML files**: Multiple pages (index.html, saas-marketing.html, calculators, etc.)
+- **Static HTML**: one page, `index.html`. The TAM, LTV, CAC, SaaS marketing and B2B lead generation pages were removed on 2026-11-03 and redirect to the homepage (`vercel.json`).
 - **Build process**: Tailwind CLI compiles CSS from `src/input.css` to `dist/output.css`
 - **Styling**: Tailwind CSS (built locally, ~22KB minified vs ~300KB CDN)
 - **Fonts**: Google Fonts (Crimson Pro for headings, Inter for body text)
